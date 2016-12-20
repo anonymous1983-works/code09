@@ -110,7 +110,7 @@ gulp.task('copy:json', () => gulp
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['html', 'styles', 'scripts', 'fonts', 'copy:json'], () => {
+gulp.task('serve', ['wiredep', 'html', 'styles', 'scripts', 'fonts', 'copy:json'], () => {
     browserSync({
         notify: false,
         port: 9000,
