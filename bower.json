@@ -9,5 +9,26 @@
     "lodash-deep": "^1.6.0",
     "animate.css": "^3.5.2",
     "fullpage.js": "^2.9.2"
+  },
+  "overrides": {
+
+    "animate.css":{
+      "main": ["animate.min.css"]
+    },
+    "fullpage.js": {
+      "main": ["dist/jquery.fullpage.css", "dist/jquery.fullpage.js"]
+    },
+    "jquery":{
+      "main": ["dist/jquery.min.js"]
+    },
+    "lodash":{
+      "main": ["lodash.js"]
+    },
+    "lodash-deep":{
+      "main": ["lodash-deep.min.js"]
+    },
+    "simple-grid":{
+      "main": ["simple-grid.min.css"]
+    }
   }
 }
