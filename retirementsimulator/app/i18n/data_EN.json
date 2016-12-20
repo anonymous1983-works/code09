@@ -1,0 +1,300 @@
+{    
+    "app": {
+        "title": "AXA Life Planning",
+        "page_title": "AXA Life Planning",
+        "need_update": "<span>You are using an outdated browser</span><br/>It is limiting your user experience. <a target='_blank' href='http://browser-update.org/update.html'>Please upgrade your browser</a>.",
+        "cookies": {
+            "content": "By continuing your visit to this site, you accept the use of cookies to make visits statistics.",
+            "button": "ok"
+        },
+        "ageUnit": "years old",
+        "monthly": "$/month",
+        "monthly_noSymbol": "/month",
+        "yearly": "$/year",
+        "yearly_noSymbol": "/year"
+    },    
+    
+    "scroller": {
+        "please": "please",
+        "scroll": "scroll",
+        "button_cancel": "cancel",
+        "button_validate": "ok",
+        "editAmount_title": "Click to edit",
+        
+        "home_level_1": "I would like to live in my own house",
+        "home_level_2": "I would like to live in a flat in the city center",
+        "home_level_3": "I would like to live in a cottage",
+        "home_level_4": "I would like to live in a big house near the beach",
+                    
+        "travel_level_1": "I would like to travel with my backpack",
+        "travel_level_2": "I would like to travel across countries with a caravan",
+        "travel_level_3": "I would like to travel across the seas with my boat",
+        "travel_level_4": "I would like to travel around the world in first class",
+
+        "food_level_1": "I would like to cook at home",
+        "food_level_2": "I would like to eat the menu of the day",
+        "food_level_3": "I would like to often eat in a trendy restaurant",
+        "food_level_4": "I would like to always eat in the best restaurant of the city",
+
+        "transport_level_1": "I would like to move by bicycle or walking",
+        "transport_level_2": "I would like to move by bus or metro",
+        "transport_level_3": "I would like to move with my own car",
+        "transport_level_4": "I would like to move around the city only by taxi",
+
+        "family_level_1": "I think that I will not have children",
+        "family_level_2": "I would like to have no more than 2 kids",
+        "family_level_3": "I would like to have a big family",
+
+        "shopping_level_1": "I would like to buy clothes only in sale",
+        "shopping_level_2": "I would like to buy my clothes in flea markets",
+        "shopping_level_3": "I would like to buy my shoes at large chain stores",
+        "shopping_level_4": "I would like to buy my clothes in luxury shops",
+        
+        "freetime_level_1": "I would like to have a quiet life at home",
+        "freetime_level_2": "I would like to visit all the museums every month",
+        "freetime_level_3": "I would like to go to the opera every week",
+        "freetime_level_4": "I would like to practice golf with a personal coach",
+
+        "health_level_1": "I practice a lot of sport and eat healthy",
+        "health_level_2": "I am quite often sick",
+
+        "saving_level_1": "I will save very few money",
+        "saving_level_2": "I will save a reasonable amount of money",
+        "saving_level_3": "I want to save a lot of money",
+        "saving_level_4": "I want to save a lot of money",
+
+        "start_saving_up_level_1": "I want to start saving now",
+        "start_saving_up_level_2": "I need some time before I start",
+        "start_saving_up_level_3": "I prefer to wait",
+        "start_saving_up_level_4": "I prefer to wait",
+
+        "last_salary_up_level_1": "I think my revenues will remain the same as now",
+        "last_salary_up_level_2": "My salary will increase regulary",
+        "last_salary_up_level_3": "I think I will earn much more money than now",
+        "last_salary_up_level_4": "I think I will earn much more money than now",
+
+        "retire_age_up_level_1": "I will try to stop working as soon as possible",
+        "retire_age_up_level_2": "I will retire at the standard age",
+        "retire_age_up_level_3": "I like my job and I will work while I can",
+        "retire_age_up_level_4": "I like my job and I will work while I can",
+        "retire_age_up_level_5": "I like my job and I will work while I can"
+    },
+
+    "nav":{
+        "salary": "Salary",
+        "pension": "Public Pension",
+        "lifestyle": "Lifestyle",
+        "complementary": "Complementary"
+    },
+
+    "start":{
+        "title": "Life Planning",
+        "subtitle": "Better plan your futur retirement",
+        "headline": "Do you think you need a complementary pension?",
+        "pension_headline": "Estimate your <br/><span>public pension</span>",
+        "lifestyle_headline": "Design your <br/><span>lifestyle</span>",
+        "plan_headline": "Discover your <br/><span>retirement plan</span>",
+        "button_start": "start simulation",
+        "help": "want to help one of your closes to prepare his retirement ?"
+    },
+
+    "pension": {
+        "title": "Estimate your public pension",
+        "titleAfterCalculation": "Estimate your public pension",
+        "headline": "by changing the filling the following form",
+        "headlineAfterCalculation": "how we calculate it...",
+        "form_name": "My name is",
+        "form_age": "I am",
+        "form_age_unit": "years old",
+        "form_birthdate_man": "I am born on the",
+        "form_birthdate_woman": "I am born on the",
+        "form_gender": "I am a",
+        "form_gender_man": "Man",
+        "form_gender_woman": "Woman",
+        "form_work": "I work as",
+
+        "form_positionStart": "since",
+        "form_positionStart_end": "years",
+
+        "form_pastPositionStart": "I worked for",
+        "form_pastPositionStart_end": "years",
+
+        "form_salary": "My salary is",
+        "form_salary_netMonthly": "net monthly",
+        "form_salary_grossYearly": "gross annual",
+        "form_startWork": "$/month. I started working at",
+        "form_startWork_end": "",
+        "form_studentMessage": "(Your public pension will be calculated on the national average)",
+
+        "result_retirementYear": "in year",
+        "result_retirementAge": "at",
+        "result_pensionTitle": "Your estimated pension",
+        "result_ratioSalary": "{{ratio}}% of your last income",
+        "result_salaryTitle": "Your last salary",
+        "result_inflationMeaning": "+{{inflation}}% per year",
+        "result_alreadyRetired": "Congratulations, you can retire in the current year.",
+
+        "button_back": "Back",
+        "button_backToMyData": "Back to my data",
+        "button_calculate": "Calculate pension",
+        "calculate_info": "calculating your public pension...",
+        "button_lifestyle": "Design my lifestyle",
+
+        "form_workPeriodDuration_before": "",
+        "form_workPeriodDuration_after": "years as",
+        "form_workPeriodSalary_before": "with",
+        "form_workPeriodSalary_after": "",
+        "button_add": "Add",
+        "button_add_title": "Add the previous work period",
+        "button_remove_title": "Remove this work period",
+        "button_workPeriod": "the previous work period"
+    },
+
+    "lifestyle": {
+        "title": "If you were retired today...",
+        "headline": "what could be your lifestyle?",
+
+        "title_not_enough": "Please decrease of<br/><span class=\"number\">{{lifestyleBalance | abs | currency:undefined:0}}</span>",
+        "headline_not_enough": "to adjust your Lifestyle",
+
+        "title_perfect": "Congratulations!",
+        "headline_perfect": "Plan & Lifestyle match perfectly...",
+        
+        "title_a_lot": "You can increase of<br/><span class=\"number\">{{lifestyleBalance | abs | currency:undefined:0}}</span>",
+        "headline_a_lot": "to adjust your Lifestyle",
+
+        "title_no_complementary_needed": "You can increase",
+        "headline_no_complementary_needed": "to adjust your Lifestyle",
+
+        "needs": "- You need -",
+        "needs_unit": "/month",
+        "button_back": "Back",
+        "button_seeFuture": "See my futur",
+        "button_add": "Add",
+        "button_otherExpenses": "OTHER Expenses",
+        "button_add_title": "Add other expenses",
+        "otherExpenses": "Other expenses :",
+        "expensesValue": " : {{expenses}} $/month"
+    },
+
+    "timeMachine": {
+        "year": "year",
+        "needs": "- your lifestyle is -",
+        "future_needs": "- your lifestyle will be -",
+        "needsFrequency": "/month",
+        "message1": "the cost of living increases",
+        "message2": "you have to take care of your health",
+        "button_go": "Let's go"
+    },
+
+    "plan": {
+        "title": "Your plan for {{year}}",
+        "headline": "you can finetune by changing<br/>following elements",
+
+        "title_not_enough": "It is not enough :(",
+        "headline_not_enough": "<strong>Decrease</strong> your Lifestyle values...<br/>or save <span class=\"number\">{{targetSaving| currency:undefined:0}}</span> /month",
+
+        "title_perfect": "Congratulations!",
+        "headline_perfect": "Plan & Lifestyle match perfectly...",
+        
+        "title_a_lot": "You have more :)",
+        "headline_a_lot": "Enjoy to <strong>increase</strong> your Lifestyle...<br/>or save <span class=\"number\">{{targetSaving| currency:undefined:0}}</span> /month",
+
+        "title_no_complementary_needed": "You have more :)",
+        "headline_no_complementary_needed": "Enjoy to <strong>increase</strong> your Lifestyle...",
+        
+        "needs": "you will need",
+        "publicPension_legend": "from your public pension",
+        "complementaryPension_legend": "from AXA Retirement plan",
+        "incomes_legend": "+ incomes",
+        "button_add": "Add",
+        "button_otherIncomes": "OTHER INCOMES",
+        "button_add_title": "Add other incomes",
+        "otherIncomes": "Other incomes",
+        "incomesValue": " : {{incomes}} $/month",
+        "taxAdvantagesBegin": "taxes deduction of<br/>",
+        "taxAdvantagesEnd": "per year",
+        "ageUnit": "years<br/>old",
+
+        "button_back": "back",
+        "button_finish": "Finish",
+        "button_sendMail": "send to my email"
+    },
+
+    "final": {
+        "retirementYear": "plan for",
+        "retirementAge": "at {{age}} years old",
+        "savings_title": "By saving now",
+        "savings_duration": "",
+        "savings_tax": "taxes advantages",
+        "complementary_title": "You will get",
+        "complementary_duration": "",
+        "complementary_capital": "or a capital of",
+        "button_save": "Save",
+        "button_restart": "Restart",
+        "button_recallMe": "Recall<br/>me",
+        "button_findAgent": "Find an<br/>agent"
+    },
+
+    "dataLoader": {
+        "loading_message": "Please wait<br/>while the data are loaded ..."
+    },
+
+    "about": {
+        "button_back": "back",
+        "button_about": "about",
+        "button_recallMe": "Recall<br/>me",
+        "button_findAgent": "Find an<br/>agent",
+
+        "website": "Welcome to AXA Tools website",
+        "website_link": "http://www.axa.com",
+        "phone": "",
+
+        "headline": "Please READ CAREFULLY THE FOLLOWING TERMS OF USE, WHICH APPLY TO ALL VISITORS TO THIS SITE. BY DECIDING TO VISIT THIS SITE, YOU IMPLICITLY AGREE TO ABIDE BY ITS TERMS.",
+
+        "presentation_title": "General Presentation",
+        "presentation_text": "You are currently connected to the http://tools.axa.com site which is published by AXA.<br/>- Company name: AXA<br/>- Legal representative: Henri de Castries - Chairman & CEO<br/>- Public company with registered capital of: €5,589,831,371.42 at December 5, 2014<br/>- Paris Register of Companies: 572.093.920<br/>- Head Office: 25, avenue Matignon 75008 Paris France<br/>- Hosting: AXA Group Solutions, 23 avenue Matignon 75008 Paris FrancePublic company with a registered capital of: €250,000 (at December 12, 2013Paris Register of Companies: 344.710.082<br/>- Publications Director: AXA Group Communication Department<br/>- Site registered at the C.N.I.L.",
+
+        "privacy_title": "Personal data",
+        "privacy_text": "The personal information communicated to the company by Internet users on the AXA Group's sites, by way of forms or questionnaires placed on line, is necessary for the processing of these forms and questionnaires. It will be analysed and passed on to the various departments concerned to be handled by them. If no objection is raised by the person concerned, AXA may be called upon to process this information for sales operations. The user has a right of access, modification, correction and removal of data collected on this site, under the conditions stipulated by law no. 78-17 of the 6th of January 1978 on computer information, files and civil liberties.",
+        
+        "custom_HTML": "",
+
+        "copyright_title": "Copyright Law",
+        "copyright_text": "This site must be seen as an inseparable whole. Complete or partial reproduction or representation of the pages, the data and any other element constituting the site, by any process and on any support, is prohibited and constitutes, without the publisher's permission, an infringement of copyright. The brand names and/or logos featured on the site are owned or acquired under licence contract by AXA.",
+        
+        "cookies_title": "Cookies",
+        "cookies_text": "Users of the site are informed that when they access this site, information may be temporarily stored in memory or on their hard disk in order to optimise and customise navigation on the site. It is possible for any Internet user to configure the preferences of his browser to refuse cookies. In this case, certain functions of the site may not be accessible."
+    },
+
+    "popup_contactMe": {
+        "title": "Recall me",
+        "customerType_label": "Are you already our client?",
+        "customerType_0": "No. I am not a client",
+        "customerType_1": "MPS or AXA MPS",
+        "customerType_2": "AXA Assigurazioni",
+        "thanks": "Thank you for<br/>your interest :)",
+        "term1": "I have read and accept the <a href='#/about/privacy'>data protection clauses</a>.",
+        "term2": "I authorize AXA to use my data for <a href='#/about/privacy'>commercial offers</a>.",
+        "nextStep": "An AXA agent will contact you.",
+        "helpAClose": "And now...<br/>you can do the same<br/>to help a close.",
+        "button_cancel": "cancel",
+        "button_ok": "Ok",
+        "button_send": "Send<br>me",
+        "button_helpAClose": "Restart for<br/>someone else"
+    },
+
+    "popup_savePlan": {
+        "title": "Save your plan on your email",
+        "headline": "We will keep your plan during 2 months.",
+        "privacyLink_label": "Learn more about the AXA privacy policy",
+        "sent": "Plan sent.",
+        "checkMail": "Check your email",
+        "availability": "Your plan is available <span>during 2 months.</span>",
+        "button_cancel": "cancel",
+        "button_ok": "Ok",
+        "button_send": "Send<br>me"
+    },
+
+    "storeLocator_link": "http://www.previsio.axa.it/dovesiamo/"
+}

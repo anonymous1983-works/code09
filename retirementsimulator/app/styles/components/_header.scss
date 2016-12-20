@@ -1,0 +1,101 @@
+.axa-header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+
+  @include rem-fallback("max-height", $axa-header-height);
+  color: $axa-header-color;
+
+  .navbar-left {
+    float: left;
+  }
+  .navbar-right {
+    float: right;
+  }
+
+  .axa-header_brand {
+    .brand_link {
+      @include clearfix();
+      @include rem-fallback("font-size", $axa-header-font-size);
+      display: block;
+      color: $axa-header-color;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-style: normal;
+
+      &:before {
+        content: "";
+        display: block;
+        position: relative;
+        float: left;
+        @include rem-fallback("width", $axa-header-height);
+        @include rem-fallback("height", $axa-header-height);
+        @include rem-fallback("margin-right", 10);
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTYuN3B4IiBoZWlnaHQ9IjU2LjdweCIgdmlld0JveD0iMCAwIDU2LjcgNTYuNyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTYuNyA1Ni43IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjMDA1NDk3IiB3aWR0aD0iNTYuNyIgaGVpZ2h0PSI1Ni43Ii8+PHBvbHlnb24gZmlsbD0iI0YzMTA0OCIgcG9pbnRzPSI1My41LDAgMzEuODk5LDI4IDM1LjEsMjggNTYuNjk5LDAgIi8+PGc+PGRlZnM+PHJlY3QgaWQ9IlNWR0lEXzFfIiB3aWR0aD0iNTYuNyIgaGVpZ2h0PSI1Ni43Ii8+PC9kZWZzPjxjbGlwUGF0aCBpZD0iU1ZHSURfMl8iPjx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzFfIiAgb3ZlcmZsb3c9InZpc2libGUiLz48L2NsaXBQYXRoPjxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGw9IiNGRkZGRkYiIGQ9Ik00My4zLDQwLjVjMSwyLjgsMywxMCwzLjgsMTAuNUg0MS43YzAtMC42LTAuMTAxLTEuMy0wLjItMS44OTljLTAuMi0wLjgwMS0yLjItNy0yLjItN2gtOC41TDI5LjUsNDRjMCwwLDEuNiw1LDEuNyw1LjNjMC4yLDAuNCwwLjg5OSwxLjgwMSwwLjg5OSwxLjgwMUgyN2MwLDAtMC4xLTAuODAxLTAuMi0xLjEwMWMtMC4xLTAuMy0wLjUtMS43LTAuNS0xLjdjLTAuNSwwLjYwMS0xLDEuMi0xLjUsMS45Yy0wLjMsMC42LTAuNSwwLjktMC41LDAuOWgtNGMwLDAtMC4xLTAuODAxLTAuMi0xLjEwMXMtMC41LTEuOC0wLjUtMS44Yy0wLjUsMC42LTEsMS4zLTEuNCwyYy0wLjMsMC42LTAuNCwwLjktMC40LDAuOWgtNGMwLDAsMS4xLTEuMTAxLDEuNS0xLjVjMC43LTAuODAxLDMuMS00LDMuMS00bC0xLTMuNEg5LjFjMCwwLTQuOCw2LjMtNSw2LjVjLTAuNiwwLjgtMS4xLDEuNi0xLjYsMi40SDBWNDkuNWwwLjEtMC4xQzAuMiw0OS4zLDMuNyw0NC45LDcsNDAuNWMyLjktMy44LDUuNy03LjUsNS45LTcuODk5YzAuNS0wLjksMS0xLjgwMSwxLjQtMi43aDQuNGMwLDAuNywwLjEsMS4zOTksMC4zLDIuMWMwLjEsMC40LDIuOCw5LjEwMSwyLjgsOS4ybDEuNS0xLjlsLTIuNi03LjhjLTAuMS0wLjUtMC40LTEtMC43LTEuNWg1LjFjMCwwLjUsMCwwLjksMC4yLDEuNGMwLjIsMC42LDEuMyw0LjYsMS4zLDQuNnMzLjUtNC4zOTksMy43LTQuN2MwLjItMC4zOTksMC40LTAuOCwwLjQtMS4zaDQuMmMtMC44MDEsMC43LTEuNSwxLjQtMi4xMDEsMi4zbC00LjksNi4zMDFsMC42LDJjMC4xLDAuMTk5LDAuMSwwLjMsMC4xLDAuM2wwLjMwMS0wLjNjMS4xOTktMS41LDYuMzk5LTguNCw2LjY5OS04LjljMC4zMDEtMC41LDAuNjAxLTEuMSwwLjktMS42aDQuMWMwLDAuNSwwLjEwMSwxLjEsMC4yLDEuNkw0My4zLDQwLjV6IE0zNywzNGMtMS4zLDItMi43LDMuOS00LjIsNS43aDUuN2MwLDAtMS4xLTMuNC0xLjMtNC4xQzM3LjEsMzUsMzcuMSwzNC41LDM3LDM0QzM3LjEsMzMuOSwzNy4xLDMzLjgsMzcsMzQgTTE1LjMsMzRjLTEuMywyLTIuNywzLjgtNC4yLDUuNjAxaDUuN2MwLDAtMS4xLTMuNC0xLjMtNC4xMDFjLTAuMS0wLjUtMC4xLTEtMC4xLTEuNUMxNS40LDMzLjksMTUuMywzMy44LDE1LjMsMzQgTTIzLjgsNDcuMmwxLjYtMi4xYy0wLjEtMC4xMDEtMS0yLjgwMS0xLTIuODAxbC0xLjUsMkwyMy44LDQ3LjJ6Ii8+PC9nPjwvc3ZnPg==);;
+      }
+
+      .text {
+        display: block;
+        float: left;
+        @include rem-fallback("padding-top", 27);
+
+        b, strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .axa-header_navbar {
+    $axa-header_element-height: $axa-header-height - (6 * 2);
+    @include clearfix();
+    @include rem-fallback("margin-top", 6);
+    li {
+      float: left;
+      @include rem-fallback("margin-left", $axa-header_element-height);
+      @include rem-fallback("line-height", $axa-header_element-height);
+
+      .btn {
+        @include rem-fallback("height", $axa-header_element-height);
+        @include rem-fallback("width", $axa-header_element-height);
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        text-align: center;
+        color: $axa-header-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+
+        .icon {
+          vertical-align: middle;
+        }
+
+        &.btn-start {
+          width: auto;
+          @include rem-fallback("padding-left", 16);
+          @include rem-fallback("padding-right", 16);
+          border: 4px solid $axa-header-color;
+          @include rem-fallback("line-height", $axa-header_element-height - (4 * 2));
+          @include rem-fallback("font-size", $axa-header_btn-font-size);
+          @include transition(background-color .2s, color .2s);
+          position: relative;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: rgba(255, 255, 255, 1);
+            background-color: $axa-header-color;
+          }
+        }
+      }
+    }
+  }
+
+}

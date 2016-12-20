@@ -1,0 +1,13 @@
+{
+  "name": "paris",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "breakpoint-sass": "^2.7.1",
+    "simple-grid": "https://github.com/zachacole/Simple-Grid.git",
+    "lodash-deep": "^1.6.0",
+    "animate.css": "^3.5.2",
+    "fullpage.js": "^2.9.2"
+  }
+}

@@ -1,0 +1,41 @@
+@include global-reset;
+@include nested-reset;
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: $white;
+  -webkit-overflow-scrolling: touch;
+  font-family: Helvetica, Arial, sans-serif;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  &.bg-turquoise,
+  .bg-turquoise,
+  .axa-page.bg-turquoise {
+    background-color: $turquoise;
+  }
+  &.bg-orange,
+  .bg-orange,
+  .axa-page.bg-orange {
+    background-color: $orange;
+  }
+  &.bg-violet,
+  .bg-violet,
+  .axa-page.bg-violet {
+    background-color: $violet;
+  }
+
+}

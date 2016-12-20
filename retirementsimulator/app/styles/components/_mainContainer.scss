@@ -1,0 +1,16 @@
+.axa-main {
+  width: 100%;
+  height: 100%;
+  @include rem-fallback("padding-top", $axa-header-height);
+  overflow: hidden;
+
+  .axa-page {
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+  }
+}
+
+@import 'pages/page-home-a';

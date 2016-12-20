@@ -1,0 +1,17 @@
+.btn {
+  border : 6px solid $white;
+  background: transparent;
+  color : $white;
+  display: inline-block;
+  text-transform : uppercase;
+  text-decoration: none;
+  @include rem-fallback("padding", 16,48);
+
+  outline: none;
+  font-weight : 700;
+  font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include rem-fallback("font-size", 18);
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,41 @@
+.intro-bulb {
+  border: 6px solid $white;
+  padding: 20px 0 ;
+  margin-bottom: 65px;
+  position: relative;
+
+  p {
+    font-size: 22px;
+    width: 80%;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 36px;
+    margin: 30px 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -64px;
+    left: 195px;
+    border-width: 32px;
+    border-style: solid;
+    border-color: $white transparent transparent $white;
+    display: block;
+    width: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -52px;
+    left: 200px;
+    border-width: 26px;
+    border-style: solid;
+    border-color: $turquoise transparent transparent $turquoise;
+    display: block;
+    width: 0;
+  }
+}
