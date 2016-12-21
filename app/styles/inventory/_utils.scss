@@ -1,4 +1,6 @@
-
+br{
+  line-height: 0;
+}
 .left {
   text-align: left;
 }
@@ -42,4 +44,16 @@
 
 .hide {
   display: none;
+}
+
+.amount {
+  position: relative;
+  @include rem-fallback("height", 46);
+  .devise {
+    font-family: 'ITC Franklin Gothic Book', Helvetica, Arial, sans-serif;
+    color: $white;
+    @include rem-fallback("font-size", 31);
+    @include center(true, true);
+
+  }
 }

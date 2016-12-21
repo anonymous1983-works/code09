@@ -10,11 +10,28 @@
   }
 
   .axa-page {
-
     width: 100%;
     height: 100%;
     overflow: auto;
     position: relative;
+
+    .page-title {
+      @include rem-fallback("font-size", 42);
+      @include rem-fallback("line-height", 44);
+      text-align: left;
+      font-weight: 800;
+      font-family: $axa-font-franklin-medium;
+      @include rem-fallback("margin-top", 72);
+      color: $white;
+
+      position: absolute;
+      top: 0;
+
+      .text,
+      .btn-popin {
+        display: inline-block;
+      }
+    }
 
   }
 }

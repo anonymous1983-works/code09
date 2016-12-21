@@ -22,7 +22,7 @@
       @include rem-fallback("font-size", $axa-header-font-size);
       display: block;
       color: $axa-header-color;
-      font-family: 'Open Sans';
+      font-family: $axa-font-franklin-medium;
       font-weight: 400;
       font-style: normal;
 
@@ -87,11 +87,17 @@
           @include transition(background-color .2s, color .2s);
           position: relative;
 
+          .text {
+            color: $axa-header-color;
+          }
           &:hover,
           &:focus,
           &:active {
-            color: rgba(255, 255, 255, 1);
+            color: $white;
             background-color: $axa-header-color;
+            .text {
+              color: $white;
+            }
           }
         }
       }
