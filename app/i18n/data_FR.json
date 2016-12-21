@@ -1,21 +1,21 @@
 {
-  "icons" : {
-    "plus" : "assets/icon-plus.png",
-    "info" : "assets/icon-info.png",
-    "multiply" : "assets/icon-phone.png",
-    "divide" : "assets/icon-phone.png",
-    "phone" : "assets/icon-phone.png",
-    "arrow" : "assets/icon-arrow.png",
-    "arrowDown" : "assets/arrow-down.png",
-    "house" : "assets/icon-house.png",
-    "health" : "assets/icon-health.png",
-    "fun" : "assets/icon-fun.png",
-    "family" : "assets/icon-family.png",
-    "graphHealth" : "assets/graph-health.png",
-    "graphEvolution" : "assets/graph-evolution.png",
-    "back" : "assets/icon-arrow.png"
+  "icons": {
+    "plus": "assets/icon-plus.png",
+    "info": "assets/icon-info.png",
+    "multiply": "assets/icon-phone.png",
+    "divide": "assets/icon-phone.png",
+    "phone": "assets/icon-phone.png",
+    "arrow": "assets/icon-arrow.png",
+    "arrowDown": "assets/arrow-down.png",
+    "house": "assets/icon-house.png",
+    "health": "assets/icon-health.png",
+    "fun": "assets/icon-fun.png",
+    "family": "assets/icon-family.png",
+    "graphHealth": "assets/graph-health.png",
+    "graphEvolution": "assets/graph-evolution.png",
+    "back": "assets/icon-arrow.png"
   },
-  "popin" : {
+  "popin": {
     "profile": {
       "text1": "Le simulateur d'Axa prend en compte différents critères pour estimer votre retraite.<br/><br/>",
       "text2": "Les critères « légaux » mais aussi des projections qui varient en fonction de certains facteurs, comme l'augmentation dans le temps, du coût de la santé ou l'inflation ou encore l'évolution des salaires.<br/><br/>",
@@ -53,188 +53,200 @@
       }
     }
   },
-  "global" : {
-    "next" : "suite",
-    "back" : "retour",
-    "backLink" : "javascript:void(0);",
-    "recap" : "obtenir mon bilan personnalisé"
+  "global": {
+    "next": "suite",
+    "back": "retour",
+    "backLink": "javascript:void(0);",
+    "recap": "obtenir mon bilan personnalisé"
   },
   "pages": {
-    "homeA": {
-      "title": "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
-      "button_start": {
-        "link": "#satrt",
-        "text": "commencer la simulation"
-      },
-      "button_next": {
-        "link": "#next",
-        "text": "Pourquoi préparer sa retraite dès maintenant ?"
+    "home": {
+      "a": {
+        "title": "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
+        "button_start": {
+          "link": "#satrt",
+          "text": "commencer la simulation"
+        },
+        "button_next": {
+          "link": "#next",
+          "text": "Pourquoi préparer sa retraite dès maintenant ?"
+        }
+      }
+    },
+    "profile": {
+      "title": "Mon profil,<br/>en quelques clics",
+      "sections": {
+        "a": {
+          "text1": "Ma situation personnelle",
+          "text2": "J'ai",
+          "text3": "ans mais je ne fais pas mon âge."
+        }
       }
     }
   },
-  "profile" : {
-    "title" : "Mon profil,<br/>en quelques clics",
-    "perso" : "Ma situation personnelle",
-    "pro" : "Ma situation professionnelle",
-    "year" : "Je suis né(e) le mais je ne fais pas mon âge.",
-    "gender" : "Je suis bien dans sa tête et dans son corps",
-    "situation" : "Je suis et j'ai enfant âgé de ans",
-    "locale" : "J'habite dans la région . Je suis",
-    "experience" : "Cela fait ans que je travaille. Je suis",
-    "salary" : "Mon dernier salaire net mensuel est de ",
-    "evolution" : "je prévois une évolution de salaire",
-    "hobby" : "La passion qui me ressemble le plus",
-    "activity" : "Je suis et je consacre &euro;/mois à mes escapades."
+  "profile": {
+    "title": "Mon profil,<br/>en quelques clics",
+    "perso": "Ma situation personnelle",
+    "pro": "Ma situation professionnelle",
+    "year": "Je suis né(e) le mais je ne fais pas mon âge.",
+    "gender": "Je suis bien dans sa tête et dans son corps",
+    "situation": "Je suis et j'ai enfant âgé de ans",
+    "locale": "J'habite dans la région . Je suis",
+    "experience": "Cela fait ans que je travaille. Je suis",
+    "salary": "Mon dernier salaire net mensuel est de ",
+    "evolution": "je prévois une évolution de salaire",
+    "hobby": "La passion qui me ressemble le plus",
+    "activity": "Je suis et je consacre &euro;/mois à mes escapades."
   },
-  "formula" : {
-    "var1" : "Salaire annuel moyen*",
-    "var2" : "Taux**",
-    "var3" : "Durée d'assurance cotisée (d)***",
-    "var4" : "Durée d'assurance maximum <br/>prise en compte au régime général (D)****"
+  "formula": {
+    "var1": "Salaire annuel moyen*",
+    "var2": "Taux**",
+    "var3": "Durée d'assurance cotisée (d)***",
+    "var4": "Durée d'assurance maximum <br/>prise en compte au régime général (D)****"
   },
-  "legend" : {
-    "var1" : "* Le salaire annuel moyen = moyenne des 25 meilleures années plafonnées à 38 K€.",
-    "var2" : "** Le taux varie de 25% à 50 %. A 50 %, il est appelé le \" taux plein \".",
-    "var3" : "*** La durée de cotisation s'exprime en trimestre. Il est possible de valider jusqu'à 4 trimestres par année.",
-    "var4" : "**** d/D = 1 au maximum avec D qui est évolutif"
+  "legend": {
+    "var1": "* Le salaire annuel moyen = moyenne des 25 meilleures années plafonnées à 38 K€.",
+    "var2": "** Le taux varie de 25% à 50 %. A 50 %, il est appelé le \" taux plein \".",
+    "var3": "*** La durée de cotisation s'exprime en trimestre. Il est possible de valider jusqu'à 4 trimestres par année.",
+    "var4": "**** d/D = 1 au maximum avec D qui est évolutif"
   },
-  "recap" : {
-    "title" : "Estimez la répartition<br/>de votre bugdet",
-    "renvenubymonth" : "mes revenus/mois",
-    "expensebymonth" : "mes dépenses/mois",
-    "lastSalary" : {
-      "main" : "Mon dernier salaire",
-      "secondary" : "Salaire net mensuel"
+  "recap": {
+    "title": "Estimez la répartition<br/>de votre bugdet",
+    "renvenubymonth": "mes revenus/mois",
+    "expensebymonth": "mes dépenses/mois",
+    "lastSalary": {
+      "main": "Mon dernier salaire",
+      "secondary": "Salaire net mensuel"
     },
-    "otherIncoming" : {
-      "main" : "autres revenus",
-      "secondary" : "rentes, indemnités..."
+    "otherIncoming": {
+      "main": "autres revenus",
+      "secondary": "rentes, indemnités..."
     },
-    "home" : {
-      "main" : "Maison",
-      "secondary" : "charges, loyer, taxes..."
+    "home": {
+      "main": "Maison",
+      "secondary": "charges, loyer, taxes..."
     },
-    "family" : {
-      "main" : "Famille",
-      "secondary" : "alimentation,études..."
+    "family": {
+      "main": "Famille",
+      "secondary": "alimentation,études..."
     },
-    "health" : {
-      "main" : "santé",
-      "secondary" : "médecin, mutuelle..."
+    "health": {
+      "main": "santé",
+      "secondary": "médecin, mutuelle..."
     },
-    "other" : {
-      "main" : "Autres",
-      "secondary" : "wazzzaaa"
+    "other": {
+      "main": "Autres",
+      "secondary": "wazzzaaa"
     }
   },
-  "start" : {
-    "title" : "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
+  "start": {
+    "title": "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
     "button_start": "commencer la simulation",
-    "title_cta" : "Pourquoi préparer sa retraite dès maintenant ?",
-    "bulb" : {
-      "title" : "Prenons un exemple !",
-      "description" : "Delphine est âgée de 34 ans.<br/>Elle vit à Bordeaux et est locataire. Elle est mère de deux enfants âgés de 5 et 8 ans<br/>dont elle a la garde, à la suite de son divorce."
+    "title_cta": "Pourquoi préparer sa retraite dès maintenant ?",
+    "bulb": {
+      "title": "Prenons un exemple !",
+      "description": "Delphine est âgée de 34 ans.<br/>Elle vit à Bordeaux et est locataire. Elle est mère de deux enfants âgés de 5 et 8 ans<br/>dont elle a la garde, à la suite de son divorce."
     },
-    "exemple" : {
-      "part1" : {
+    "exemple": {
+      "part1": {
         "title": "Aujourd'hui",
-        "left" : {
-          "title" : "Son budget",
-          "description" : "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
-          "description-2" : "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
+        "left": {
+          "title": "Son budget",
+          "description": "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
+          "description-2": "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
         },
-        "right" : {
-          "title" : "Ses dépenses actuelles :",
-          "listItems" : {
-            "item1" : {
-              "img" : "assets/icon-house.png",
-              "amount" : "1 800 €",
-              "title" : "pour la maison",
-              "description" : "(loyer, taxes, charges...)"
+        "right": {
+          "title": "Ses dépenses actuelles :",
+          "listItems": {
+            "item1": {
+              "img": "assets/icon-house.png",
+              "amount": "1 800 €",
+              "title": "pour la maison",
+              "description": "(loyer, taxes, charges...)"
             },
-            "item2" : {
-              "img" : "assets/icon-health.png",
-              "amount" : "175 €",
-              "title" : "pour la santé",
-              "description" : "(médecine, mutuelles...) "
+            "item2": {
+              "img": "assets/icon-health.png",
+              "amount": "175 €",
+              "title": "pour la santé",
+              "description": "(médecine, mutuelles...) "
             },
-            "item3" : {
-              "img" : "assets/icon-fun.png",
-              "amount" : "875 €",
-              "title" : "pour la famille",
-              "description" : "et milou..."
+            "item3": {
+              "img": "assets/icon-fun.png",
+              "amount": "875 €",
+              "title": "pour la famille",
+              "description": "et milou..."
             },
-            "item4" : {
-              "img" : "assets/icon-family.png",
-              "amount" : "865 €",
-              "title" : "pour les loisirs",
-              "description" : "(voyage, sport...)"
+            "item4": {
+              "img": "assets/icon-family.png",
+              "amount": "865 €",
+              "title": "pour les loisirs",
+              "description": "(voyage, sport...)"
             }
           }
         }
       },
-      "part2" : {
+      "part2": {
         "title": "Aujourd'hui",
-        "left" : {
-          "title" : "Son budget",
-          "description" : "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
-          "description-2" : "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
+        "left": {
+          "title": "Son budget",
+          "description": "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
+          "description-2": "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
         },
-        "right" : {
-          "title" : "Ses dépenses actuelles :",
-          "listItems" : {
-            "item1" : {
-              "amount" : "1 800 €",
-              "title" : "pour la maison",
-              "description" : "(loyer, taxes, charges...)"
+        "right": {
+          "title": "Ses dépenses actuelles :",
+          "listItems": {
+            "item1": {
+              "amount": "1 800 €",
+              "title": "pour la maison",
+              "description": "(loyer, taxes, charges...)"
             },
-            "item2" : {
-              "amount" : "175 €",
-              "title" : "pour la santé",
-              "description" : "(médecine, mutuelles...) "
+            "item2": {
+              "amount": "175 €",
+              "title": "pour la santé",
+              "description": "(médecine, mutuelles...) "
             },
-            "item3" : {
-              "amount" : "875 €",
-              "title" : "pour la famille",
-              "description" : "et milou..."
+            "item3": {
+              "amount": "875 €",
+              "title": "pour la famille",
+              "description": "et milou..."
             },
-            "item4" : {
-              "amount" : "865 €",
-              "title" : "pour les loisirs",
-              "description" : "(voyage, sport...)"
+            "item4": {
+              "amount": "865 €",
+              "title": "pour les loisirs",
+              "description": "(voyage, sport...)"
             }
           }
         }
       },
-      "disclaimer" : "* Sur la base des informations fournies et des projections de salaire, dépenses et inflation.",
-      "repartiion" : {
-        "left" :{
-          "title" : "L'évolution de ses dépenses santé",
-          "subTitle" : "(par âge) **"
+      "disclaimer": "* Sur la base des informations fournies et des projections de salaire, dépenses et inflation.",
+      "repartiion": {
+        "left": {
+          "title": "L'évolution de ses dépenses santé",
+          "subTitle": "(par âge) **"
         },
-        "right" :{
-          "title" : "L’évolution de ses revenus",
-          "subTitle" : ""
+        "right": {
+          "title": "L’évolution de ses revenus",
+          "subTitle": ""
         }
       },
-      "explantion" : {
-        "title" : "Quels sont les critères pris en compte dans la simulation ?",
-        "headline" : "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
-        "text" : "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
-        "text1" : "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
-        "text2" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
+      "explantion": {
+        "title": "Quels sont les critères pris en compte dans la simulation ?",
+        "headline": "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
+        "text": "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
+        "text1": "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
+        "text2": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
       },
-      "explantion2" : {
-        "title" : "Quels sont les critères pris en compte dans la simulation ?",
-        "subTitle" : "Quels sont les critères pris en compte dans la simulation ?",
-        "text" : "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
-        "text1" : "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
-        "text2" : "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
-        "text3" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text4" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text5" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text6" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text7" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
+      "explantion2": {
+        "title": "Quels sont les critères pris en compte dans la simulation ?",
+        "subTitle": "Quels sont les critères pris en compte dans la simulation ?",
+        "text": "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
+        "text1": "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
+        "text2": "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
+        "text3": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
+        "text4": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
+        "text5": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
+        "text6": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
+        "text7": "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
       }
     }
   }

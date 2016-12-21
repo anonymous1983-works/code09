@@ -12,6 +12,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/simple-grid/simple-grid.min.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -38,18 +41,18 @@
 <header class="axa-header">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+
                 <div class="pull-left navbar-left">
                     <h1 class="axa-header_brand">
-                        <a class="brand_link" href="" data-template="{{header.brand.link}}">
+                        <a class="brand_link" href="" data-template="{{header.brand.link}}" data-toggle="axa-fullpage-btn_section" axa-fullpage-target="home">
                             <span class="text" data-template="{{header.brand.title}}"></span>
                         </a>
                     </h1>
                 </div>
                 <div class="pull-right navbar-right">
-                    <ul class="axa-header_navbar">
+                    <ul class="axa-header_navbar" id="axa-header_navbar">
                         <li>
-                            <a href="" class="btn btn-start" data-template="{{header.navbar.button_start.link}}">
+                            <a href="" class="btn btn-start" data-template="{{header.navbar.button_start.link}}" data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
                                 <span class="text" data-template="{{header.navbar.button_start.text}}"></span>
                             </a>
                         </li>
@@ -65,91 +68,111 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+
         </div>
     </div>
 </header>
 <!-- end header.tpl.html-->
 
-<div class="axa-main">
+<div class="axa-main" id="fullpage">
 
 <!-- start page-home-a.tpl.html-->
 <!-- ---------------------------------- -->
 <!--            PAGE HOME A             -->
 <!-- ---------------------------------- -->
-<div class="axa-page page-home-a bg-turquoise" id="page-home-a">
+<div class="axa-page section page-home-a bg-turquoise"
+     id="page-home-a"
+     axa-fullpage-anchor="home">
 
-    <div class="center">
-        <h2 class="page-title" data-template="{{start.title}}"></h2>
+    <div class="page-container">
 
-        <a href="" class="btn btn-start" data-template="{{pages.homeA.button_start.link}}">
-            <span class="text" data-template="{{pages.homeA.button_start.text}}"></span>
+        <div class="center">
+            <h2 class="page-title" data-template="{{pages.home.a.title}}"></h2>
+
+            <a href="" class="btn btn-start" data-template="{{pages.home.a.button_start.link}}"
+               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
+                <span class="text" data-template="{{pages.home.a.button_start.text}}"></span>
+            </a>
+        </div>
+
+
+        <a href="" class="btn btn-next" data-template="{{pages.home.a.button_next.link}}">
+            <span class="text" data-template="{{pages.home.a.button_next.text}}"></span>
+            <i class="icons">
+                <i class="icon-a"></i>
+            </i>
         </a>
     </div>
-
-
-
-    <a href="" class="btn btn-next" data-template="{{pages.homeA.button_next.link}}">
-        <span class="text" data-template="{{pages.homeA.button_next.text}}"></span>
-        <i class="icons">
-            <i class="icon-a"></i>
-        </i>
-    </a>
-
 
 </div>
 <!-- end page-home-a.tpl.html-->
 
-<!-- start page-home-a.tpl.html-->
+<!-- start page-profile-a.tpl.html-->
 <!-- ---------------------------------- -->
-<!--            PAGE HOME A             -->
+<!--            PAGE PROFILE A          -->
 <!-- ---------------------------------- -->
-<div class="axa-page page-home-a bg-turquoise" id="page-home-a">
+<div class="axa-page section page-profile page-profile-a bg-orange"
+     id="page-profile-a"
+     axa-fullpage-anchor="profile">
 
-    <div class="center">
-        <h2 class="page-title" data-template="{{start.title}}"></h2>
+    <div class="container">
+        <div class="row">
 
-        <a href="" class="btn btn-start" data-template="{{pages.homeA.button_start.link}}">
-            <span class="text" data-template="{{pages.homeA.button_start.text}}"></span>
-        </a>
+            <div class="page-title">
+                <h2  class="text" data-template="{{pages.profile.title}}"></h2>
+                <i class="js-info profile btn-icon btn-popin icon-info-circle"></i>
+            </div>
+
+            <div class="page-container">
+                <h3 class="title-style-1" data-template="{{pages.profile.sections.a.text1}}"></h3>
+                <div class="form-group">
+                    <span class="form-text" data-template="{{pages.profile.sections.a.text2}}"></span>
+                    <input type="text" class="form-control" style="width: 80px"/>
+                    <span class="form-text" data-template="{{pages.profile.sections.a.text3}}"></span>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-text" data-template="{{pages.profile.sections.a.text2}}"></span>
+                    <input type="text" class="form-control" style="width: 80px"/>
+                    <span class="form-text" data-template="{{pages.profile.sections.a.text3}}"></span>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-
-
-
-    <a href="" class="btn btn-next" data-template="{{pages.homeA.button_next.link}}">
-        <span class="text" data-template="{{pages.homeA.button_next.text}}"></span>
-        <i class="icons">
-            <i class="icon-a"></i>
-        </i>
-    </a>
 
 
 </div>
-<!-- end page-home-a.tpl.html-->
+<!-- end page-profile-a.tpl.html-->
 
 <!-- start page-home-a.tpl.html-->
 <!-- ---------------------------------- -->
 <!--            PAGE HOME A             -->
 <!-- ---------------------------------- -->
-<div class="axa-page page-home-a bg-turquoise" id="page-home-a">
+<div class="axa-page section page-home-a bg-turquoise"
+     id="page-home-c"
+     axa-fullpage-anchor="pageHomeC">
 
-    <div class="center">
-        <h2 class="page-title" data-template="{{start.title}}"></h2>
+    <div class="page-container">
 
-        <a href="" class="btn btn-start" data-template="{{pages.homeA.button_start.link}}">
-            <span class="text" data-template="{{pages.homeA.button_start.text}}"></span>
+        <div class="center">
+            <h2 class="page-title" data-template="{{pages.home.a.title}}"></h2>
+
+            <a href="" class="btn btn-start" data-template="{{pages.home.a.button_start.link}}"
+               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
+                <span class="text" data-template="{{pages.home.a.button_start.text}}"></span>
+            </a>
+        </div>
+
+
+        <a href="" class="btn btn-next" data-template="{{pages.home.a.button_next.link}}">
+            <span class="text" data-template="{{pages.home.a.button_next.text}}"></span>
+            <i class="icons">
+                <i class="icon-a"></i>
+            </i>
         </a>
     </div>
-
-
-
-    <a href="" class="btn btn-next" data-template="{{pages.homeA.button_next.link}}">
-        <span class="text" data-template="{{pages.homeA.button_next.text}}"></span>
-        <i class="icons">
-            <i class="icon-a"></i>
-        </i>
-    </a>
-
 
 </div>
 <!-- end page-home-a.tpl.html-->
@@ -159,6 +182,10 @@
 <!-- start footer.tpl.html-->
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/lodash/lodash.js"></script>
+<script src="/bower_components/lodash-deep/lodash-deep.min.js"></script>
+<script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -174,6 +201,7 @@
 <script src="scripts/components/dataLoader.js"></script>
 <script src="scripts/components/dataBinder.js"></script>
 <script src="scripts/components/recap.js"></script>
+<script src="scripts/components/fullpage.js"></script>
 <!-- endbuild -->
 <!-- end footer.tpl.html-->
 </body>

@@ -1,0 +1,41 @@
+.form-group {
+  @include rem-fallback("font-size", 32);
+  @include rem-fallback("line-height", 58);
+  opacity: 1;
+  font-weight: 300;
+  @include rem-fallback("margin-top", 32);;
+  display: inline-block;
+  width: 100%;
+  @include transition(font-size .5s, line-height .5s, margin-top .5s, opacity .5s);
+
+  .form-control {
+    @include rem-fallback("font-size", 32);
+    @include rem-fallback("line-height", 58);
+    font-weight: 700;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 5px solid $white;
+    padding: 0 4px;
+    @include transition(font-size .5s, line-height .5s);
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &.completed,
+  &.fadeInDown {
+    margin-top: 0;
+    opacity: .5;
+  }
+
+  &.completed,
+  &.fadeInDown,
+  &.completed .form-control,
+  &.fadeInDown .form-control {
+    @include rem-fallback("font-size", 24);
+    @include rem-fallback("line-height", 58);
+  }
+}

@@ -1,0 +1,45 @@
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+// Classes
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.full-image {
+  img {
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}

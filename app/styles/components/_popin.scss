@@ -1,0 +1,6 @@
+.btn-popin {
+  @include rem-fallback("width", 25);
+  @include rem-fallback("height", 25);
+  background: url(../assets/icon-info-circle.svg) 50% 50% no-repeat;
+  cursor: pointer;
+}
