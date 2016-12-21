@@ -61,7 +61,7 @@
     <div class="row">
         <div class="col-12">
             <div>
-                <div data-template="{{recap.title}}" class="main-title"></div>
+                <div data-template="{{recap.title}}"></div>
                 <span class="js-info profile">
                     <img data-template="{{icons.info}}" src="" title="" alt=""/>
                 </span>
@@ -73,27 +73,21 @@
         <!-- left part -->
 
         <div class="col-6">
-            <div class="row">
-                <div class="col-12">
-                    <div class="center-text text" data-template="{{recap.renvenubymonth}}"></div>
-
-                    <input type="text" class="js-input-binding text" data-binding="income.incomeTotal" />
-                </div>
+            <div class="col-12">
+                <div class="center-text" data-template="{{recap.renvenubymonth}}"></div>
+                <input type="text" class="js-input-binding" data-binding="income.incomeTotal" />
             </div>
             <form name="" class="js-form-binding incoming">
                 <div class="row">
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.lastSalary.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.lastSalary.secondary}}" class="form-subTitle text"></div>
+                                <div data-template="{{recap.lastSalary.main}}" class="form-title"></div>
+                                <div data-template="{{recap.lastSalary.secondary}}" class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="amount">
-                                <input type="text" class="js-input-binding text" data-binding="income.salary"/>
-                                <div class="devise">€</div>
-                            </div>
+                            <input type="text" class="js-input-binding" data-binding="income.salary"/>
                         </div>
                     </div>
                 </div>
@@ -101,25 +95,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.otherIncoming.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.otherIncoming.secondary}}"class="form-subTitle text"></div>
+                                <div data-template="{{recap.otherIncoming.main}}" class="form-title"></div>
+                                <div data-template="{{recap.otherIncoming.secondary}}"class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="js-input-binding text amount" data-binding="income.otherIcoming" data-binding-type="array"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" class="js-row-templated">
-                    <div class="col-12">
-                        <div class="col-6">
-                            <div>
-                                <div data-template="{{recap.otherIncoming.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.otherIncoming.secondary}}"class="form-subTitle text"></div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="js-input-binding text amount" data-binding="income.otherIcoming" data-binding-type="array"/>
+                            <input type="text" class="js-input-binding" data-binding="income.otherIcoming" data-binding-type="array"/>
                         </div>
                     </div>
                 </div>
@@ -129,8 +110,8 @@
         <!-- right part -->
         <div class="col-6">
             <div class="col-12">
-                <div class="center-text text" data-template="{{recap.expensebymonth}}"></div>
-                <input type="text" class="js-input-binding text" data-binding="expenseTotal" />
+                <div class="center-text" data-template="{{recap.expensebymonth}}"></div>
+                <input type="text" class="js-input-binding" data-binding="expenseTotal" />
             </div>
             <form name="" class="js-form-binding expense">
                 <!--- HOBBY ---->
@@ -138,12 +119,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div class="form-title js-text-binding text"></div>
-                                <div class="form-subTitle js-text-binding text"></div>
+                                <div class="form-title js-text-binding"></div>
+                                <div class="form-subTitle js-text-binding"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="js-input-binding text amount" data-binding="hobby"/>
+                            <input type="text" class="js-input-binding" data-binding="hobby"/>
                         </div>
                     </div>
                 </div>
@@ -152,12 +133,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.home.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.home.secondary}}" class="form-subTitle text"></div>
+                                <div data-template="{{recap.home.main}}" class="form-title"></div>
+                                <div data-template="{{recap.home.secondary}}" class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="text amount" data-binding="expense.home"/>
+                            <input type="text" data-binding="expense.home"/>
                         </div>
                     </div>
                 </div>
@@ -166,12 +147,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.family.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.family.secondary}}" class="form-subTitle text"></div>
+                                <div data-template="{{recap.family.main}}" class="form-title"></div>
+                                <div data-template="{{recap.family.secondary}}" class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="text amount" data-binding="expense.family"/>
+                            <input type="text" data-binding="expense.family"/>
                         </div>
                     </div>
                 </div>
@@ -180,12 +161,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.health.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.health.secondary}}" class="form-subTitle text"></div>
+                                <div data-template="{{recap.health.main}}" class="form-title"></div>
+                                <div data-template="{{recap.health.secondary}}" class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="text amount" data-binding="expense.health"/>
+                            <input type="text" data-binding="expense.health"/>
                         </div>
                     </div>
                 </div>
@@ -194,26 +175,12 @@
                     <div class="col-12">
                         <div class="col-6">
                             <div>
-                                <div data-template="{{recap.other.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.other.secondary}}" class="form-subTitle text"></div>
+                                <div data-template="{{recap.other.main}}" class="form-title"></div>
+                                <div data-template="{{recap.other.secondary}}" class="form-subTitle"></div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <input type="text" class="text amount" data-binding="expense.otherExpenses" data-binding-type="array"/>
-                        </div>
-                    </div>
-                </div>
-                <!--- OTHER EXPENSE ---->
-                <div class="row js-row-templated">
-                    <div class="col-12">
-                        <div class="col-6">
-                            <div>
-                                <div data-template="{{recap.other.main}}" class="form-title text"></div>
-                                <div data-template="{{recap.other.secondary}}" class="form-subTitle text"></div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="text amount" data-binding="expense.otherExpenses" data-binding-type="array"/>
+                            <input type="text" data-binding="expense.otherExpenses" data-binding-type="array"/>
                         </div>
                     </div>
                 </div>
@@ -227,7 +194,7 @@
         <div class="col-12">
             <div class="next">
                 <div class="center-text">
-                    <input type="button" class="btn text" data-template="{{global.recap}}" value="" />
+                    <input type="button" class="btn" data-template="{{global.recap}}" value="" />
                 </div>
             </div>
         </div>

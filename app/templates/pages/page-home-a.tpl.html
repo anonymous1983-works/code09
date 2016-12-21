@@ -1,24 +1,28 @@
 <!-- ---------------------------------- -->
 <!--            PAGE HOME A             -->
 <!-- ---------------------------------- -->
-<div class="axa-page <!-- @@var classPage --> <!-- @@var bgPage -->" id="<!-- @@var idPage -->">
+<div class="axa-page section <!-- @@var classPage --> <!-- @@var bgPage -->"
+     id="<!-- @@var idPage -->"
+     axa-fullpage-anchor="<!-- @@var sectionPage -->">
 
-    <div class="center">
-        <h2 class="page-title" data-template="{{start.title}}"></h2>
+    <div class="page-container">
 
-        <a href="" class="btn btn-start" data-template="{{pages.homeA.button_start.link}}">
-            <span class="text" data-template="{{pages.homeA.button_start.text}}"></span>
+        <div class="center">
+            <h2 class="page-title" data-template="{{pages.home.a.title}}"></h2>
+
+            <a href="" class="btn btn-start" data-template="{{pages.home.a.button_start.link}}"
+               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
+                <span class="text" data-template="{{pages.home.a.button_start.text}}"></span>
+            </a>
+        </div>
+
+
+        <a href="" class="btn btn-next" data-template="{{pages.home.a.button_next.link}}">
+            <span class="text" data-template="{{pages.home.a.button_next.text}}"></span>
+            <i class="icons">
+                <i class="icon-a"></i>
+            </i>
         </a>
     </div>
-
-
-
-    <a href="" class="btn btn-next" data-template="{{pages.homeA.button_next.link}}">
-        <span class="text" data-template="{{pages.homeA.button_next.text}}"></span>
-        <i class="icons">
-            <i class="icon-a"></i>
-        </i>
-    </a>
-
 
 </div>

@@ -16,22 +16,12 @@ body {
   padding: 0;
   color: $white;
   -webkit-overflow-scrolling: touch;
-  font-family: 'ITC Franklin Gothic Book', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 
   &.no-scroll {
     overflow: hidden;
   }
 
-  input, select {
-    background-color: transparent;
-    border : 0;
-    @include rem-fallback("font-size", 31);
-    text-align: center;
-    border-bottom : 3px solid $white;
-    font-family: 'ITC Franklin Gothic Book', Helvetica, Arial, sans-serif;
-    outline: none;
-  }
-  
   &.bg-turquoise,
   .bg-turquoise,
   .axa-page.bg-turquoise {
@@ -48,32 +38,4 @@ body {
     background-color: $violet;
   }
 
-  .text,
-  .main-title {
-    color : $white;
-  }
-
-  .main-title {
-    @include rem-fallback("font-size", 42);
-    @include rem-fallback("line-height", 44);
-    font-family: 'ITC Franklin Gothic Hvy', Helvetica, Arial, sans-serif;
-    width:45%;
-    display: inline-block;
-    &:after {
-      content : "€";
-      width:30px;
-      height:30px;
-    }
-  }
-  .amount {
-    position:relative;
-    @include rem-fallback("height", 46);
-    .devise {
-      font-family: 'ITC Franklin Gothic Book', Helvetica, Arial, sans-serif;
-      color : $white;
-      @include rem-fallback("font-size", 31);
-      @include center(true, true);
-
-    }
-  }
 }

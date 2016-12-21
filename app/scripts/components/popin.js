@@ -114,7 +114,7 @@
                 var test = new POPIN.popin.Popin({
                     "element" : document.querySelectorAll('.profile img')[0],
                     /*
-                    "otherClass" : ["textHome", "OtherClass2"],
+                    "otherClass" : ["OtherClass1", "OtherClass2"],
                     "title" : "tesazeazaaezzet",
                     "imgUrl" : "assets/icon-arrow.png",
                     "imgAlt" : "test",
