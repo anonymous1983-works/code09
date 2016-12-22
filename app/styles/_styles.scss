@@ -1,0 +1,173 @@
+.page-container {
+  width: 96%;
+  @include rem-fallback("max-width", 1280);
+  margin : 0 2%;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    margin : 0 auto;
+  }
+  .page-home-a & {
+  }
+
+  .page-home-b & {
+    @include rem-fallback("margin-top", 90);
+    @include rem-fallback("padding-top", 90);
+    @include rem-fallback("padding-bottom", 90);
+  }
+
+}
+.title-section {
+
+  .bg-turquoise & {
+    font-family: $axa-font-franklin-heavy;
+    color : $dark-blue;
+    @include rem-fallback("margin", 20, 0);
+    @include rem-fallback("font-size", 30);
+    @include rem-fallback("line-height", 22);
+  }
+}
+.sub-title-section {
+  .bg-turquoise & {
+    font-family: $axa-font-franklin-demi;
+    color: $dark-blue;
+    @include rem-fallback("margin", 0);
+    @include rem-fallback("margin-bottom", 40);
+    @include rem-fallback("font-size", 22);
+    @include rem-fallback("line-height", 24);
+  }
+}
+
+.title-article {
+  font-family: $axa-font-franklin-heavy;
+  @include rem-fallback("font-size", 24);
+  @include rem-fallback("line-height", 24);
+  @include rem-fallback("margin-bottom", 10);
+}
+.description-article {
+  font-family: $axa-font-franklin-book;
+  @include rem-fallback("font-size", 20);
+  @include rem-fallback("line-height", 28);
+  b {
+    font-family: $axa-font-franklin-demi;
+
+  }
+}
+.icon-universe {
+  width: 100%;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 80%;
+
+  }
+}
+
+.universe {
+  .item {
+    @include rem-fallback("margin-bottom", 30);
+
+  }
+  .universe-container {
+    @include rem-fallback("margin-left", 10);
+
+  }
+  .universe-amount {
+    font-family: $axa-font-franklin-heavy;
+    @include rem-fallback("font-size", 26);
+    @include rem-fallback("line-height", 29);
+    text-transform: uppercase;
+  }
+  .universe-title {
+    font-family: $axa-font-franklin-heavy;
+    @include rem-fallback("font-size", 16);
+    @include rem-fallback("line-height", 18);
+    text-transform: uppercase;
+  }
+  .universe-description {
+    font-family: $axa-font-franklin-medium;
+    @include rem-fallback("font-size", 16);
+    @include rem-fallback("line-height", 14);
+    text-transform: uppercase;
+  }
+}
+
+.disclaimer-text {
+  font-family: $axa-font-franklin-medium;
+  @include rem-fallback("font-size", 14);
+  @include rem-fallback("line-height", 30);
+  b {
+    font-family: $axa-font-franklin-demi;
+
+  }
+}
+.disclaimer-container {
+    @include rem-fallback("margin", 10, 0);
+  .disclaimer-text {
+    @include rem-fallback("line-height", 24);
+
+  }
+}
+
+
+.seperator {
+  position: relative;
+  @include rem-fallback("margin-top", 40);
+  @include rem-fallback("padding-bottom", 40);
+
+}
+.seperator:before {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background: $white-light;
+}
+
+.white-box {
+  border : 3px solid $white;
+
+  &.internal-spacing {
+    padding: 20px 40px;
+  }
+  &.external-spacing {
+    margin : 20px 0;
+  }
+}
+.section-graph {
+
+  @include rem-fallback("margin-top", 50);
+  .graph-title {
+    font-family: $axa-font-franklin-heavy;
+    @include rem-fallback("font-size", 24);
+    @include rem-fallback("line-height", 24);
+  }
+  .graph-info {
+    font-family: $axa-font-franklin-demi;
+    @include rem-fallback("font-size", 18);
+    @include rem-fallback("line-height", 24);
+    font-style: italic;
+  }
+  .graph {
+
+    @include rem-fallback("min-height", 400);
+    @include rem-fallback("padding", 10, 20);
+    position: relative;
+    text-align : center;
+    img {
+      max-width : 100%;
+      @include center(true, false);
+      @include rem-fallback("bottom", 20);
+    }
+  }
+}
+.formula {
+  .row [class^="col"] {
+    margin-left : 0;
+    margin-right : 0;
+  }
+}
+.formula-text {
+  font-family: $axa-font-franklin-demi;
+  @include rem-fallback("font-size", 20);
+  @include rem-fallback("line-height", 22);
+  color :$dark-blue;
+}

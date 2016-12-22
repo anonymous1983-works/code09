@@ -17,6 +17,7 @@
   .form-group {
     @include rem-fallback("font-size", 32);
     @include rem-fallback("line-height", 58);
+    @include rem-fallback("height", 58);
     opacity: 1;
     font-weight: 300;
     @include rem-fallback("margin-top", 32);;

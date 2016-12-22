@@ -112,7 +112,7 @@
     "var1" : "Salaire annuel moyen*",
     "var2" : "Taux**",
     "var3" : "Durée d'assurance cotisée (d)***",
-    "var4" : "Durée d'assurance maximum <br/>prise en compte au régime général (D)****"
+    "var4" : "Durée d'assurance maximum prise en compte au régime général (D)****"
   },
   "legend" : {
     "var1" : "* Le salaire annuel moyen = moyenne des 25 meilleures années plafonnées à 38 K€.",

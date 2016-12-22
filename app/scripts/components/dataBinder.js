@@ -50,9 +50,8 @@
             if(bindingType !== undefined && bindingType === 'array') {
                 isMultiple = true;
             }
-            currentElt.off('change');
-            currentElt.on('change', function (e, dta){
-                console.log('aaaaaaa')
+            currentElt.off('blur');
+            currentElt.on('blur', function (e, dta){
                 sameBindingTypeElts = $('[' + handlersName+ '=\"' + binding + '\"]');
 
                 var currentElt = $(this);
@@ -70,6 +69,7 @@
                 }
                 _.deepSet(datas.datas2send, binding, currentVal);
                 $.publish('dataBinding:update');
+
             });
         });
     }

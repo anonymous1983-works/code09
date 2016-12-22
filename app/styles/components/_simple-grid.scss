@@ -15,7 +15,7 @@ $breakpoint-med: 45em; // 720px
 $breakpoint-large: 60em; // 960px
 
 .container {
-  width: 90%;
+  width: 96%;
   margin-left: auto;
   margin-right: auto;
 
@@ -23,6 +23,7 @@ $breakpoint-large: 60em; // 960px
   }
 
   @media only screen and (min-width: $breakpoint-large) {
+    width: 96%;
     @include rem-fallback("max-width", 1280);
   }
 }
@@ -39,7 +40,7 @@ $breakpoint-large: 60em; // 960px
 .row [class^="col"] {
   position: relative;
   float: left;
-  margin: 0;
+  margin: 0 2%;
   min-height: 0.125rem;
 }
 

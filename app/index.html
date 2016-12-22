@@ -1,0 +1,353 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>paris</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/simple-grid/simple-grid.min.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="bg-turquoise">
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img src="assets/logo.jpg" title="" alt=""/>
+            <span data-template="{{header.title}}"></span>
+            <div class="">
+              <ul>
+                <li>
+                  <div data-template="{{start.button_start}}"></div>
+                </li>
+                <li>
+                  <a href="" data-template="{{header.geolocation.link}}" target="blank">
+                    <img data-template="{{icons.arrow}}" src="" title="" alt=""/>
+                  </a>
+                </li>
+                <li>
+                  <a href="" data-template="{{header.call.link}}" target="blank">
+                    <img data-template="{{icons.phone}}" src="" title="" alt=""/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mainContainer">
+      <div class="row">
+        <div class="col-12">
+          <h1 data-template="{{start.title}}"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="center-text">
+            <input type="button" class="btn" data-template="{{start.button_start}}" value="{{start.button_start}}" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <span class="full-image">
+            <img src="assets/question-zero-background.png" title="" alt=""/>
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2 data-template="{{start.title_cta}}">{{start.title_cta}}</h2>
+        </div>
+      </div>
+<!----- -->
+      <div class="row">
+        <div class="col-12">
+          <div class="intro-bulb">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/example-tooltip-background.png"/>
+              </div>
+              <div class="col-9">
+                <div data-template="{{start.bulb.title}}" class="title-blue">{{start.bulb.title}}</div>
+                <div data-template="{{start.bulb.description}}">{{start.bulb.title}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="title-blue" data-template="{{start.exemple.part1.title}}"></div>
+          <div class="col-6">
+            <div class="title-white" data-template="{{start.exemple.part1.left.title}}"></div>
+            <div data-template="{{start.exemple.part1.left.description}}"></div>
+            <div data-template="{{start.exemple.part1.left.description-2}}"></div>
+          </div>
+          <div class="col-6">
+            <div class="title-white" data-template="{{start.exemple.part1.right.title}}">eeeee</div>
+            <ul>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.house}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item1.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item1.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item1.description}}"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.health}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item2.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item2.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item2.description}}"></div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.fun}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item3.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item3.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item3.description}}"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.family}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item4.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item4.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part1.right.listItems.item4.description}}"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="title-blue" data-template="{{start.exemple.part2.title}}"></div>
+          <div class="col-6">
+            <div class="title-white" data-template="{{start.exemple.part2.left.title}}"></div>
+            <div data-template="{{start.exemple.part2.left.description}}"></div>
+            <div data-template="{{start.exemple.part2.left.description-2}}"></div>
+          </div>
+          <div class="col-6">
+            <div class="title-white" data-template="{{start.exemple.part2.right.title}}"></div>
+            <ul>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.house}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item1.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item1.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item1.description}}"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.health}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item2.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item2.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item2.description}}"></div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.fun}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item3.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item3.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item3.description}}"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="" data-template="{{icons.family}}"/>
+                  </div>
+                  <div class="col-10">
+                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item4.amount}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item4.title}}"></div>
+                    <div class="" data-template="{{start.exemple.part2.right.listItems.item4.description}}"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="" data-template="{{start.exemple.disclaimer}}"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="" data-template="{{start.exemple.repartiion.left.title}}"></div>
+          <div class="" data-template="{{start.exemple.repartiion.left.subTitle}}"></div>
+          <img src="" data-template="{{icons.graphHealth}}"/>
+        </div>
+        <div class="col-6">
+          <div class="" data-template="{{start.exemple.repartiion.right.title}}"></div>
+          <img src="" data-template="{{icons.graphEvolution}}"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+         <div class="seperator">---</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="title-blue" data-template="{{start.exemple.explantion.title}}"></div>
+          <div class="col-6">
+            <div data-template="{{start.exemple.explantion.headline}}"></div>
+            <div data-template="{{start.exemple.explantion.text}}"></div>
+          </div>
+          <div class="col-6">
+            <div data-template="{{start.exemple.explantion.text1}}"></div>
+            <div data-template="{{start.exemple.explantion.text2}}"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="seperator">---</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="title-blue" data-template="{{start.exemple.explantion2.title}}"></div>
+          <div class="title-blue" data-template="{{start.exemple.explantion2.subTitle}}"></div>
+          <div class="col-6">
+            <div data-template="{{start.exemple.explantion2.text}}"></div>
+            <div data-template="{{start.exemple.explantion2.text1}}"></div>
+            <div data-template="{{start.exemple.explantion2.text2}}"></div>
+            <div data-template="{{start.exemple.explantion2.text3}}"></div>
+          </div>
+          <div class="col-6">
+            <div data-template="{{start.exemple.explantion2.text4}}"></div>
+            <div data-template="{{start.exemple.explantion2.text5}}"></div>
+            <div data-template="{{start.exemple.explantion2.text6}}"></div>
+            <div data-template="{{start.exemple.explantion2.text7}}"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="">
+            <span data-template="{{formula.var1}}"></span>
+            <span>
+              <img src="" data-template="{{icons.multiply}}"/>
+            </span>
+            <span data-template="{{formula.var2}}"></span>
+            <span>
+              <img src="" data-template="{{icons.multiply}}"/>
+            </span>
+            <span data-template="{{formula.var3}}"></span>
+            <span>
+              <img src="" data-template="{{icons.divide}}"/>
+            </span>
+            <span data-template="{{formula.var4}}"></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="">
+            <div data-template="{{legend.var1}}"></div>
+            <div data-template="{{legend.var2}}"></div>
+            <div data-template="{{legend.var3}}"></div>
+            <div data-template="{{legend.var4}}"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="loader"></div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
+    <script src="/bower_components/lodash-deep/lodash-deep.min.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/components/events.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/components/loader.js"></script>
+    <script src="scripts/components/popin.js"></script>
+    <script src="scripts/components/datasFiller.js"></script>
+    <script src="scripts/components/dataStorage.js"></script>
+    <script src="scripts/components/dataLoader.js"></script>
+    <script src="scripts/components/dataBinder.js"></script>
+    <script src="scripts/components/recap.js"></script>
+
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,4 +1,9 @@
-
+.text-blue {
+  color : $dark-blue;
+}
+.text-white {
+  color : $white;
+}
 
 .title-style-1 {
   @include rem-fallback("font-size", 20);

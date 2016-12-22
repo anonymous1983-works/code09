@@ -52,6 +52,16 @@
   }
 
   .axa-header_navbar {
+    display : none;
+    .btn-start {
+      display : none;
+      &.active {
+        display : block;
+      }
+    }
+    &.active {
+      display : block;
+    }
     $axa-header_element-height: $axa-header-height - (6 * 2);
     @include clearfix();
     @include rem-fallback("margin-top", 6);
