@@ -52,6 +52,7 @@
             }
             currentElt.off('change');
             currentElt.on('change', function (e, dta){
+                console.log('aaaaaaa')
                 sameBindingTypeElts = $('[' + handlersName+ '=\"' + binding + '\"]');
 
                 var currentElt = $(this);
@@ -129,7 +130,7 @@
     }
     function init () {
         var list = getDataBinder ();
-        //cleanDatas (); PUT WITH FULLPAGE.JS
+        cleanDatas (); //PUT WITH FULLPAGE.JS
         getDatas ();
         $.publish('dataBinding:ready');
     }

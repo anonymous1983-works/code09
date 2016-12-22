@@ -14,6 +14,16 @@
     height: 100%;
     overflow: auto;
     position: relative;
+    display: block;
+
+    .fp-tableCell{
+      display: table;
+    }
+
+    .axa-page-container.cell{
+      display: table-cell;
+      vertical-align: middle;
+    }
 
     .page-title {
       @include rem-fallback("font-size", 42);

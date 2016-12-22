@@ -22,8 +22,11 @@
                     });
 
                     $(opts.selector).fullpage({
+                        keyboardScrolling: false,
+                        scrollOverflowReset: true,
                         anchors: _anchors
                     });
+                    $.fn.fullpage.setAllowScrolling(false);
 
                     $('[data-toggle="axa-fullpage-btn_section"]').on('click', function (event) {
                         event.preventDefault();

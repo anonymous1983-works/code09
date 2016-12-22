@@ -1,41 +1,70 @@
-.form-group {
-  @include rem-fallback("font-size", 32);
-  @include rem-fallback("line-height", 58);
-  opacity: 1;
-  font-weight: 300;
-  @include rem-fallback("margin-top", 32);;
-  display: inline-block;
-  width: 100%;
-  @include transition(font-size .5s, line-height .5s, margin-top .5s, opacity .5s);
 
-  .form-control {
+.axa-form {
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $white;
+  }
+
+  .form-group {
     @include rem-fallback("font-size", 32);
     @include rem-fallback("line-height", 58);
-    font-weight: 700;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 5px solid $white;
-    padding: 0 4px;
-    @include transition(font-size .5s, line-height .5s);
+    opacity: 1;
+    font-weight: 300;
+    @include rem-fallback("margin-top", 32);;
+    display: inline-block;
+    width: 100%;
+    @include transition(all .15s linear);
+    display: none;
 
-    &:hover,
-    &:focus,
-    &:active {
-      outline: none;
+    &:first-child,
+    &.fadeInDown,
+    &.fadeInUp {
+      display: block;
+    }
+
+    .form-control {
+      @include rem-fallback("font-size", 32);
+      @include rem-fallback("line-height", 58);
+      font-weight: 700;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 5px solid $white;
+      padding: 0 8px;
+      @include transition(font-size .5s, line-height .5s);
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+
+    &.completed {
+      margin-top: 0;
+      * {
+        opacity: .5;
+      }
+
+      &.active *,
+      &:hover * {
+        opacity: 1;
+      }
+    }
+
+    &.completed,
+    &.completed .form-control {
+      @include rem-fallback("font-size", 24);
+      @include rem-fallback("line-height", 58);
     }
   }
-
-  &.completed,
-  &.fadeInDown {
-    margin-top: 0;
-    opacity: .5;
-  }
-
-  &.completed,
-  &.fadeInDown,
-  &.completed .form-control,
-  &.fadeInDown .form-control {
-    @include rem-fallback("font-size", 24);
-    @include rem-fallback("line-height", 58);
-  }
 }
+

@@ -111,34 +111,89 @@
 <!-- ---------------------------------- -->
 <!--            PAGE PROFILE A          -->
 <!-- ---------------------------------- -->
-<div class="axa-page section page-profile page-profile-a bg-orange"
+<div class="axa-page section fp-auto-heigh page-profile page-profile-a bg-orange"
      id="page-profile-a"
      axa-fullpage-anchor="profile">
 
-    <div class="container">
-        <div class="row">
+    <div class="axa-page-container cell ">
+        <div class="container">
+            <div class="row">
 
-            <div class="page-title">
-                <h2  class="text" data-template="{{pages.profile.title}}"></h2>
-                <i class="js-info profile btn-icon btn-popin icon-info-circle"></i>
-            </div>
-
-            <div class="page-container">
-                <h3 class="title-style-1" data-template="{{pages.profile.sections.a.text1}}"></h3>
-                <div class="form-group">
-                    <span class="form-text" data-template="{{pages.profile.sections.a.text2}}"></span>
-                    <input type="text" class="form-control" style="width: 80px"/>
-                    <span class="form-text" data-template="{{pages.profile.sections.a.text3}}"></span>
+                <div class="page-title">
+                    <h2 class="text" data-template="{{pages.profile.title}}"></h2>
+                    <i class="js-info profile btn-icon btn-popin icon-info-circle"></i>
                 </div>
 
-                <div class="form-group">
-                    <span class="form-text" data-template="{{pages.profile.sections.a.text2}}"></span>
-                    <input type="text" class="form-control" style="width: 80px"/>
-                    <span class="form-text" data-template="{{pages.profile.sections.a.text3}}"></span>
+                <div class="page-container">
+                    <h3 class="title-style-1" data-template="{{pages.profile.sections.a.text1}}"></h3>
+                    <div class="form axa-form">
+                        <div class="form-group animated fadeInUpBig">
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text2}}"></span>
+                            <input data-binding="personal.dayofbirth" name="dayofbirth" class="form-control"
+                                   style="width: 74px" placeholder="00"/>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text2_2}}"></span>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text3}}"></span>
+                            <select data-binding="personal.gender" name="gender" class="form-control">
+                                <option val=""></option>
+                                <option val="mr">Monsieur</option>
+                                <option val="mme">Madame</option>
+                                <option val="mlle">Mademoiselle</option>
+                            </select>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text3_2}}"></span>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text4}}"></span>
+                            <select data-binding="personal.region" name="region" class="form-control">
+                                <option val=""></option>
+                                <option val="51">Alsace Champagne</option>
+                                <option val="19">Aquitaine Limousin</option>
+                                <option val="15">Aquitaine Rhone Alpes</option>
+                                <option val="21">Bourgogne Franche Comté</option>
+                                <option val="22">Bretagne</option>
+                                <option val="28">Centre Val de Loire</option>
+                                <option val="2A">Corse</option>
+                                <option val="75">Ile de France</option>
+                                <option val="99">Languedoc Roussillon</option>
+                                <option val="62">Nord Pas de Calais</option>
+                                <option val="76">Normandie</option>
+                                <option val="85">Pays de la Loire</option>
+                                <option val="99">PACA</option>
+
+                            </select>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text4_2}}"></span>
+                            <select data-binding="personal.owner" name="owner" class="form-control">
+                                <option val=""></option>
+                                <option val="landlord">proprietaire</option>
+                                <option val="tenant">locataire</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text5}}"></span>
+                            <select data-binding="personal.maritalStatus" name="maritalStatus" class="form-control">
+                                <option val=""></option>
+                                <option val="couple">en couple</option>
+                                <option val="single">célibataire</option>
+                            </select>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text5_2}}"></span>
+                            <input type="text" class="form-control" style="width: 54px"/>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text5_3}}"></span>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text5_4}}"></span>
+                            <input type="text" class="form-control" style="width: 54px"/>
+                            ,
+                            <input type="text" class="form-control" style="width: 54px"/>
+                            <span class="form-text" data-template="{{pages.profile.sections.a.text5_5}}"></span>
+                        </div>
+                    </div>
+
                 </div>
+
+
             </div>
-
-
         </div>
     </div>
 
@@ -202,6 +257,7 @@
 <script src="scripts/components/dataBinder.js"></script>
 <script src="scripts/components/recap.js"></script>
 <script src="scripts/components/fullpage.js"></script>
+<script src="scripts/components/form.js"></script>
 <!-- endbuild -->
 <!-- end footer.tpl.html-->
 </body>

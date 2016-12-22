@@ -79,7 +79,17 @@
         "a": {
           "text1": "Ma situation personnelle",
           "text2": "J'ai",
-          "text3": "ans mais je ne fais pas mon âge."
+          "text2_2": "ans mais je ne fais pas mon âge.",
+          "text3": "Je suis",
+          "text3_2": "bien dans sa tête et dans son corps.",
+          "text4": "J'habite dans la région",
+          "text4_2": ". Je suis",
+          "text5": "Je suis",
+          "text5_2": "et j'ai",
+          "text5_3": "enfant(s)",
+          "text5_4": "âgés de",
+          "text5_5": "ans."
+
         }
       }
     }
