@@ -4,39 +4,82 @@
   background: url(../assets/icon-info-circle.svg) 50% 50% no-repeat;
   cursor: pointer;
 }
+
 .popin {
   position: absolute;
+  z-index: 200;
   background-color: white;
   font-size: 10px;
-  padding: 20px;
+  padding: 36px 36px 20px 20px;
   width: 350px;
-  left:100px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  left: 100px;
+  border: 0;
   font-family: $axa-font-franklin-medium;
   @include rem-fallback("font-size", 14);
   @include rem-fallback("line-height", 12);
+  color: #202020;
 
-  &.textHome * {
-    color : $red!important;
+  &.theme-home {
+    color: $turquoise;
   }
-  &.textFamily * {
-    color :$dark_blue!important;
+  &.theme-profile {
+    color: $orange;
   }
-  &.textHealth * {
-    color : $yellow!important;
+  &.theme-recap {
+    color: $violet;
   }
-  &.textHobby * {
-    color : $light_blue!important;
+  &.theme-results {
+    color: $turquoise_dark;
   }
-  &.textOther * {
 
+  &.theme-chart-home {
+    color: #e53c3f;
+    width: 250px;
+    padding: 36px 20px 20px 20px;
+  }
+  &.theme-chart-family {
+    color: #16509b;
+    width: 250px;
+    padding: 36px 20px 20px 20px;
+  }
+  &.theme-chart-health {
+    color: #f6ab22;
+    width: 250px;
+    padding: 36px 20px 20px 20px;
+  }
+  &.theme-chart-hobby {
+    color: #78c8d5;
+    width: 250px;
+    padding: 36px 20px 20px 20px;
+  }
+  &.theme-chart-other {
+    color: #7cc056;
+    width: 250px;
   }
 
   .title {
     @include rem-fallback("font-size", 24);
     @include rem-fallback("line-height", 24);
     font-family: $axa-font-franklin-heavy;
+    margin-top: -36px;
+    padding: 10px 0;
+    display: table;
+    vertical-align: middle;
+    display: table;
+
+    .title-icon {
+      position: relative;
+      left: inherit;
+      bottom: inherit;
+      transform: initial;
+      margin-right: 16px;
+    }
+
+    .title-text,
+    .title-icon {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 
   &:after, &:before {
@@ -101,16 +144,89 @@
     }
   }
 
-  a, .popinContent {
-    color: black;
-  }
   .popinContent {
-    margin-top:15px;
+    margin-top: 5px;
   }
-  .closeBtn {
+  .popin-content {
+    text-align: left;
+    @include rem-fallback("line-height", 18);
+  }
+  .btn-close {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 36px;
+    height: 36px;
     float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .link-close {
+      display: block;
+      width: 36px;
+      height: 36px;
+      display: block;
+      background-image: url('../assets/sprites-close.png');
+    }
   }
+
+  &.theme-home,
+  &theme-chart-home {
+    .btn-close .link-close {
+      background-position: 50% 0;
+    }
+  }
+  &.theme-profile {
+    .btn-close .link-close {
+      background-position: 50% -36px;
+    }
+  }
+  &.theme-recap {
+    .btn-close .link-close {
+      background-position: 50% -72px;
+    }
+  }
+  &.theme-results {
+    .btn-close .link-close {
+      background-position: 50% -108px;
+    }
+  }
+
+  &.theme-chart-home {
+    .btn-close .link-close {
+      background-position: 50% -144px;
+    }
+  }
+  &.theme-chart-family {
+    .btn-close .link-close {
+      background-position: 50% -180px;
+    }
+  }
+  &.theme-chart-health {
+    .btn-close .link-close {
+      background-position: 50% -216px;
+    }
+  }
+  &.theme-chart-hobby {
+    .btn-close .link-close {
+      background-position: 50% -252px;
+    }
+  }
+  &.theme-chart-other {
+    .btn-close .link-close {
+      background-position: 50% -288px;
+    }
+  }
+}
+
+
+
+#log{
+  position: fixed;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 700;
 }

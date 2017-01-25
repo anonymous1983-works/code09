@@ -1,0 +1,50 @@
+
+<div class="axa-page section fp-auto-heigh <!-- @@var classPage --> <!-- @@var bgPage -->"
+     id="<!-- @@var idPage -->"
+     axa-fullpage-anchor="<!-- @@var sectionPage -->">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title">
+                    <h2 class="text">
+                        <span data-template="pages.profile.title"></span>
+                        <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin"
+                           axa-popin='{
+                                "data":{
+                                    "theme": "theme-profile",
+                                    "idText":"pages.profile.popup.text",
+                                    "idTitle":"pages.profile.popup.title",
+                                    "image": {
+                                        "idPath":"pages.profile.popup.image.path",
+                                        "idAlt":"pages.profile.popup.image.alt",
+                                        "idName":"pages.profile.popup.image.name"
+                                        }
+                                },
+                                 "callback": ""
+                            }'></i>
+                        <div class="hide">
+                            <div id="idPopinTextProfile" data-template="pages.profile.popup.text"></div>
+                            <div id="idPopinTitleProfile" data-template="pages.profile.popup.title"></div>
+                            <div id="idPopinImagePathProfile" data-template="pages.profile.popup.image.path"></div>
+                            <div id="idPopinImageAltProfile" data-template="pages.profile.popup.image.alt"></div>
+                            <div id="idPopinImageNameProfile" data-template="pages.profile.popup.image.name"></div>
+                        </div>
+                    </h2>
+
+                </div>
+
+                <a href="#" class="btn-back btn-slide-back"><span class="text"
+                                                                  data-template="global.back"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@include= ./sub-pages-profile/sub-page-profile-personal.tpl.html {"idPage": "page-profile-section-personal", "slideIndexPage": "1", "classPage": "page-profile-personal"} -->
+
+    <!-- @@include= ./sub-pages-profile/sub-page-profile-professional.tpl.html {"idPage": "page-profile-section-professional", "slideIndexPage": "2", "classPage": "page-profile-professional"} -->
+
+    <!-- @@include= ./sub-pages-profile/sub-page-profile-expense.tpl.html {"idPage": "page-profile-section-expense", "slideIndexPage": "3", "classPage": "page-profile-expense"} -->
+
+
+</div>

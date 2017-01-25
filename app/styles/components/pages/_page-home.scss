@@ -1,0 +1,151 @@
+.axa-main .page-home {
+
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  font-family: $axa-font-franklin-heavy;
+
+  .fp-tableCell {
+    vertical-align: inherit;
+  }
+
+  .page-title {
+    @include rem-fallback("font-size", 48);
+    @include rem-fallback("line-height", 48);
+    text-align: center;
+    font-weight: 800;
+    font-family: $axa-font-franklin-heavy;
+    @include rem-fallback("margin-top", 72 + $axa-header-height);
+    position: relative;
+  }
+
+  .btn-start {
+    @include rem-fallback("font-size", 32);
+    margin-top: 130px;
+    background-color: $turquoise;
+
+    /*&:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $axa-header-color;
+      border-color: $axa-header-color;
+    }*/
+  }
+
+  .btn-next {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    margin-left: -223px;
+    padding-bottom: 60px;
+    border: 0;
+    @include rem-fallback("font-size", 22);
+    text-transform: none;
+    font-family: $axa-font-franklin-medium;
+    font-weight: 400;
+
+    .icons {
+      .icon-a,
+      .icon-b,
+      .icon-c {
+        display: block;
+        background: url("../assets/icon-chevron-down.svg") 50% 100% no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -28px;
+        z-index: 10;
+        display: block;
+        width: 59px;
+        height: 53px;
+        opacity: 1;
+        -moz-animation: axa-animation-next 4s infinite;
+        -webkit-animation: axa-animation-next 4s infinite;
+        animation: axa-animation-next 4s infinite;
+      }
+
+    }
+
+    &:hover {
+      .icon-a {
+        //-webkit-animation: axa-animation-scaleout 1s infinite ease-in-out;
+        //animation: axa-animation-scaleout 1s infinite ease-in-out;
+      }
+    }
+
+  }
+
+  .zone-a {
+    background-image: $axa-page_home_a-background-image;
+    background-position: $axa-page_home_a-background-position;
+    background-repeat: $axa-page_home_a-background-repeat;
+    background-size: $axa-page_home_a-background-size;
+  }
+
+  .zone-b {
+    @include rem-fallback("padding-top", $axa-header-height*2);
+  }
+
+}
+
+@-moz-keyframes axa-animation-next {
+  0%, 10%, 25%, 40%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  30% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes axa-animation-next {
+  0%, 10%, 25%, 40%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+
+@keyframes axa-animation-next {
+  0%, 10%, 25%, 40%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  30% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}

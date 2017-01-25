@@ -1,0 +1,209 @@
+.axa-popup {
+
+  $axa-popup-color: #0d519b;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  &:after {
+    content: "";
+    background: rgba(255, 255, 255, .4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+  }
+
+  .axa-popup-content {
+    position: fixed;
+    z-index: 910;
+    padding: 40px 80px;
+    background: rgba(255, 255, 255, 1);
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+
+    @include rem-fallback("font-size", 19);
+    @include rem-fallback("line-height", 24);
+    @include rem-fallback("margin-top", 36);
+
+    color: $axa-popup-color;
+
+    .btn.btn-close {
+      color: $axa-popup-color;
+      display: block;
+      width: 36px;
+      height: 36px;
+      background-image: url(../assets/sprites-close.png);
+      background-position: 50% -180px;
+      background-repeat: no-repeat;
+      border: 0;
+      padding: 0;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      .text {
+        display: none;
+      }
+    }
+
+    .btn.btn-white {
+
+      width: auto;
+      @include rem-fallback("padding-left", 16);
+      @include rem-fallback("padding-right", 16);
+      @include rem-fallback("padding-top", 8);
+      @include rem-fallback("padding-bottom", 8);
+      border: 4px solid $axa-popup-color;
+      @include rem-fallback("line-height", 22);
+      @include rem-fallback("font-size", 20);
+      @include transition(background-color .2s, color .2s);
+      position: relative;
+      min-width: 230px;
+      text-align: center;
+      @include rem-fallback("margin-top", 30);
+
+      .text {
+        color: $axa-popup-color;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+        background-color: $axa-popup-color !important;
+        .text {
+          color: $white;
+        }
+      }
+
+    }
+
+    .axa-popup-header {
+      @include rem-fallback("font-size", 28);
+      font-family: $axa-font-franklin-heavy;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .axa-popup-body {
+      .summary {
+        @include rem-fallback("font-size", 19);
+        @include rem-fallback("line-height", 24);
+        @include rem-fallback("margin-top", 36);
+      }
+
+
+    }
+
+    .axa-popup-form {
+      @include rem-fallback("margin-top", 50);
+      .form-row {
+        @include rem-fallback("margin-bottom", 20);
+
+        .label,
+        .input {
+          @include rem-fallback("font-size", 22);
+        }
+
+        .label {
+          @include rem-fallback("line-height", 24);
+          @include rem-fallback("height", 38);
+          @include rem-fallback("padding-top", 6);
+          font-family: $axa-font-franklin-medium;
+        }
+
+        .input {
+          border: 0;
+          border-bottom: 2px solid $axa-popup-color;
+          @include rem-fallback("line-height", 36);
+          @include rem-fallback("height", 38);
+          font-family: $axa-font-franklin-heavy;
+
+          &.date {
+            background: url(../assets/icon-calendar.png) 100% 50% no-repeat;
+          }
+
+          &.time {
+            background: url(../assets/icon-arrow-down.png) 100% 50% no-repeat;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            outline: none;
+            background: none;
+          }
+        }
+      }
+
+      &.form_validate {
+        input.error{
+          border-bottom: 2px solid $error;
+        }
+        input.error + label.error{
+          padding: 5px 0;
+          margin: 0 2%;
+          color: $error;
+          display: block;
+          clear: both;
+        }
+      }
+    }
+
+    .axa-popup-loader {
+      padding-top: 40px;
+
+      loader-svg {
+        display: block;
+        width: 100%;
+        text-align: center;
+        .path {
+          stroke-dasharray: $loader-offset;
+          stroke-dashoffset: 0;
+          transform-origin: center;
+          animation: dash $loader-duration ease-in-out infinite,
+          colors ($loader-duration*4) ease-in-out infinite;
+        }
+        .spinner {
+          animation: rotator $loader-duration linear infinite;
+        }
+      }
+
+    }
+
+    .axa-popup-success {
+      text-align: center;
+      color: $success;
+      padding: 20px 8px;
+      display: none;
+    }
+
+    .axa-popup-error {
+      text-align: center;
+      color: $error;
+      padding: 20px 8px;
+      display: none;
+    }
+
+  }
+
+  &.axa-popup_contact,
+  &.axa-popup_send_balance_sheet {
+    .axa-popup-content {
+      width: 552px;
+      margin-left: -276px;
+      min-height: 230px;
+      color: $axa-popup-color;
+    }
+  }
+
+  .axa-popup-link-available{
+    margin-top: 40px;
+  }
+}

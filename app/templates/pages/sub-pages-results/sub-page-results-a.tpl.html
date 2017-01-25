@@ -1,0 +1,163 @@
+<div class="zone-a full-page" id="results-zone-a">
+
+    <div class="axa-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="page-title">
+                        <h2 class="text">
+                            <span data-template="pages.results.title"></span>
+                            <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin" axa-popin='{
+                                       "data":{
+                                            "theme": "theme-results",
+                                            "idText":"pages.results.popup.text",
+                                            "idTitle":"pages.results.popup.title",
+                                            "image": {
+                                                "idPath":"pages.results.popup.image.path",
+                                                "idAlt":"pages.results.popup.image.alt",
+                                                "idName":"pages.results.popup.image.name"
+                                                }
+                                         },
+                                         "callback": ""
+                                    }'></i>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <ul class="results-actions">
+                        <li>
+                            <a href="" class="link"><span data-template="pages.results.sections.a.btnrestart"></span></a>
+                        </li>
+                        <li>
+                            <a href="" class="link send send-balance_sheet"><span data-template="pages.results.sections.a.btnsendmail"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="axa-page-body">
+
+        <div class="form axa-form container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-results">
+
+                        <span data-template="pages.results.sections.a.text1"></span>
+
+                        <span class="input-update">
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   autocomplete="off"
+                                   data-binding="personal.dayofretirement"
+                                   data-print="personal.dayofretirement"
+                                   step="1"
+                                   min="18"
+                                   name="dayofretirement"
+                                   class="form-control dayofretirement"
+                                   placeholder="0" />
+                        </span>
+
+
+                        <strong data-template="pages.results.sections.a.text1_1"></strong>
+
+                        <span data-template="pages.results.sections.a.text1_2"></span>
+
+                        <strong class="text-bigger">
+                            <span data-print="quoteResult.estimatedExpensesBeforeRetirement"></span>
+                            <span data-template="pages.results.monthlyPrice"></span>
+                        </strong>
+
+                        <br/>
+
+                        <span data-template="pages.results.sections.a.text2"></span>
+
+                        <strong class="text-bigger">
+                            <span class="form-text" data-print="quoteResult.estimatedRetirementPension"></span>
+                            <span class="form-text" data-template="pages.results.monthlyPrice"></span>
+                        </strong>
+
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-8">
+                                <span class="panel-label-valign"
+                                      data-template="pages.results.sections.a.text3"></span>
+                                </div>
+
+                                <div class="col-4 text-center">
+
+                                    <strong class="text-bigger">
+                                        <span data-print="quoteResult.missToWin"></span>
+                                        <span data-template="pages.results.monthlyPrice"></span>
+                                    </strong>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <span class="" data-template="pages.results.sections.a.text4"></span><br/>
+                                    <span class="" data-template="pages.results.sections.a.text4_1"></span>
+                                </div>
+
+                                <div class="col-4 text-center">
+
+                                    <strong class="text-bigger">
+                                        <span data-print="quoteResult.proposedSaving"></span> <span data-template="pages.results.monthlyPrice"></span>
+                                    </strong>
+
+                                    <div class="price-notice">
+
+                                        <small>
+                                            <span data-template="pages.results.sections.a.text4_2"></span>
+                                            <strong><span data-print="quoteResult.taxSaved"></span> €</strong>
+                                            <span data-template="pages.results.sections.a.text4_3"></span>
+                                        </small>
+
+                                    </div>
+
+                                    <i class="icons">
+                                        <i class="icon-a"></i>
+                                    </i>
+
+                                    <a class="btn btn-color-turquoise btn-animate btn-contact animated fadeIn" data-template="pages.results.sections.a.button_contact.link">
+                                        <span class="text" data-template="pages.results.sections.a.button_contact.text"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="btn-next-wrapper">
+            <a href="" class="btn-next btn-next-zone animated fadeInUp"
+               data-template="pages.results.a.button_next.link"
+               data-toggle="axa-fullpage-btn_section"
+               axa-fullpage-target="#results-zone-b">
+
+                <span class="text" data-template="pages.results.a.button_next.text"></span>
+                <i class="icons">
+                    <i class="icon-a"></i>
+                </i>
+            </a>
+        </div>
+    </div>
+
+</div>

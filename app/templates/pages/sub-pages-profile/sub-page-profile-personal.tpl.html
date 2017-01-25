@@ -1,0 +1,195 @@
+<div class="slide <!-- @@var classPage -->" id="<!-- @@var idPage -->"
+     axa-fullpage-slide-index="<!-- @@var slideIndexPage -->">
+
+    <div class="page-container axa-page-container cell ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="title-style-1" data-template="pages.profile.sections.personal.text1"></h3>
+                    <div class="form axa-form">
+                        <div class="form-group animated fadeInUpBig">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text2"></span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   maxlength="3"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="personal.dayofbirth"
+                                   name="dayofbirth"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="18" />
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text2_2"></span>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text3"></span>
+
+                            <select data-binding="personal.gender"
+                                    data-template="select.personal.gender"
+                                    name="gender"
+                                    class="form-control">
+
+                            </select>
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text3_2"></span>
+                        </div>
+
+                        <div class="form-group animated responve-profil-input-bottom">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text4"></span>
+
+                            <select data-binding="personal.region"
+                                    data-template="select.personal.county"
+                                    name="region" class="form-control">
+
+                            </select>
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text4_2"></span>
+                            <select data-binding="personal.owner"
+                                    data-template="select.personal.owner"
+                                    name="owner" class="form-control">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group animated responve-profil-input-top">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text5"></span>
+
+                            <select data-binding="personal.maritalStatus"
+                                    data-template="select.personal.maritalStatus"
+                                    name="maritalStatus"
+                                    class="form-control">
+
+                            </select>
+
+                            <span id="idProfileCouple">
+
+                                <span class="form-text"
+                                      data-template="pages.profile.sections.personal.text5_2">
+
+                                </span>
+
+                                <input type="number"
+                                       inputmode="numeric"
+                                       pattern="[0-9]*"
+                                       maxlength="1"
+                                       min="0"
+                                       max="6"
+                                       data-binding="personal.numberOfChildren"
+                                       placeholder="0"
+                                       id="idInputNumberOfChildren"
+                                       class="form-control"
+                                       style="width: 40px"
+                                       tabindex="2"
+                                       data-toggle="axa-dynamic_zone"
+                                       axa-dynamic_zone='{"zone": "#idProfileNumberOfChildren", "data": {"id":"#idInputNumberOfChildren"}, "callback": "updateNumberOfChidren"}' />
+
+                                <span class="form-text"
+                                      data-template="pages.profile.sections.personal.text5_3">
+
+                                </span>
+
+                                <span id="idProfileNumberOfChildren" class="dynamicNumberOfChildren">
+
+                                    <span class="form-text"
+                                          data-template="pages.profile.sections.personal.text5_4">
+
+                                    </span>
+
+                                    <span class="old">
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[0]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="3" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[1]"
+                                               class="form-control"
+                                               style="width: 54px" 
+                                               tabindex="4"/>
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[2]"
+                                               class="form-control"
+                                               style="width: 54px" 
+                                               tabindex="5"/>
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[3]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="6" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[4]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="7" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[5]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="8" />
+                                    </span>
+
+                                    <span class="form-text"
+                                          data-template="pages.profile.sections.personal.text5_5">
+
+                                    </span>
+
+                                </span>
+                            </span>
+
+                        </div>
+
+                        <div class="clearfix center responve-profil-input-top">
+                            <a href="#" class="btn btn-color-orange btn-form-next btn-animate">
+                                <span class="form-text" data-template="global.next"></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

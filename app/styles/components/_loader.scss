@@ -1,16 +1,87 @@
-.loader {
-  position : fixed;
-  top: 0;
-  bottom:0;
-  left:0;
+$loader-offset: 187 !default;
+$loader-duration: 1.4s !default;
+
+.axa-loader {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  @include rem-fallback("top", $axa-header-height);
+  bottom: 0;
+  left: 0;
   right: 0;
-  width:100vw;
-  height:100vh;
-  background: $white;
-  &.is_hide {
-    display : none;
-    opacity : 0;
-    height: 0;
-    width:0;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
+.axa-loader.start {
+
+  loader-svg {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .path {
+      stroke-dasharray: $loader-offset;
+      stroke-dashoffset: 0;
+      transform-origin: center;
+      animation:
+              dash $loader-duration ease-in-out infinite,
+              colors ($loader-duration*4) ease-in-out infinite;
+    }
+    .spinner {
+      animation: rotator $loader-duration linear infinite;
+    }
+  }
+}
+
+.axa-loader.start{
+  background: $white;
+}
+
+.axa-loader.chart {
+  background: $violet-loader;
+}
+
+.loader-chart {
+  width: 800px;
+  height: 580px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center -100px;
+  background-image: url(../assets/loader-chart.gif);
+}
+
+
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+@keyframes colors {
+  0% { stroke: $dark_blue; }
+  25% { stroke: $light_blue; }
+  50% { stroke: $yellow; }
+  75% { stroke: $red; }
+  100% { stroke: $violet-loader; }
+}
+
+@keyframes dash {
+  0% { stroke-dashoffset: $loader-offset; }
+  50% {
+    stroke-dashoffset: $loader-offset/4;
+    transform:rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: $loader-offset;
+    transform:rotate(450deg);
+  }
+}
+

@@ -6,18 +6,9 @@
   @media only screen and (min-width: $breakpoint-large) {
     margin : 0 auto;
   }
-  .page-home-a & {
-  }
-
-  .page-home-b & {
-    @include rem-fallback("margin-top", 90);
-    @include rem-fallback("padding-top", 90);
-    @include rem-fallback("padding-bottom", 90);
-  }
 
 }
 .title-section {
-
   .bg-turquoise & {
     font-family: $axa-font-franklin-heavy;
     color : $dark-blue;
@@ -47,9 +38,9 @@
   font-family: $axa-font-franklin-book;
   @include rem-fallback("font-size", 20);
   @include rem-fallback("line-height", 28);
-  b {
+  b, strong {
     font-family: $axa-font-franklin-demi;
-
+    font-weight: bold;
   }
 }
 .icon-universe {
@@ -146,6 +137,8 @@
     @include rem-fallback("line-height", 24);
     font-style: italic;
   }
+
+
   .graph {
 
     @include rem-fallback("min-height", 400);
@@ -157,17 +150,50 @@
       @include center(true, false);
       @include rem-fallback("bottom", 20);
     }
+
   }
 }
-.formula {
-  .row [class^="col"] {
-    margin-left : 0;
-    margin-right : 0;
+.formula.white-box.external-spacing {
+  display: table;
+  width: 100%;
+  padding: 10px 20px;
+
+  > div {
+    display: table-row;
+
+    > span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .formula-text {
+      font-family: $axa-font-franklin-demi;
+      @include rem-fallback("font-size", 18);
+      @include rem-fallback("line-height", 22);
+      color :$dark-blue;
+      font-weight: bold;
+    }
+
+    .formula-divide,
+    .formula-multiply {
+      padding: 8px;
+      text-align: center;
+      font-size:30px;
+      font-weight: normal;
+      font-family: $axa-font-franklin-book;
+    }
+    .formula-divide {
+      font-size: 40px;
+    }
+    .formula-1 {
+      width: 23%;
+    }
+
+    .formula-4 {
+      width: 39%;
+    }
   }
+
+
+
 }
-.formula-text {
-  font-family: $axa-font-franklin-demi;
-  @include rem-fallback("font-size", 20);
-  @include rem-fallback("line-height", 22);
-  color :$dark-blue;
-}
+

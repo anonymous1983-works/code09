@@ -8,27 +8,50 @@
     "simple-grid": "https://github.com/zachacole/Simple-Grid.git",
     "lodash-deep": "^1.6.0",
     "animate.css": "^3.5.2",
-    "fullpage.js": "^2.9.2"
+    "fullpage.js": "^2.9.2",
+    "chart.js": "^2.4.0",
+    "amplify": "^1.1.2",
+    "jquery-validation": "^1.16.0",
+    "base-64": "^0.1.0",
+    "clipboard": "^1.5.16",
+    "es6-promise": "^4.0.5"
   },
   "overrides": {
-
-    "animate.css":{
-      "main": ["animate.min.css"]
+    "animate.css": {
+      "main": [
+        "animate.min.css"
+      ]
     },
     "fullpage.js": {
-      "main": ["dist/jquery.fullpage.css", "dist/jquery.fullpage.js"]
+      "main": [
+        "dist/jquery.fullpage.css",
+        "dist/jquery.fullpage.js"
+      ]
     },
-    "jquery":{
-      "main": ["dist/jquery.min.js"]
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
     },
-    "lodash":{
-      "main": ["lodash.js"]
+    "lodash": {
+      "main": [
+        "lodash.js"
+      ]
     },
-    "lodash-deep":{
-      "main": ["lodash-deep.min.js"]
+    "lodash-deep": {
+      "main": [
+        "lodash-deep.min.js"
+      ]
     },
-    "simple-grid":{
-      "main": ["simple-grid.min.css"]
+    "simple-grid": {
+      "main": [
+        "simple-grid.min.css"
+      ]
+    },
+    "jquery-validation": {
+      "main": [
+        "simple-grid.min.css"
+      ]
     }
   }
 }

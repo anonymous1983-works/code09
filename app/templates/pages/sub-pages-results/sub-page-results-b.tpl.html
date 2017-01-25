@@ -1,0 +1,220 @@
+<div class="zone-b" id="results-zone-b">
+    <div class="container">
+        <div class="row section-graph">
+            <!-- content -->
+
+            <div class="col-7">
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title1">
+                </h4>
+
+                <div class="white-box graph graph-estimate">
+                    <img src="assets/graph-estimate.png" data-template="icons.graphEstimate">
+
+                    <div class="legend">
+                        <ul>
+                            <li class="income"><span class="text" data-template="{{pages.results.sections.b.graph_estimate.legend.income}}" ></span></li>
+                            <li class="expense"><span class="text" data-template="{{pages.results.sections.b.graph_estimate.legend.expense}}"></span></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="price bg-darkblue price-start">
+                        <span data-print="quoteResult.actualSalary"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-darkblue price-middle">
+                        <span data-print="quoteResult.estimatedSalaryBeforeRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-darkblue price-end">
+                        <span data-print="quoteResult.estimatedRetirementPension"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-start">
+                        <span data-print="quoteResult.actualExpenses"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-middle">
+                        <span data-print="quoteResult.estimatedExpensesBeforeRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-end">
+                        <span data-print="quoteResult.estimatedExpensesRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="chart-footer">
+
+                        <div class="date actual-date">
+                            <div class="text" data-template="{{pages.results.sections.b.graph_estimate.current}}"></div>
+                            <div>
+                                <span data-print="personal.dayofbirth"></span>
+                                <span class="years"
+                                      data-template="{{pages.results.sections.b.graph_estimate.years}}"></span>
+                            </div>
+                        </div>
+
+                        <div class="date retirement-date">
+                            <div class="text"
+                                 data-template="{{pages.results.sections.b.graph_estimate.retirement}}"></div>
+                            <div>
+                                <span data-print="personal.dayofretirement"></span>
+                                <span class="years"
+                                      data-template="{{pages.results.sections.b.graph_estimate.years}}"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-5">
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title2">
+                </h4>
+
+                <div class="row">
+                    <div class="col-6">
+                        <span data-template="pages.results.sections.b.text2_1"></span>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="price-box">
+                            <strong class="text-bigger">
+
+                                <span class="input-update">
+                                    <input type="number"
+                                           inputmode="numeric"
+                                           pattern="[0-9]*"
+                                           autocomplete="off"
+                                           class="salaryBeforeRetirement form-control blue"
+                                           data-binding="fixedSalaryBeforeRetirement"
+                                           data-print="quoteResult.estimatedSalaryBeforeRetirement" />
+                                </span>
+
+                                <span class="montly-label" data-template="pages.results.monthlyPrice"></span>
+                            </strong>
+
+                            <div class="link" data-template="pages.results.sections.b.text2_2"></div>
+                            <div><i><span data-template="pages.results.sections.b.text2_3"></span></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title3">
+                </h4>
+
+                <span data-template="pages.results.sections.b.text3_1"></span>
+                <strong class="text-medium"><span data-print="quoteResult.yearOfBirth"></span></strong>,
+                <span data-template="pages.results.sections.b.text3_2"></span>
+                <strong class="text-medium"><span data-print="quoteResult.remainingDuration.quarters"></span> <span
+                        data-template="pages.results.sections.b.text3_3a"></span></strong>
+
+                <span data-template="pages.results.sections.b.text3_4"></span>
+
+                <strong class="text-medium"><span data-print="quoteResult.remainingDuration.years"></span> <span
+                        data-template="pages.results.sections.b.text3_5a"></span></strong>
+
+                <span data-template="pages.results.sections.b.text3_6"></span>
+
+            </div>
+
+            <div class="col-12" style="padding-top:35px">
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title4">
+                </h4>
+            </div>
+
+            <div class="col-5">
+                <div class="white-box graph graph-chart today">
+                    <div class="graph-title" data-template="pages.results.sections.b.graphTitle"></div>
+                    <div class="graph-body">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+
+                <div class="chart-legends">
+                    <div>
+                        <div class="chart-legend home" data-chart-type="home">
+                            <span class="text" data-template="pages.recap.expense.home.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.home.icon">
+                        </div>
+
+                        <div class="chart-legend family" data-chart-type="family">
+                            <span class="text" data-template="pages.recap.expense.family.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.family.icon">
+                        </div>
+
+                        <div class="chart-legend health" data-chart-type="health">
+                            <span class="text" data-template="pages.recap.expense.health.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.health.icon">
+                        </div>
+
+                        <div class="chart-legend hobby" data-chart-type="hobby">
+                            <span class="text" data-template="pages.recap.expense.hobby.main"></span>
+                            <img class="icon" hobby="icon">
+                        </div>
+
+                        <div class="chart-legend other" data-chart-type="other">
+                            <span class="text" data-template="pages.recap.expense.other.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.other.icon">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-5">
+
+                <div class="white-box graph graph-chart retirement">
+                    <div class="graph-title" data-print="quoteResult.yearOfRetirement"></div>
+                    <div data-print=""></div>
+                    <div class="graph-body">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+
+
+                <ul class="results-actions results-footer">
+                    <li>
+                        <a class="btn btn-color-turquoise btn-animate btn-contact animated fadeIn"
+                           data-template="pages.results.sections.a.button_contact.link">
+                            <span class="text" data-template="pages.results.sections.a.button_contact.text"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <span data-template="pages.results.sections.a.btnrestart"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link send send-balance_sheet">
+                            <span data-template="pages.results.sections.a.btnsendmail"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

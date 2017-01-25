@@ -1,0 +1,568 @@
+
+<div class="axa-page section fp-auto-heigh  <!-- @@var classPage --> <!-- @@var bgPage -->"
+     id="<!-- @@var idPage -->"
+     axa-fullpage-anchor="<!-- @@var sectionPage -->">
+
+
+    <div class="page-container axa-page-container cell">
+        <div class="page-recap_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title col-6">
+                            <h2 class="text">
+                                <span data-template="pages.recap.title"></span>
+                                <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin"
+                                   axa-popin='{
+                                       "data":{
+                                            "theme": "theme-recap",
+                                            "idText":"pages.recap.popup.text",
+                                            "idTitle":"pages.recap.popup.title",
+                                            "image": {
+                                                "idPath":"pages.recap.popup.image.path",
+                                                "idAlt":"pages.recap.popup.image.alt",
+                                                "idName":"pages.recap.popup.image.name"
+                                                }
+                                         },
+                                         "callback": ""
+                                    }'></i>
+
+                            </h2>
+                        </div>
+                        <div class="page-estimation-bar col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="estimation-expense">
+                                        <div class="estimation-indicator">
+                                            <div class="ko" data-template="pages.recap.economy.error.message"></div>
+                                            <div class="ok">
+                                                <span class="text" data-template="pages.recap.economy.title"></span>
+                                                <span class="val" data-print="economy"></span>
+                                                <span class="devise" data-template="global.currency"></span>
+                                            </div>
+                                        </div>
+                                        <div class="estimation-bar">
+                                            <ul class="estims">
+                                                <li class="estim hobby bg-color"></li>
+                                                <li class="estim home bg-color"></li>
+                                                <li class="estim family bg-color"></li>
+                                                <li class="estim health bg-color"></li>
+                                                <li class="estim other bg-color"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-recap_body">
+            <div class="container">
+
+                <div class="row">
+                    <!-- left part -->
+                    <div class="col-6">
+                        <div class="recap-sub_header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="center-text text">
+                                        <div class="recap-header-title"
+                                             data-template="pages.recap.incoming.title"></div>
+                                        <div class="recap-header-total js-input-binding text">
+                                            <span data-print="income.total" class="total account">0</span>
+                                            <span data-template="global.currency" class="currency"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recap-form incomes">
+                            <form class="js-form-binding form form-incoming">
+
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="incomeSalary">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.incoming.salary.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.incoming.salary.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.salary"
+                                                       data-print="income.salary"
+                                                       id="incomeSalary"
+                                                       tabindex="10"/>
+
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row js-row-template active">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="incomeOtherIcoming">
+
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[0]"
+                                                           data-print="income.otherIncomingLabels[0]"
+                                                           id="incomeOtherIncomingLabels"
+                                                           tabindex="11" />
+
+                                                </div>
+
+                                            </label>
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[0]"
+                                                       data-print="income.otherIncoming[0]"
+                                                       id="incomeOtherIcoming"
+                                                       tabindex="12" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="incomeOtherIcomingA">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[1]"
+                                                           data-print="income.otherIncomingLabels[1]"
+                                                           id="incomeOtherIncomingLabelsA"
+                                                           tabindex="13" />
+
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[1]"
+                                                       data-print="income.otherIncoming[1]"
+                                                       id="incomeOtherIcomingA"
+                                                       tabindex="14" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="incomeOtherIcomingB">
+                                                <div class="form-label_text update">
+
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title">
+
+                                                    </div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[2]"
+                                                           data-print="income.otherIncomingLabels[2]"
+                                                           id="incomeOtherIncomingLabelsB"
+                                                           tabindex="15" />
+
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[2]"
+                                                       data-print="income.otherIncoming[2]"
+                                                       id="incomeOtherIcomingB"
+                                                       tabindex="16" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <a href="#" class="btn btn-color-violet btn-animate btn-add btn-add-income">
+                                        <span class="text">+</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- right part -->
+                    <div class="col-6">
+                        <div class="recap-sub_header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="center-text text">
+                                        <div class="recap-header-title"
+                                             data-template="pages.recap.expense.title"></div>
+                                        <div class="recap-header-total js-input-binding text">
+                                            <span data-print="expense.total" class="total account">0</span>
+                                            <span data-template="global.currency" class="currency"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recap-form expenses">
+                            <form class="js-form-binding form form-expense">
+                                <!-- HOBBY -->
+                                <div class="row recap-form_row" hobby-hide="other">
+
+                                    <div class="col-12" >
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHobby">
+                                                <div class="form-label_text">
+                                                    <div class="label-title js-text-binding text" hobby="label">
+
+                                                    </div>
+                                                    <div hobby="sublabel"
+                                                         class="label-sub_title">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-label_icon" >
+                                                    <ul class="title-picture" hobbies-icons="icon">
+
+                                                    </ul>
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.hobby"
+                                                       data-print="expense.hobby"
+                                                       id="expenseHobby"
+                                                       tabindex="17" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency"
+                                                                          class="currency"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HOME -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHome">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.home.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.home.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.home.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.home"
+                                                       data-print="expense.home"
+                                                       id="expenseHome"
+                                                       tabindex="18"/>
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAMILY -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseFamily">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.family.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.family.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.family.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.family"
+                                                       data-print="expense.family"
+                                                       id="expenseFamily"
+                                                       tabindex="19" />
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HEALTH -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHealth">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.health.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.health.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.health.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.health"
+                                                       data-print="expense.health"
+                                                       id="expenseHealth"
+                                                       tabindex="20"/>
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="expenseOtherExpensesA">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[0]"
+                                                           data-print="expense.otherExpensesLabels[0]"
+                                                           id="incomeOtherExpensesLabelsA"
+                                                           tabindex="21" />
+
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[0]"
+                                                       data-print="expense.otherExpenses[0]"
+                                                       id="expenseOtherExpensesA"
+                                                       tabindex="22"/>
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="expenseOtherExpensesB">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[1]"
+                                                           data-print="expense.otherExpensesLabels[1]"
+                                                           id="incomeOtherExpensesLabelsB"
+                                                           tabindex="23" />
+
+                                                </div>
+
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[1]"
+                                                       data-print="expense.otherExpenses[1]"
+                                                       id="expenseOtherExpensesB"
+                                                       tabindex="24" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseOtherExpensesC">
+
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title">
+
+                                                    </div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[2]"
+                                                           data-print="expense.otherExpensesLabels[2]"
+                                                           id="incomeOtherExpensesLabelsC"
+                                                           tabindex="25" />
+
+                                                </div>
+
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+
+                                            </label>
+
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[2]"
+                                                       data-print="expense.otherExpenses[2]"
+                                                       id="expenseOtherExpensesC"
+                                                       tabindex="26" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <a href="#" class="btn btn-color-violet btn-animate btn-add btn-add-income">
+                                        <span class="text">+</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-recap_footer">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clearfix center">
+                            <a href="" class="btn btn-color-violet btn-animate btn-start animated fadeIn "
+                               id="btn-go_to_simulation"
+                               data-template="pages.home.a.button_start.link"
+                               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#loader">
+                                <span class="text" data-template="global.recap"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END class=container-->
+    </div>
+
+</div>

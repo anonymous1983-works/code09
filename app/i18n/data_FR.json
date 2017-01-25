@@ -1,21 +1,205 @@
 {
-  "icons" : {
-    "plus" : "assets/icon-plus.png",
-    "info" : "assets/icon-info.png",
-    "multiply" : "assets/icon-phone.png",
-    "divide" : "assets/icon-phone.png",
-    "phone" : "assets/icon-phone.png",
-    "arrow" : "assets/icon-arrow.png",
-    "arrowDown" : "assets/arrow-down.png",
-    "house" : "assets/icon-house.png",
-    "health" : "assets/icon-health.png",
-    "fun" : "assets/icon-fun.png",
-    "family" : "assets/icon-family.png",
-    "graphHealth" : "assets/graph-health.png",
-    "graphEvolution" : "assets/graph-evolution.png",
-    "back" : "assets/icon-arrow.png"
+  "select": {
+    "personal": {
+      "gender": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "mme",
+          "label": "une femme"
+        },
+        {
+          "value": "mr",
+          "label": "un homme"
+        }
+      ],
+      "county": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "51",
+          "label": "Alsace Champagne"
+        },
+        {
+          "value": "19",
+          "label": "Aquitaine Limousin"
+        },
+        {
+          "value": "15",
+          "label": "Aquitaine Rhone Alpes"
+        },
+        {
+          "value": "21",
+          "label": "Bourgogne Franche Comté"
+        },
+        {
+          "value": "22",
+          "label": "Bretagne"
+        },
+        {
+          "value": "28",
+          "label": "Centre Val de Loire"
+        },
+        {
+          "value": "2A",
+          "label": "Corse"
+        },
+        {
+          "value": "75",
+          "label": "Ile de France"
+        }
+      ],
+      "owner": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "landlord",
+          "label": "proprietaire"
+        },
+        {
+          "value": "tenant",
+          "label": "locataire"
+        }
+      ],
+      "maritalStatus": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "couple",
+          "label": "en couple"
+        },
+        {
+          "value": "single",
+          "label": "célibataire"
+        }
+      ]
+    },
+    "professional": {
+      "status": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "cadre",
+          "label": "Cadre"
+        },
+        {
+          "value": "employe",
+          "label": "Employé"
+        },
+        {
+          "value": "fonctionnaire",
+          "label": "Fonctionnaire"
+        },
+        {
+          "value": "profession-liberale",
+          "label": "Profession libérale"
+        }
+      ],
+      "evolution": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "1",
+          "label": "stable 1% / an"
+        },
+        {
+          "value": "2",
+          "label": "modérée 2% / an"
+        },
+        {
+          "value": "5",
+          "label": "dynamique 5% / an"
+        }
+      ]
+    },
+    "hobbies": [
+      {
+        "label": "",
+        "value": "",
+        "description": "€/mois.",
+        "sublabel": ""
+      },
+      {
+        "label": "Globe-trotter",
+        "value": "globetrotter",
+        "sublabel": "Escapades...",
+        "description": "€/mois à mes escapades.",
+        "src": "../assets/${type}-depenses_globetrotter.png"
+      },
+      {
+        "label": "Mode",
+        "value": "fashion",
+        "sublabel": "Tendance...",
+        "description": "€/mois à tout ce qui est tendance.",
+        "src": "../assets/${type}-depenses_fashion.png"
+      },
+      {
+        "label": "Musique",
+        "value": "music",
+        "sublabel": "Vibrer...",
+        "description": "€/mois à vibrer à tous les rythmes.",
+        "src": "../assets/${type}-depenses_music.png"
+      },
+      {
+        "label": "Geek",
+        "value": "geek",
+        "sublabel": "Tester...",
+        "description": "€/mois à tester tous les nouveaux devices.",
+        "src": "../assets/${type}-depenses_device.png"
+      },
+      {
+        "label": "Sport",
+        "value": "sport",
+        "sublabel": "Adrénaline...",
+        "description": "€/mois à mon adrénaline et à garder la forme.",
+        "src": "../assets/${type}-depenses_sport.png"
+      },
+      {
+        "label": "Art",
+        "value": "art",
+        "sublabel": "À gogo...",
+        "description": "€/mois à l’art à gogo.",
+        "src": "../assets/${type}-depenses_art.png"
+      },
+      {
+        "label": "Autre",
+        "value": "other",
+        "sublabel": " ",
+        "description": "€/mois.",
+        "src": "../assets/${type}-depenses_other.png"
+      }
+    ]
   },
-  "popin" : {
+  "icons": {
+    "plus": "../assets/icon-plus.png",
+    "info": "../assets/icon-info.png",
+    "multiply": "../assets/icon-phone.png",
+    "divide": "../assets/icon-phone.png",
+    "phone": "../assets/icon-phone.png",
+    "arrow": "../assets/icon-arrow.png",
+    "arrowDown": "../assets/arrow-down.png",
+    "house": "../assets/icon-depenses_house.png",
+    "health": "../assets/icon-depenses_health.png",
+    "fun": "../assets/icon-depenses_globetrotter.png",
+    "family": "../assets/icon-depenses_family.png",
+    "graphHealth": "../assets/graph-health.png",
+    "graphEstimate": "../assets/graph-estimate.png",
+    "graphEvolution": "../assets/graph-evolution.png",
+    "back": "../assets/icon-arrow.png"
+  },
+  "popin": {
     "profile": {
       "text1": "Le simulateur d'Axa prend en compte différents critères pour estimer votre retraite.<br/><br/>",
       "text2": "Les critères « légaux » mais aussi des projections qui varient en fonction de certains facteurs, comme l'augmentation dans le temps, du coût de la santé ou l'inflation ou encore l'évolution des salaires.<br/><br/>",
@@ -25,7 +209,7 @@
   },
   "header": {
     "brand": {
-      "title": "Préparer <strong>votre retraire</strong>",
+      "title": "Préparer <strong>votre retraite</strong>",
       "link": "/"
     },
     "navbar": {
@@ -53,11 +237,84 @@
       }
     }
   },
-  "global" : {
-    "next" : "suite",
-    "back" : "retour",
-    "backLink" : "javascript:void(0);",
-    "recap" : "obtenir mon bilan personnalisé"
+  "popup_contact": {
+    "close": "fermer",
+    "title": "Contacter un conseiller",
+    "body": {
+      "text": "Afin d’être rappelé par l’un de nos conseillers, veuillez saisir les informations suivantes",
+      "form": {
+        "row1": {
+          "label": "Nom"
+        },
+        "row2": {
+          "label": "N° téléphone"
+        },
+        "row3": {
+          "label": "Date"
+        },
+        "row4": {
+          "label": "Tranche horaire"
+        },
+        "btnSubmit": "Valider"
+      }
+    },
+    "success": "Votre message a bien été envoyé",
+    "error": "Error! votre message n'a pas été envoyé. veuillez réessayer plus tard."
+  },
+  "popup_send_balance_sheet": {
+    "close": "fermer",
+    "title": "Recevoir votre bilan",
+    "body": {
+      "text": "Veuillez saisir votre adresse e-mail pour recevoir votre bilan",
+      "form": {
+        "row1": {
+          "label": "E-mail",
+          "default_val": ""
+        },
+        "btnSubmit": "Envoyer",
+        "btnCopyClipboard": "Copier le lien"
+      }
+    },
+    "success": "Votre demande a bien été traité",
+    "error": "Error! service temporairement indisponible veuillez réessayer ultérieurement.",
+    "available": "Votre bilan personnalisé peut être consulté depuis ce lien :"
+  },
+  "global": {
+    "next": "suite",
+    "back": "retour",
+    "backLink": "javascript:void(0);",
+    "recap": "obtenir mon bilan personnalisé",
+    "currency": "€",
+    "validator": {
+      "msg_required": "Ce champ est requis.",
+      "msg_email": "Veuillez saisir une adresse mail valide.",
+      "msg_url": "Veuillez saisir une URL valide.",
+      "msg_creditcard": "Veuillez saisir un numéro de carte de crédit valide.",
+      "msg_date": "Veuillez saisir une date valide.",
+      "msg_datetime": "Veuillez saisir une date/heure valide.(aaaa-mm-jjThh:mm:ssZ)",
+      "msg_datetime_local": "Veuillez saisir une date/heure locale valide.(aaaa-mm-jjThh:mm:ss)",
+      "msg_time": "Veuillez saisir une heure valide.",
+      "msg_alphabetic": "Veuillez ne saisir que des lettres.",
+      "msg_alphanumeric": "Veuillez ne saisir que des lettres, souligné et chiffres.",
+      "msg_color": "Veuillez saisir une couleur valide. (nommée, hexadecimale ou rvb)",
+      "msg_month": "Veuillez saisir une année et un mois. (ex.: 1974-03)",
+      "msg_week": "Veuillez saisir une année et une semaine. (ex.: 1974-W43)",
+      "msg_number": "Veuillez saisir un nombre.(ex.: 12,-12.5,-1.3e-2)",
+      "msg_integer": "Veuillez saisir un nombre sans decimales.",
+      "msg_zipcode": "Veuillez saisir un code postal valide.",
+      "msg_minlength": "Veuillez saisir au moins {0} caractères.",
+      "msg_maxlength": "Veuillez ne pas saisir plus de {0} caractères.",
+      "msg_min": "Veuillez saisir une valeur supérieure ou égale à {0}.",
+      "msg_max": "Veuillez saisir une valeur inférieure ou égale à {0}.",
+      "msg_mustmatch": "Veuillez resaisir la même valeur.",
+      "msg_captcha": "Votre réponse ne correspond pas au texte de l'image. Réesayez.",
+      "msg_personnummer": "Veuillez saisir un personnummer valide. (aaaammjj-aaaa)",
+      "msg_organisationsnummer": "Veuillez saisir un organisationsnummer valide. (xxyyzz-aaaa)",
+      "msg_ipv4": "Veuillez saisir une adresse IP valide (version 4).",
+      "msg_ipv6": "Veuillez saisir une adresse IP valide (version 6).",
+      "msg_tel": "Veuillez saisir un numéro de téléphone valide.",
+      "msg_remote": "Veuillez vérifier ce champ."
+    }
   },
   "pages": {
     "home": {
@@ -75,8 +332,18 @@
     },
     "profile": {
       "title": "Mon profil,<br/>en quelques clics",
+      "popup": {
+        "theme": "theme-profile",
+        "title": "title popup profile",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>Mauris et interdum enim. Cras euismod est lacus, id sagittis ex mollis ac. Nam tempor, felis sollicitudin euismod cursus, orci ipsum scelerisque enim, vitae pretium dolor mauris eu metus. Duis mollis consectetur fermentum. Sed urna nunc, tristique at dolor vitae, tempor tempus justo. <br/><br/>Ut sed sem magna. Quisque interdum venenatis lacus, at euismod nisl semper eu. Aenean consectetur mattis lobortis. Praesent ut sapien ultricies, venenatis diam eget, hendrerit tellus.",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
       "sections": {
-        "a": {
+        "personal": {
           "text1": "Ma situation personnelle",
           "text2": "J'ai",
           "text2_2": "ans mais je ne fais pas mon âge.",
@@ -89,174 +356,351 @@
           "text5_3": "enfant(s)",
           "text5_4": "âgés de",
           "text5_5": "ans."
-
+        },
+        "professional": {
+          "text1": "Ma situation professionnelle",
+          "text2": "Cela fait",
+          "text2_2": "années que je travaille. Je suis",
+          "text3": "Mon salaire net mensuel est de",
+          "text3_2": "euros.",
+          "text4": "Je prévois une évolution de salaire"
+        },
+        "expense": {
+          "text1": "La dépense qui me ressemble",
+          "text2": "Je suis",
+          "text3": "et je consacre",
+          "text3_2": "€/mois à mon adrénaline et à garder la forme."
+        }
+      }
+    },
+    "recap": {
+      "title": "Estimez la répartition<br/>de votre budget",
+      "popup": {
+        "theme": "theme-recap",
+        "title": "title popup recap",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>Mauris et interdum enim. Cras euismod est lacus, id sagittis ex mollis ac. Nam tempor, felis sollicitudin euismod cursus, orci ipsum scelerisque enim, vitae pretium dolor mauris eu metus. Duis mollis consectetur fermentum. Sed urna nunc, tristique at dolor vitae, tempor tempus justo. <br/><br/>Ut sed sem magna. Quisque interdum venenatis lacus, at euismod nisl semper eu. Aenean consectetur mattis lobortis. Praesent ut sapien ultricies, venenatis diam eget, hendrerit tellus.",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
+      "economy": {
+        "title": "économie",
+        "error": {
+          "message": "Vos dépenses ne peuvent pas dépasser vos revenus. Merci d'ajouter vos revenus, ou de réduire vos dépenses."
+        }
+      },
+      "incoming": {
+        "title": "mes revenus/mois",
+        "salary": {
+          "main": "Mon dernier salaire",
+          "secondary": "Salaire net mensuel"
+        },
+        "other": {
+          "main": "autres revenus",
+          "secondary": "rentes, indemnités..."
+        }
+      },
+      "expense": {
+        "title": "mes dépenses/mois",
+        "hobby": {
+          "main": "Loisirs",
+          "secondary": "Escapades..."
+        },
+        "home": {
+          "main": "Maison",
+          "secondary": "charges, loyer, taxes...",
+          "icon": "../assets/icon-depenses_house.png"
+        },
+        "family": {
+          "main": "Famille",
+          "secondary": "alimentation, études...",
+          "icon": "../assets/icon-depenses_family.png"
+        },
+        "health": {
+          "main": "Santé",
+          "secondary": "médecin, mutuelle...",
+          "icon": "../assets/icon-depenses_health.png"
+        },
+        "other": {
+          "main": "Autres",
+          "secondary": "Autres dépenses...",
+          "icon": "../assets/icon-depenses_other.png"
+        }
+      }
+    },
+    "results": {
+      "title": "Votre bilan retraite<br/>personnalisé",
+      "popup": {
+        "theme": "theme-results",
+        "title": "",
+        "text": "L’âge légal de départ à la retraite  dépend de votre année de naissance. Dans le cadre de la réforme des retraites, il passe progressivement de 60 à 67 ans.<br><br>Vous êtes né en 19xx, vous pouvez donc partir à l’âge de 67 ans, à condition d’avoir travaillé 172 trimestres.<br><br>Vous avez également la possibilité de partir plus tôt, ou plus tard, ce qui changera votre pension une fois à la retraite. ",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
+      "loader": {
+        "content": "",
+        "style": "background-image: url(../assets/fr/loader-chart.gif);"
+      },
+      "monthlyPrice": "€/mois",
+      "a": {
+        "button_next": {
+          "link": "#next",
+          "text": "Le détail de mon bilan"
+        }
+      },
+      "sections": {
+        "a": {
+          "text1": "Je souhaite partir à la retraite à",
+          "text1_1": "ans",
+          "text1_2": "et mes dépenses estimées seront de",
+          "text2": "Le montant de ma pension retraite sera de",
+          "text3": "J'aurai un <strong>manque à gagner</strong> de",
+          "text4": "Pour maintenir mon <strong>niveau de vie actuel</strong>",
+          "text4_1": "nous vous proposons d'épargner dès à présent",
+          "text4_2": "Vous pourrez économiser <br />jusqu'à",
+          "text4_3": "d'impots/an !",
+          "btnrestart": "Recommencer la simulation",
+          "btnsendmail": "Recevoir mon bilan personnalisé",
+          "button_contact": {
+            "link": "http://google.com?q=contact",
+            "text": "Contacter un conseiller"
+          }
+        },
+        "b": {
+          "title1": "&Eacute;volution de vos revenus <br />et de vos dépenses/mois",
+          "title2": "Votre dernier salaire",
+          "text2_1": "Nous estimons le montant de votre dernier salaire<br />au moment de votre départ à la retraite de :",
+          "text2_2": "Changer le montant de mon dernier salaire",
+          "text2_3": "(en fin de carrière)",
+          "title3": "Nombre d'années vous restant à travailler",
+          "text3_1": "Vous êtes nés en",
+          "text3_2": "il vous faut donc côtiser",
+          "text3_3a": "trimestres",
+          "text3_3b": "trimestre",
+          "text3_4": "soit au minimum",
+          "text3_5a": "<strong>années</strong>",
+          "text3_5b": "<strong>année</strong>",
+          "text3_6": "pour bénéficier d'une retraire à taux plein.",
+          "title4": "Répartition de vos dépenses/mois<br /><small>(estimation)</small>",
+          "btncontact": "Contacter un conseiller",
+          "btnrestart": "Recommencer la simulation",
+          "btnsendmail": "Recevoir mon bilan personnalisé",
+          "graphTitle": "Aujourd'hui",
+          "graph_estimate": {
+            "years": "ans",
+            "current": "votre âge <br>actuel",
+            "retirement": "votre âge de départ<br> à la retaite",
+            "legend": {
+              "income": "revenus",
+              "expense": "dépenses"
+            }
+          }
+        }
+      },
+      "chart": {
+        "popup": {
+          "home": {
+            "theme": "theme-chart-home",
+            "icon": "../assets/icon-depenses_house.png",
+            "title": "MAISON",
+            "text": "En début de carrière, on est souvent locataire de surface peut coûteuse. En fin de carrière, même si on est devenu propriétaire, les coûts associés au logement demeurent importants (taxes foncières, travaux pour maintenir l'état du logement, renouvellement de l'électroménager, achat de meubles,...)."
+          },
+          "family": {
+            "theme": "theme-chart-family",
+            "icon": "../assets/icon-depenses_family.png",
+            "title": "FAMILLE",
+            "text": "Le coût de la scolarité des enfants augmente avec le niveau d’études, pour atteindre des sommes importantes en cas d’études prolongées (ex : écoles de commerce ou d’ingénieur privées...). <br> Par ailleurs, les parents demeurent un soutien financier plus longtemps que ce soit au moment des premiers investissements conséquents de leurs enfants ou pour leurs petits-enfants."
+          },
+          "health": {
+            "theme": "theme-chart-health",
+            "icon": "../assets/icon-depenses_health.png",
+            "title": "SANTÉ",
+            "text": "Plus l’âge augmente et plus les dépenses de santé ont tendance à suivre une courbe exponentielle du fait des traitements, médicaments et du besoin d’accompagnement."
+          },
+          "hobby": {
+            "theme": "theme-chart-hobby",
+            "icon": "../assets/icon-depenses_globetrotter.png",
+            "title": "LOISIRS",
+            "text": "Une fois à la retraite, on a plus de temps pour profiter de la vie. Vacances, sorties, visites des petits enfants... Ce poste de dépense augmente souvent."
+          },
+          "other": {
+            "theme": "theme-chart-other",
+            "icon": "../assets/icon-depenses_other.png",
+            "title": "AUTRES",
+            "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. "
+          }
         }
       }
     }
   },
-  "profile" : {
-    "title" : "Mon profil,<br/>en quelques clics",
-    "perso" : "Ma situation personnelle",
-    "pro" : "Ma situation professionnelle",
-    "year" : "Je suis né(e) le mais je ne fais pas mon âge.",
-    "gender" : "Je suis bien dans sa tête et dans son corps",
-    "situation" : "Je suis et j'ai enfant âgé de ans",
-    "locale" : "J'habite dans la région . Je suis",
-    "experience" : "Cela fait ans que je travaille. Je suis",
-    "salary" : "Mon dernier salaire net mensuel est de ",
-    "evolution" : "je prévois une évolution de salaire",
-    "hobby" : "La passion qui me ressemble le plus",
-    "activity" : "Je suis et je consacre &euro;/mois à mes escapades."
+  "profile": {
+    "title": "Mon profil,<br/>en quelques clics",
+    "perso": "Ma situation personnelle",
+    "pro": "Ma situation professionnelle",
+    "year": "Je suis né(e) le mais je ne fais pas mon âge.",
+    "gender": "Je suis bien dans sa tête et dans son corps",
+    "situation": "Je suis et j'ai enfant âgé de ans",
+    "locale": "J'habite dans la région . Je suis",
+    "experience": "Cela fait ans que je travaille. Je suis",
+    "salary": "Mon dernier salaire net mensuel est de ",
+    "evolution": "je prévois une évolution de salaire",
+    "hobby": "La passion qui me ressemble le plus",
+    "activity": "Je suis et je consacre &euro;/mois à mes escapades."
   },
-  "formula" : {
-    "var1" : "Salaire annuel moyen*",
-    "var2" : "Taux**",
-    "var3" : "Durée d'assurance cotisée (d)***",
-    "var4" : "Durée d'assurance maximum prise en compte au régime général (D)****"
+  "formula": {
+    "var1": "Salaire annuel moyen*",
+    "var2": "Taux**",
+    "var3": "Durée d'assurance cotisée (d)***",
+    "var4": "Durée d'assurance maximum prise en compte au régime général (D)****"
   },
-  "legend" : {
-    "var1" : "* Le salaire annuel moyen = moyenne des 25 meilleures années plafonnées à 38 K€.",
-    "var2" : "** Le taux varie de 25% à 50 %. A 50 %, il est appelé le \" taux plein \".",
-    "var3" : "*** La durée de cotisation s'exprime en trimestre. Il est possible de valider jusqu'à 4 trimestres par année.",
-    "var4" : "**** d/D = 1 au maximum avec D qui est évolutif"
+  "legend": {
+    "var1": "* Le salaire annuel moyen = moyenne des 25 meilleures années plafonnées à 38 K€.",
+    "var2": "** Le taux varie de 25% à 50 %. A 50 %, il est appelé le \" taux plein \".",
+    "var3": "*** La durée de cotisation s'exprime en trimestre. Il est possible de valider jusqu'à 4 trimestres par année.",
+    "var4": "**** d/D = 1 au maximum avec D qui est évolutif"
   },
-  "recap" : {
-    "title" : "Estimez la répartition de votre bugdet",
-    "renvenubymonth" : "mes revenus/mois",
-    "expensebymonth" : "mes dépenses/mois",
-    "lastSalary" : {
-      "main" : "Mon dernier salaire",
-      "secondary" : "Salaire net mensuel"
+  "recap": {
+    "title": "Estimez la répartition de votre bugdet",
+    "renvenubymonth": "mes revenus/mois",
+    "expensebymonth": "mes dépenses/mois",
+    "lastSalary": {
+      "main": "Mon dernier salaire",
+      "secondary": "Salaire net mensuel"
     },
-    "otherIncoming" : {
-      "main" : "autres revenus",
-      "secondary" : "rentes, indemnités..."
+    "otherIncoming": {
+      "main": "autres revenus",
+      "secondary": "rentes, indemnités..."
     },
-    "home" : {
-      "main" : "Maison",
-      "secondary" : "charges, loyer, taxes..."
+    "home": {
+      "main": "Maison",
+      "secondary": "charges, loyer, taxes..."
     },
-    "family" : {
-      "main" : "Famille",
-      "secondary" : "alimentation,études..."
+    "family": {
+      "main": "Famille",
+      "secondary": "alimentation,études..."
     },
-    "health" : {
-      "main" : "santé",
-      "secondary" : "médecin, mutuelle..."
+    "health": {
+      "main": "santé",
+      "secondary": "médecin, mutuelle..."
     },
-    "other" : {
-      "main" : "Autres",
-      "secondary" : "wazzzaaa"
+    "other": {
+      "main": "Autres",
+      "secondary": "wazzzaaa"
     }
   },
-  "start" : {
-    "title" : "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
+  "start": {
+    "title": "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
     "button_start": "commencer la simulation",
-    "title_cta" : "Pourquoi préparer sa retraite dès maintenant ?",
-    "bulb" : {
-      "title" : "Prenons un exemple !",
-      "description" : "Delphine est âgée de 34 ans.<br/>Elle vit à Bordeaux et est locataire. Elle est mère de deux enfants âgés de 5 et 8 ans<br/>dont elle a la garde, à la suite de son divorce."
+    "title_cta": "Pourquoi préparer sa retraite dès maintenant ?",
+    "bulb": {
+      "title": "Prenons un exemple !",
+      "description": "Delphine est âgée de 34 ans.<br/>Elle vit à Bordeaux et est locataire. Elle est mère de deux enfants âgés de 5 et 8 ans<br/>dont elle a la garde, à la suite de son divorce."
     },
-    "exemple" : {
-      "part1" : {
+    "exemple": {
+      "part1": {
         "title": "Aujourd'hui",
-        "left" : {
-          "title" : "Son budget",
-          "description" : "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
-          "description-2" : "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
+        "left": {
+          "title": "Son budget",
+          "description": "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
+          "description-2": "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
         },
-        "right" : {
-          "title" : "Ses dépenses actuelles :",
-          "listItems" : {
-            "item1" : {
-              "img" : "assets/icon-house.png",
-              "amount" : "1 800 €",
-              "title" : "pour la maison",
-              "description" : "(loyer, taxes, charges...)"
+        "right": {
+          "title": "Ses dépenses actuelles :",
+          "listItems": {
+            "item1": {
+              "img": "assets/icon-house.png",
+              "amount": "1 225 €",
+              "title": "pour la maison",
+              "description": "(loyer, taxes, charges...)"
             },
-            "item2" : {
-              "img" : "assets/icon-health.png",
-              "amount" : "175 €",
-              "title" : "pour la santé",
-              "description" : "(médecine, mutuelles...) "
+            "item2": {
+              "img": "assets/icon-health.png",
+              "amount": "175 €",
+              "title": "pour la santé",
+              "description": "(médecine, mutuelles...) "
             },
-            "item3" : {
-              "img" : "assets/icon-fun.png",
-              "amount" : "875 €",
-              "title" : "pour la famille",
-              "description" : "et milou..."
+            "item3": {
+              "img": "assets/icon-fun.png",
+              "amount": "875 €",
+              "title": "pour la famille",
+              "description": "et milou..."
             },
-            "item4" : {
-              "img" : "assets/icon-family.png",
-              "amount" : "865 €",
-              "title" : "pour les loisirs",
-              "description" : "(voyage, sport...)"
+            "item4": {
+              "img": "assets/icon-family.png",
+              "amount": "865 €",
+              "title": "pour les loisirs",
+              "description": "(voyage, sport...)"
             }
           }
         }
       },
-      "part2" : {
-        "title": "Aujourd'hui",
-        "left" : {
-          "title" : "Son budget",
-          "description" : "Elle exerce la fonction de Responsable de <br/>communication avec un statut de cadre et son revenu mensuel s'élève à <b>2 500 €/mois</b>.<bt/>Elle n'a pas de plan de carrière défini.",
-          "description-2" : "<br/>En dehors de ses enfants, Delphine a deux passions <br/>dans la vie : le parapente auquel elle consacre <br/>un budget d'environ <b>500 €/an</b> et Milou, le chien <br/>de la famille auquel est dévolu <b>60 €/mois</b>."
+      "part2": {
+        "title": "Demain, à la retraite",
+        "left": {
+          "title": "",
+          "description": "Delphine partira à la retraite en <strong>2049</strong> à <strong>67 ans</strong>. Son salaire estimé en fin de carrière sera de <strong>4&nbsp;500&nbsp;€</strong> mais elle ne touchera que <strong>2&nbsp;700&nbsp;€</strong> de pension de retraite.",
+          "description-2": "<br/>Son manque à gagner sera de <strong>1&nbsp;675&nbsp;€</strong> si elle souhaite maintenir le niveau de vie qu’elle a aujourd’hui, une fois ses enfants partis. <br /><br />En épargnant dès à présent <strong>330&nbsp;€</strong> tous les mois, avec la possibilité de défiscaliser <strong>345&nbsp;€</strong> chaque année. Delphine n’aura pas besoin de faire de choix de vie."
         },
-        "right" : {
-          "title" : "Ses dépenses actuelles :",
-          "listItems" : {
-            "item1" : {
-              "amount" : "1 800 €",
-              "title" : "pour la maison",
-              "description" : "(loyer, taxes, charges...)"
+        "right": {
+          "title": "Ses dépenses seront ainsi réparties* :",
+          "listItems": {
+            "item1": {
+              "amount": "1 800 €",
+              "title": "pour la maison",
+              "description": "(loyer, taxes, charges...)"
             },
-            "item2" : {
-              "amount" : "175 €",
-              "title" : "pour la santé",
-              "description" : "(médecine, mutuelles...) "
+            "item2": {
+              "amount": "675 €",
+              "title": "pour la santé",
+              "description": "(médecine, mutuelles...) "
             },
-            "item3" : {
-              "amount" : "875 €",
-              "title" : "pour la famille",
-              "description" : "et milou..."
+            "item3": {
+              "amount": "1000 €",
+              "title": "pour la famille",
+              "description": "et milou..."
             },
-            "item4" : {
-              "amount" : "865 €",
-              "title" : "pour les loisirs",
-              "description" : "(voyage, sport...)"
+            "item4": {
+              "amount": "900 €",
+              "title": "pour les loisirs",
+              "description": "(voyage, sport...)"
             }
           }
         }
       },
-      "disclaimer" : "* Sur la base des informations fournies et des projections de salaire, dépenses et inflation.",
-      "repartiion" : {
-        "left" :{
-          "title" : "L'évolution de ses dépenses santé",
-          "subTitle" : "(par âge) **"
+      "disclaimer": "* Sur la base des informations fournies et des projections de salaire, dépenses et inflation.",
+      "repartiion": {
+        "left": {
+          "title": "L'évolution de ses dépenses santé",
+          "subTitle": "(par âge) **"
         },
-        "right" :{
-          "title" : "L’évolution de ses revenus",
-          "subTitle" : ""
+        "right": {
+          "title": "L’évolution de ses revenus",
+          "subTitle": ""
         }
       },
-      "explantion" : {
-        "title" : "Quels sont les critères pris en compte dans la simulation ?",
-        "headline" : "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
-        "text" : "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
-        "text1" : "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
-        "text2" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
+      "explantion": {
+        "title": "Quels sont les critères pris en compte dans la simulation ?",
+        "headline": "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
+        "text": "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
+        "text1": "Connaitre l’âge actuel de vos enfants nous permet, par exemple, de savoir s’ils seront toujours à votre charge, en tant qu’étudiants, au moment de la retraite.",
+        "text2": "<br/>Mieux vous connaître en intégrant également dans nos calculs d’autres critères plus personnels, nous conduit à mieux définir votre profil et à affiner notre simulation."
       },
-      "explantion2" : {
-        "title" : "Quels sont les critères pris en compte dans la simulation ?",
-        "subTitle" : "Quels sont les critères pris en compte dans la simulation ?",
-        "text" : "Le simulateur d'Axa prend en compte différents<br/>critères pour estimer votre retraite.",
-        "text1" : "Il y a les critères \" légaux \" mais aussi des projections<br/>qui varient en fonction de certains facteurs comme <br/>l'augmentation, dans le temps, du coût de la santé <br/>ou l'inflation ou encore l'évolution des salaires.",
-        "text2" : "Mieux vous connaître en intégrant également dans<br/>nos calculs d'autres critères plus personnels nous aide<br/>à mieux définir votre profil et à affiner notre simulation.",
-        "text3" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text4" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text5" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text6" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite.",
-        "text7" : "Connaître l'âge actuel de vos enfants nous permet,<br/>par exemple, de savoir s'ils seront toujours à votre charge, en tant qu'étudiants, au moment de la retraite."
+      "explantion2": {
+        "title": "Comment est calculée la retraite ?",
+        "subTitle": "Pour bénéficier d’une retraite du régime général de la sécurité sociale, il faut avoir cotisé au moins un trimestre (et avoir touché un salaire minimum de 1 452 €), au régime général des salariés.",
+        "text": "L’âge légal de départ à la retraite est de <strong>62 ans</strong>.<br /><br /> ",
+        "text1": "La retraite est alors calculée au <strong>taux plein</strong> si le nombre de trimestres requis est atteint. Si vous êtes né(e) en 1956, il faut <strong>166 trimestres</strong> pour avoir le <strong>taux plein</strong>. Si vous êtes né(e) en 1973, il faut <strong>172 trimestres</strong>.<br /> <br />",
+        "text2": "Des surcotes peuvent s’appliquer ainsi que des <strong>majorations</strong>. Par exemple, chaque année travaillée au-dessus de <strong>60 ans permet une surcote de 5%</strong>.<br /> <br />",
+        "text3": "Le nombre d’enfants élevés (qu’ils soient les vôtres, adoptés ou ceux de votre conjoint) apportera une majoration de trimestres :<br /><strong>8 trimestres</strong> par enfant né jusqu’au 31/12/2009. Pour chaque enfant né après le 31/12/2009, <strong>4 trimestres pour la mère et 4 à répartir au choix</strong> entre le père et la mère (à faire dans l’année des 4 ans).<br /> <br />",
+        "text4": "Les complémentaires peuvent aussi avoir un effet très important sur les retraites pour avoir le taux plein.<br /><br />",
+        "text5": "<strong>Il existe en réalité beaucoup de cas particuliers. D’où l’importance de bien se faire conseiller pour obtenir une estimation précise et optimiser sa retraite.</strong><br /><br />",
+        "text6": "Vous pouvez toutefois choisir de continuer à travailler. Le taux plein est garanti à 67 ans.<br /><br />",
+        "text7": "La retraite dure en moyenne 28 ans pour les femmes et 24 ans pour les hommes."
       }
     }
   }

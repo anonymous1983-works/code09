@@ -31,6 +31,7 @@ $breakpoint-large: 60em; // 960px
 .row {
   width: 100%;
   position: static;
+  @include clearfix;
 }
 
 .row.relative {

@@ -27,6 +27,11 @@ body {
   .axa-page.bg-turquoise {
     background-color: $turquoise;
   }
+  &.bg-light-turquoise,
+  .bg-light-turquoise,
+  .axa-page.bg-light-turquoise {
+    background-color: #3dbdc6;
+  }
   &.bg-orange,
   .bg-orange,
   .axa-page.bg-orange {
@@ -38,4 +43,51 @@ body {
     background-color: $violet;
   }
 
+  &.bg-violet-loader,
+  .bg-violet-loader,
+  .axa-page.bg-violet-loader {
+    background-color: $violet-loader;
+  }
+
+  .home {
+    &.text-color {
+      color: $red;
+    }
+    &.bg-color {
+      background: $red;
+    }
+  }
+  .family {
+    &.text-color {
+      color: $dark_blue;
+    }
+    &.bg-color {
+      background: $dark_blue;
+    }
+  }
+  .hobby {
+    &.text-color {
+      color: $light_blue;
+    }
+    &.bg-color {
+      background: $light_blue;
+    }
+  }
+  .health {
+    &.text-color {
+      color: $yellow;
+    }
+    &.bg-color {
+      background: $yellow;
+    }
+  }
+  .other {
+    &.text-color {
+      color: $gray;
+    }
+    &.bg-color {
+      background: $gray;
+    }
+  }
 }
+

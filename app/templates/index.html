@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <!-- @@include= ./extends/head.tpl.html {} -->
+</head>
+<body class="">
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- @@include= ./extends/header.tpl.html {} -->
+
+<div class="axa-main" id="fullpage">
+
+    <!-- @@include= ./pages/page-home.tpl.html {"idPage": "page-home", "sectionPage":"home", "classPage": "page-home page-home-a", "bgPage": "bg-turquoise"} -->
+
+    <!-- @@include= ./pages/page-profile.tpl.html {"idPage": "page-profile", "sectionPage":"profile", "classPage": "page-profile", "bgPage": "bg-orange"} -->
+
+    <!-- @@include= ./pages/page-recap.tpl.html {"idPage": "page-recap", "sectionPage":"recap", "classPage": "page-recap", "bgPage": "bg-violet"} -->
+
+    <!-- @@include= ./pages/page-loader.tpl.html {"idPage": "page-loader", "sectionPage":"loader", "classPage": "page-loader", "bgPage": "bg-violet-loader"} -->
+
+    <!-- @@include= ./pages/page-results.tpl.html {"idPage": "page-results", "sectionPage":"results", "classPage": "page-results", "bgPage": "bg-light-turquoise"} -->
+
+</div>
+<div class="axa-loader start" style="display:block">
+    <div>
+        <loader-svg>
+            <svg class="spinner" width="80px" height="80px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                        r="30"></circle>
+            </svg>
+        </loader-svg>
+    </div>
+</div>
+<div class="axa-loader chart">
+    <div>
+        <div class="loader-chart">
+        </div>
+    </div>
+</div>
+
+<!-- @@include= ./extends/footer.tpl.html {} -->
+</body>
+</html>

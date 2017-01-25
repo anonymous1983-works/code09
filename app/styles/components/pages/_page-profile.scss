@@ -1,3 +1,124 @@
 .page-profile {
 
+  .btn-slide-back {
+    position: absolute;
+    z-index: 20;
+    @include rem-fallback("top", 180);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 8px 0 0;
+    @include rem-fallback("padding-left", 38);
+    font-weight: 800;
+    font-family: "ITC Franklin Gothic Med", Helvetica, Arial, sans-serif;
+    display: none;
+
+    .text {
+      @include rem-fallback("font-size", 12);
+      @include rem-fallback("line-height", 26);
+      @include rem-fallback("padding-top", 4);
+      display: inline-block;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      @include rem-fallback("width", 35);
+      @include rem-fallback("height", 30);
+      background: url("../assets/icon-arrow-left.svg") 0 50% no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include transition(left .1s ease-out);
+
+    }
+
+    &:hover {
+      &:after {
+        left: -10px;
+      }
+    }
+
+  }
+
+  &.show-back {
+    .btn-slide-back {
+      display: block;
+    }
+  }
+
+  .header-title {
+    @include clearfix;
+    position: relative;
+
+    .title {
+      @include title-style-1;
+      float: left;
+    }
+    .title-picture {
+      float: left;
+      @include rem-fallback("margin-top", -77);
+      @include rem-fallback("margin-left", 16);
+      .item {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .slide {
+    .axa-form {
+      display: none;
+    }
+    &.active {
+      .axa-form {
+        display: block;
+      }
+    }
+  }
+
+  .dynamicProfileMaritalStatus {
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+  }
+
+  .dynamicNumberOfChildren {
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+    .old {
+      display: none;
+      &.active {
+        display: inline-block;
+      }
+    }
+  }
+  .next-wrapper-remove-height{
+    margin-bottom: -80px;
+  }
+
+  /*responsive case*/
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .responve-profil-input-top{
+      margin-top: 60px !important;
+    }
+    .responve-profil-input-bottom{
+      margin-bottom: 20px !important;
+    }
+  }
+
+
 }
+
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .responve-profil-input-top{
+      margin-top: 60px !important;
+    }
+    .responve-profil-input-bottom{
+      margin-bottom: 20px !important;
+    }
+  }

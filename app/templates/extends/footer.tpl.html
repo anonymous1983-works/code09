@@ -1,24 +1,48 @@
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
+<script src="/bower_components/es6-promise/es6-promise.min.js"></script>
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/amplify/lib/amplify.min.js"></script>
 <script src="/bower_components/lodash/lodash.js"></script>
 <script src="/bower_components/lodash-deep/lodash-deep.min.js"></script>
 <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="/bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+<script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/bower_components/base-64/base64.js"></script>
+<script src="/bower_components/clipboard/dist/clipboard.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
+<script>
+    if (window.Promise === undefined){
+        window.Promise = window.ES6Promise;
+    }
+</script>
+
 <!-- build:js scripts/main.js -->
-<script src="scripts/components/events.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/utils.js"></script>
+<script src="scripts/lifeplan.js"></script>
 <script src="scripts/settings.js"></script>
+<script src="scripts/mock.js"></script>
+<script src="scripts/components/events.js"></script>
+<script src="scripts/components/inputNumber.js"></script>
 <script src="scripts/components/loader.js"></script>
 <script src="scripts/components/popin.js"></script>
-<script src="scripts/components/datasFiller.js"></script>
-<script src="scripts/components/dataStorage.js"></script>
-<script src="scripts/components/dataLoader.js"></script>
+<script src="scripts/components/templateCache.js"></script>
+<script src="scripts/components/localStorage.js"></script>
 <script src="scripts/components/dataBinder.js"></script>
-<script src="scripts/components/recap.js"></script>
+<script src="scripts/components/dataInclude.js"></script>
+<script src="scripts/components/dataTemplate.js"></script>
+<script src="scripts/components/dataPrint.js"></script>
+<script src="scripts/components/dataLoader.js"></script>
 <script src="scripts/components/fullpage.js"></script>
 <script src="scripts/components/form.js"></script>
+<script src="scripts/components/formRecapAdd.js"></script>
+<script src="scripts/components/quotation.js"></script>
+<script src="scripts/components/estimeBar.js"></script>
+<script src="scripts/components/hobbies.js"></script>
+<script src="scripts/components/chartToday.js"></script>
+<script src="scripts/components/chartRetirement.js"></script>
+<script src="scripts/components/popupContact.js"></script>
+<script src="scripts/components/popupSendBalanceSheet.js"></script>
+<script src="scripts/main.js"></script>
 <!-- endbuild -->

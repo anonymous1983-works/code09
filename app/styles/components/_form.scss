@@ -2,16 +2,25 @@
 .axa-form {
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $white;
+    color: rgba(255, 255, 255, .3);
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: $white;
+    color: rgba(255, 255, 255, .3);
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: $white;
+    color: rgba(255, 255, 255, .3);
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: $white;
+    color: rgba(255, 255, 255, .3);
+  }
+
+  .btn-form-next {
+    display: none;
+    @include rem-fallback("margin-top", 48);
+  }
+  &.form-checked .btn-form-next,
+  &.checked .btn-form-next {
+    display: inline-block;
   }
 
   .form-group {
@@ -49,6 +58,14 @@
       }
     }
 
+    select {
+      &.form-control {
+          option {
+            color: #414141;
+          }
+        }
+    }
+
     &.completed {
       margin-top: 0;
       * {
@@ -69,3 +86,22 @@
   }
 }
 
+.form-control {
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+
+input[type=number]{
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

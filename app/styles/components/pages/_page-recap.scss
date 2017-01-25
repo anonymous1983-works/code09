@@ -1,0 +1,314 @@
+.page-recap {
+
+  .main-title {
+    @include rem-fallback("font-size", 42);
+    @include rem-fallback("line-height", 44);
+    text-align: left;
+    font-weight: 800;
+    font-family: $axa-font-franklin-medium;
+    @include rem-fallback("margin-top", 72);
+    color: $white;
+  }
+  .estimation-expense {
+    position: relative;
+
+    .estimation-indicator {
+      position: absolute;
+      bottom: 45px;
+      border: 1px solid #ffffff;
+      transition: all 1s ease;
+      right: 0%;
+      @include rem-fallback("line-height", 20);
+      //@include rem-fallback("height", 30);
+      display: block;
+      padding: 5px 24px;
+      font-family: "ITC Franklin Gothic Demi", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+
+      .text {
+        text-transform: uppercase;
+        padding-right: 6px;
+      }
+
+      .devise {
+        padding-left: 6px;
+      }
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 13px 12px 0;
+        border-color: transparent #ffffff transparent transparent;
+        position: absolute;
+        bottom: -12px;
+        right: -1px;
+
+      }
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent $violet transparent transparent;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+      }
+
+      &.error {
+        background: #ffffff;
+        color: $red;
+        &:after {
+          border-color: transparent #ffffff transparent transparent;
+        }
+      }
+    }
+
+    .estimation-bar {
+      //background-color: $white-light;
+
+      background: repeating-linear-gradient(-45deg, $white-ultra-light, $white-ultra-light 1px, transparent 2px, transparent 3px);
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      @include rem-fallback("height", 30);
+      position: relative;
+      @include clearfix;
+
+      ul {
+        position: relative;
+        height: inherit;
+        padding: 0;
+        margin: 0;
+        transition: width 1s ease;
+        width: 100%;
+      }
+      .estim {
+        transition: width 1s ease;
+        list-style-type: none;
+        float: left;
+        width: 0%;
+        @include rem-fallback("height", 30);
+        padding: 0;
+        margin: 0;
+        &.other.bg-color {
+          background: #7ebf5c;
+        }
+      }
+    }
+  }
+
+  .page-recap_header {
+    .page-estimation-bar {
+      position: absolute;
+      @include rem-fallback("top", 0);
+      right: 0;
+      z-index: 10;
+      @include rem-fallback("margin-top", 166);
+      width: 50%;
+    }
+  }
+
+  .page-recap_body {
+    @include rem-fallback("padding-top", 240);
+  }
+
+  .page-recap_footer {
+    @include rem-fallback("padding-top", 30);
+    @include rem-fallback("padding-bottom", 30);
+  }
+  .recap-sub_header {
+    padding-bottom: 32px;
+
+    .recap-header-title {
+      text-transform: uppercase;
+      @include rem-fallback("font-size", 15);
+      @include rem-fallback("line-height", 30);
+      @include rem-fallback("letter-spacing", 1);
+      font-family: $axa-font-franklin-demi;
+    }
+
+    .recap-header-total {
+      text-align: center;
+      outline: none;
+      border: 0;
+      @include rem-fallback("font-size", 28);
+      @include rem-fallback("line-height", 28);
+      @include rem-fallback("letter-spacing", 1);
+      font-family: $axa-font-franklin-demi;
+      display: inline-block;
+      font-weight: 700;
+    }
+
+  }
+
+  .recap-form {
+
+    .form-incoming {
+      //padding-right: 5%;
+    }
+    .form-expense {
+      //padding-left: 5%;
+    }
+
+    label {
+
+      input {
+        text-transform: uppercase;
+        background:transparent;
+        border:0;
+        color:white;
+        margin:0;
+        padding:0;
+        @include rem-fallback("font-size", 15);
+        font-family: $axa-font-franklin-medium;
+        width: 100%;
+        border-bottom: 3px solid $white;
+      }
+
+      .update {
+        position: relative;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          display: block;
+          bottom: 5px;
+          left:-32px;
+          background: url(../assets/icon-pencil.png) 2px 50% no-repeat;
+          background-size: cover;
+        }
+      }
+
+    }
+
+    .label-title,
+    .label-sub_title {
+      text-transform: uppercase;
+    }
+
+    .recap-form_row {
+      margin-bottom: 48px;
+
+      &.js-row-template {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+
+      .row-line {
+        @include clearfix;
+        display: table;
+
+        .form-label,
+        .form-amount {
+          width: 60%;
+          display: table-cell;
+          vertical-align: middle;
+          position: relative;
+        }
+        .form-amount {
+          width: 40%;
+        }
+
+        .form-label {
+          padding-right: 32px;
+
+          .form-label_text {
+            float: left;
+          }
+          .form-label_icon {
+            float: right;
+            position: absolute;
+            @include rem-fallback("right", 23);
+            @include rem-fallback("top", -10);
+
+            .item {
+              display: none;
+              &.active {
+                display: block;
+              }
+            }
+
+          }
+          .label-title {
+            @include rem-fallback("font-size", 20);
+            font-weight: bold;
+            font-family: $axa-font-franklin-demi;
+            padding-bottom: 4px;
+          }
+          .label-sub_title {
+            @include rem-fallback("font-size", 15);
+            font-family: $axa-font-franklin-medium;
+            display: table-cell;
+            padding-right: 45px;
+          }
+        }
+        .form-amount {
+          .form-control {
+            background: transparent;
+            border: 0;
+            width: 100%;
+            @include rem-fallback("height", 50);
+            @include rem-fallback("height", 50);
+            @include rem-fallback("font-size", 38);
+            @include rem-fallback("padding-right", 40);
+            display: block;
+            float: left;
+            font-family: sans-serif;
+            text-align: right;
+            border-bottom: 3px solid $white;
+
+            &:hover,
+            &:focus,
+            &:active {
+              outline: none;
+            }
+          }
+          .devise {
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include rem-fallback("line-height", 50);
+            @include rem-fallback("font-size", 38);
+            font-family: sans-serif;
+          }
+        }
+
+      }
+    }
+
+    .btn-add {
+      @include rem-fallback("font-size", 50);
+      @include rem-fallback("padding", 15);
+      border-radius: 50%;
+      .text {
+        @include rem-fallback("width", 30);
+        @include rem-fallback("height", 30);
+        @include rem-fallback("line-height", 18);
+        display: block;
+        text-align: center;
+      }
+      &.btn-animate:before {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1024px){
+    .number{
+      line-height: 1;
+    }
+    .wrap{
+      display: table-cell;
+      padding-right: 45px;
+    }
+  }
+
+}

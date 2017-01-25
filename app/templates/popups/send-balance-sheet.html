@@ -1,0 +1,75 @@
+<a href="#" class="btn btn-close"><span class="text" data-template="{{popup_send_balance_sheet.close}}"></span></a>
+<div class="axa-popup-header">
+    <span data-template="{{popup_send_balance_sheet.title}}"></span>
+</div>
+<div class="axa-popup-body">
+    <div class="summary text" data-template="{{popup_send_balance_sheet.body.text}}"></div>
+
+    <form class="axa-popup-form axa-form-send form_validate" action="" data-template="{{popup_send_balance_sheet.body.form.action}}">
+
+        <div class="row form-row">
+
+            <label class="col-3 label" for="send_balance_sheet-mail">
+                <span data-template="{{popup_send_balance_sheet.body.form.row1.label}}"></span>
+            </label>
+
+            <div class="col-9">
+
+                <input type="email"
+                       data-binding="personal.email"
+                       data-print="personal.email"
+                       id="send_balance_sheet-mail"
+                       name="send_balance_sheet_mail"
+                       class="col-12 input"
+                       placeholder="name@mail.com"
+                       required>
+
+            </div>
+        </div>
+
+        <div class="center">
+            <a href="#" class="btn btn-submit btn-white">
+                <span class="text" data-template="{{popup_send_balance_sheet.body.form.btnSubmit}}"></span>
+            </a>
+        </div>
+
+    </form>
+</div>
+
+<div class="axa-popup-success">
+    <span data-template="{{popup_send_balance_sheet.success}}"></span>
+</div>
+
+<div class="axa-popup-error">
+    <span data-template="{{popup_send_balance_sheet.error}}"></span>
+</div>
+
+<div class="axa-popup-link-available">
+
+    <p class="text">
+        <span data-template="{{popup_send_balance_sheet.available}}"></span>
+    </p>
+
+    <form class="axa-popup-form">
+
+        <div class="box-link">
+
+            <div class="row form-row">
+                <div class="col-12">
+                    <input type="text"
+                           id="quotation-link"
+                           class="col-12 quotation-link input" />
+                </div>
+
+            </div>
+            <div class="center">
+                <a class="btn btn-copy-clipboard btn-white" data-clipboard-target="#quotation-link">
+                    <span class="text" data-template="{{popup_send_balance_sheet.body.form.btnCopyClipboard}}"></span>
+                </a>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>

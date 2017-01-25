@@ -1,10 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-  <head>
+<head>
+<!-- start head.tpl.html-->
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>paris</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.axa.fr/etc/designs/axa/axa-fr-desktop/clientlib_publish/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.axa.fr/etc/designs/axa/axa-fr-desktop/clientlib_publish/img/logo/favicon.ico"/>
+    <title>Préparer votre retraite - AXA</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -24,330 +27,1868 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body class="bg-turquoise">
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header>
-      <div class="container">
+
+<!-- end head.tpl.html-->
+</head>
+<body class="">
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- start header.tpl.html-->
+
+<header class="axa-header">
+    <div class="container">
         <div class="row">
-          <div class="col-12">
-            <img src="assets/logo.jpg" title="" alt=""/>
-            <span data-template="{{header.title}}"></span>
-            <div class="">
-              <ul>
-                <li>
-                  <div data-template="{{start.button_start}}"></div>
-                </li>
-                <li>
-                  <a href="" data-template="{{header.geolocation.link}}" target="blank">
-                    <img data-template="{{icons.arrow}}" src="" title="" alt=""/>
-                  </a>
-                </li>
-                <li>
-                  <a href="" data-template="{{header.call.link}}" target="blank">
-                    <img data-template="{{icons.phone}}" src="" title="" alt=""/>
-                  </a>
-                </li>
-              </ul>
+            <div class="col-12">
+
+
+                <div class="pull-left navbar-left">
+                    <h1 class="axa-header_brand">
+                        <a class="brand_link" href="" data-template="{{header.brand.link}}" data-toggle="axa-fullpage-btn_section" axa-fullpage-target="home">
+                            <span class="text" data-template="{{header.brand.title}}"></span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="pull-right navbar-right">
+                    <ul class="axa-header_navbar" id="axa-header_navbar">
+                        <li class="item-start">
+                            <a href="" class="btn btn-start" data-template="{{header.navbar.button_start.link}}" data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
+                                <span class="text" data-template="{{header.navbar.button_start.text}}"></span>
+                            </a>
+                        </li>
+                        <li class="item-geolocation">
+                            <a href="" class="btn btn-geolocation" data-template="{{header.navbar.geolocation.link}}" target="blank">
+                                <img class="icon" data-template="{{header.navbar.geolocation.icon}}" src="" data-template-title="" title="" data-template-alt="{{header.navbar.geolocation.attr.alt}}" alt=""  />
+                            </a>
+                        </li>
+                        <li class="item-call">
+                            <a href="" class="btn btn-call" data-template="{{header.navbar.call.link}}" target="blank">
+                                <img class="icon" data-template="{{header.navbar.call.icon}}" src="" data-template-title="{{header.navbar.call.attr.title}}" title="" data-template-alt="{{header.navbar.call.attr.alt}}" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
+<!-- end header.tpl.html-->
 
-    <div class="container mainContainer">
-      <div class="row">
-        <div class="col-12">
-          <h1 data-template="{{start.title}}"></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="center-text">
-            <input type="button" class="btn" data-template="{{start.button_start}}" value="{{start.button_start}}" />
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <span class="full-image">
-            <img src="assets/question-zero-background.png" title="" alt=""/>
-          </span>
-        </div>
-      </div>
+<div class="axa-main" id="fullpage">
 
-      <div class="row">
-        <div class="col-12">
-          <h2 data-template="{{start.title_cta}}">{{start.title_cta}}</h2>
-        </div>
-      </div>
-<!----- -->
-      <div class="row">
-        <div class="col-12">
-          <div class="intro-bulb">
-            <div class="row">
-              <div class="col-3">
-                <img src="assets/example-tooltip-background.png"/>
-              </div>
-              <div class="col-9">
-                <div data-template="{{start.bulb.title}}" class="title-blue">{{start.bulb.title}}</div>
-                <div data-template="{{start.bulb.description}}">{{start.bulb.title}}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- start page-home.tpl.html-->
 
-      <div class="row">
-        <div class="col-12">
-          <div class="title-blue" data-template="{{start.exemple.part1.title}}"></div>
-          <div class="col-6">
-            <div class="title-white" data-template="{{start.exemple.part1.left.title}}"></div>
-            <div data-template="{{start.exemple.part1.left.description}}"></div>
-            <div data-template="{{start.exemple.part1.left.description-2}}"></div>
-          </div>
-          <div class="col-6">
-            <div class="title-white" data-template="{{start.exemple.part1.right.title}}">eeeee</div>
-            <ul>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.house}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item1.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item1.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item1.description}}"></div>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.health}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item2.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item2.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item2.description}}"></div>
-                  </div>
-                </div>
+<div class="axa-page section page-home page-home-a bg-turquoise"
+     id="page-home"
+     axa-fullpage-anchor="home">
+    <div class="page-container axa-page-container cell">
 
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.fun}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item3.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item3.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item3.description}}"></div>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.family}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part1.right.listItems.item4.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item4.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part1.right.listItems.item4.description}}"></div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<!-- start sub-page-home-a.tpl.html-->
+<div class="zone-a full-page">
+    <div class="row">
 
-      <div class="row">
-        <div class="col-12">
-          <div class="title-blue" data-template="{{start.exemple.part2.title}}"></div>
-          <div class="col-6">
-            <div class="title-white" data-template="{{start.exemple.part2.left.title}}"></div>
-            <div data-template="{{start.exemple.part2.left.description}}"></div>
-            <div data-template="{{start.exemple.part2.left.description-2}}"></div>
-          </div>
-          <div class="col-6">
-            <div class="title-white" data-template="{{start.exemple.part2.right.title}}"></div>
-            <ul>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.house}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item1.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item1.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item1.description}}"></div>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.health}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item2.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item2.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item2.description}}"></div>
-                  </div>
-                </div>
+        <div class="center">
+            <h2 class="page-title" data-template="pages.home.a.title"></h2>
 
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.fun}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item3.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item3.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item3.description}}"></div>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="" data-template="{{icons.family}}"/>
-                  </div>
-                  <div class="col-10">
-                    <div class="title-blue" data-template="{{start.exemple.part2.right.listItems.item4.amount}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item4.title}}"></div>
-                    <div class="" data-template="{{start.exemple.part2.right.listItems.item4.description}}"></div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <a href="" class="btn btn-color-turquoise btn-animate btn-start animated fadeIn "
+               data-template="pages.home.a.button_start.link"
+               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#profile">
+                <span class="text" data-template="pages.home.a.button_start.text"></span>
+            </a>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12">
-          <div class="" data-template="{{start.exemple.disclaimer}}"></div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-6">
-          <div class="" data-template="{{start.exemple.repartiion.left.title}}"></div>
-          <div class="" data-template="{{start.exemple.repartiion.left.subTitle}}"></div>
-          <img src="" data-template="{{icons.graphHealth}}"/>
-        </div>
-        <div class="col-6">
-          <div class="" data-template="{{start.exemple.repartiion.right.title}}"></div>
-          <img src="" data-template="{{icons.graphEvolution}}"/>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-         <div class="seperator">---</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="title-blue" data-template="{{start.exemple.explantion.title}}"></div>
-          <div class="col-6">
-            <div data-template="{{start.exemple.explantion.headline}}"></div>
-            <div data-template="{{start.exemple.explantion.text}}"></div>
-          </div>
-          <div class="col-6">
-            <div data-template="{{start.exemple.explantion.text1}}"></div>
-            <div data-template="{{start.exemple.explantion.text2}}"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="seperator">---</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="title-blue" data-template="{{start.exemple.explantion2.title}}"></div>
-          <div class="title-blue" data-template="{{start.exemple.explantion2.subTitle}}"></div>
-          <div class="col-6">
-            <div data-template="{{start.exemple.explantion2.text}}"></div>
-            <div data-template="{{start.exemple.explantion2.text1}}"></div>
-            <div data-template="{{start.exemple.explantion2.text2}}"></div>
-            <div data-template="{{start.exemple.explantion2.text3}}"></div>
-          </div>
-          <div class="col-6">
-            <div data-template="{{start.exemple.explantion2.text4}}"></div>
-            <div data-template="{{start.exemple.explantion2.text5}}"></div>
-            <div data-template="{{start.exemple.explantion2.text6}}"></div>
-            <div data-template="{{start.exemple.explantion2.text7}}"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <span data-template="{{formula.var1}}"></span>
-            <span>
-              <img src="" data-template="{{icons.multiply}}"/>
-            </span>
-            <span data-template="{{formula.var2}}"></span>
-            <span>
-              <img src="" data-template="{{icons.multiply}}"/>
-            </span>
-            <span data-template="{{formula.var3}}"></span>
-            <span>
-              <img src="" data-template="{{icons.divide}}"/>
-            </span>
-            <span data-template="{{formula.var4}}"></span>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <div data-template="{{legend.var1}}"></div>
-            <div data-template="{{legend.var2}}"></div>
-            <div data-template="{{legend.var3}}"></div>
-            <div data-template="{{legend.var4}}"></div>
-          </div>
-        </div>
-      </div>
+        <a href="" class="btn-next btn-next-zone animated fadeInUp btn-start" data-template="pages.home.a.button_next.link"
+           data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#home-zone-b">
+            <span class="text" data-template="pages.home.a.button_next.text"></span>
+            <i class="icons">
+                <i class="icon-a"></i>
+            </i>
+        </a>
 
     </div>
-    <div class="loader"></div>
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/lodash/lodash.js"></script>
-    <script src="/bower_components/lodash-deep/lodash-deep.min.js"></script>
-    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+</div>
+<!-- end sub-page-home-a.tpl.html-->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/components/events.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/utils.js"></script>
-    <script src="scripts/settings.js"></script>
-    <script src="scripts/components/loader.js"></script>
-    <script src="scripts/components/popin.js"></script>
-    <script src="scripts/components/datasFiller.js"></script>
-    <script src="scripts/components/dataStorage.js"></script>
-    <script src="scripts/components/dataLoader.js"></script>
-    <script src="scripts/components/dataBinder.js"></script>
-    <script src="scripts/components/recap.js"></script>
+<!-- start sub-page-home-b.tpl.html-->
+<div class="zone-b" id="home-zone-b">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro-bulb">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="bulbImg">
+                                    <img src="assets/example-tooltip-background.png"/>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div data-template="start.bulb.title" class="text-blue title">start.bulb.title
+                                </div>
+                                <div data-template="start.bulb.description" class="description">start.bulb.title
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-blue title-section" data-template="start.exemple.part1.title"></div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6">
+                    <div class="text-white title-article" data-template="start.exemple.part1.left.title"></div>
+                    <div class="description-article" data-template="start.exemple.part1.left.description"></div>
+                    <div class="description-article" data-template="start.exemple.part1.left.description-2"></div>
+                </div>
 
-    <!-- endbuild -->
-  </body>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="text-white title-article" data-template="start.exemple.part1.right.title"></div>
+                    <ul class="universe">
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.house"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part1.right.listItems.item1.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part1.right.listItems.item1.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part1.right.listItems.item1.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.health"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part1.right.listItems.item2.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part1.right.listItems.item2.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part1.right.listItems.item2.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.family"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part1.right.listItems.item3.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part1.right.listItems.item3.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part1.right.listItems.item3.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.fun"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part1.right.listItems.item4.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part1.right.listItems.item4.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part1.right.listItems.item4.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-blue title-section" data-template="start.exemple.part2.title"></div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6">
+                    <div class="text-white title-article" data-template="start.exemple.part2.left.title"></div>
+                    <div class="description-article" data-template="start.exemple.part2.left.description"></div>
+                    <div class="description-article" data-template="start.exemple.part2.left.description-2"></div>
+                </div>
+
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="text-white title-article" data-template="start.exemple.part2.right.title"></div>
+                    <ul class="universe">
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.house"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part2.right.listItems.item1.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part2.right.listItems.item1.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part2.right.listItems.item1.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.health"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part2.right.listItems.item2.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part2.right.listItems.item2.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part2.right.listItems.item2.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.family"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part2.right.listItems.item3.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part2.right.listItems.item3.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part2.right.listItems.item3.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="" class="icon-universe" data-template="icons.fun"/>
+                                </div>
+                                <div class="col-9">
+                                    <div class="universe-container">
+                                        <div class="text-blue universe-amount"
+                                             data-template="start.exemple.part2.right.listItems.item4.amount"></div>
+                                        <div class="universe-title"
+                                             data-template="start.exemple.part2.right.listItems.item4.title"></div>
+                                        <div class="universe-description"
+                                             data-template="start.exemple.part2.right.listItems.item4.description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="disclaimer-text" data-template="start.exemple.disclaimer"></div>
+                </div>
+            </div>
+            <div class="row section-graph">
+                <div class="col-6">
+                    <div class="white-box graph">
+                        <div class="graph-title" data-template="start.exemple.repartiion.left.title"></div>
+                        <div class="graph-info" data-template="start.exemple.repartiion.left.subTitle"></div>
+                        <img src="" data-template="icons.graphHealth"/>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="white-box graph">
+                        <div class="graph-title" data-template="start.exemple.repartiion.right.title"></div>
+                        <img src="" data-template="icons.graphEvolution"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="seperator"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-blue title-section" data-template="start.exemple.explantion.title"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-blue sub-title-section"
+                             data-template="start.exemple.explantion.headline"></div>
+                        <div class="description-article" data-template="start.exemple.explantion.text"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="description-article" data-template="start.exemple.explantion.text1"></div>
+                        <div class="description-article" data-template="start.exemple.explantion.text2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="seperator"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-blue title-section" data-template="start.exemple.explantion2.title"></div>
+                    <div class="text-blue sub-title-section"
+                         data-template="start.exemple.explantion2.subTitle"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="description-article" data-template="start.exemple.explantion2.text"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text1"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text2"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text3"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="description-article" data-template="start.exemple.explantion2.text4"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text5"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text6"></div>
+                        <div class="description-article" data-template="start.exemple.explantion2.text7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="white-box internal-spacing external-spacing formula">
+                        <div>
+
+                            <span class="formula-text formula-1" data-template="formula.var1"></span>
+
+                            <span class="formula-multiply">x</span>
+
+                            <span class="formula-text formula-2" data-template="formula.var2"></span>
+
+                            <span class="formula-multiply">x</span>
+
+                            <span class="formula-text formula-3" data-template="formula.var3"></span>
+
+                            <span class="formula-divide">/</span>
+
+                            <span class="formula-text formula-4" data-template="formula.var4"></span>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="disclaimer-container">
+                        <div class="disclaimer-text" data-template="legend.var1"></div>
+                        <div class="disclaimer-text" data-template="legend.var2"></div>
+                        <div class="disclaimer-text" data-template="legend.var3"></div>
+                        <div class="disclaimer-text" data-template="legend.var4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end sub-page-home-b.tpl.html-->
+
+    </div>
+</div>
+<!-- end page-home.tpl.html-->
+
+<!-- start page-profile.tpl.html-->
+
+<div class="axa-page section fp-auto-heigh page-profile bg-orange"
+     id="page-profile"
+     axa-fullpage-anchor="profile">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title">
+                    <h2 class="text">
+                        <span data-template="pages.profile.title"></span>
+                        <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin"
+                           axa-popin='{
+                                "data":{
+                                    "theme": "theme-profile",
+                                    "idText":"pages.profile.popup.text",
+                                    "idTitle":"pages.profile.popup.title",
+                                    "image": {
+                                        "idPath":"pages.profile.popup.image.path",
+                                        "idAlt":"pages.profile.popup.image.alt",
+                                        "idName":"pages.profile.popup.image.name"
+                                        }
+                                },
+                                 "callback": ""
+                            }'></i>
+                        <div class="hide">
+                            <div id="idPopinTextProfile" data-template="pages.profile.popup.text"></div>
+                            <div id="idPopinTitleProfile" data-template="pages.profile.popup.title"></div>
+                            <div id="idPopinImagePathProfile" data-template="pages.profile.popup.image.path"></div>
+                            <div id="idPopinImageAltProfile" data-template="pages.profile.popup.image.alt"></div>
+                            <div id="idPopinImageNameProfile" data-template="pages.profile.popup.image.name"></div>
+                        </div>
+                    </h2>
+
+                </div>
+
+                <a href="#" class="btn-back btn-slide-back"><span class="text"
+                                                                  data-template="global.back"></span></a>
+            </div>
+        </div>
+    </div>
+
+<!-- start sub-page-profile-personal.tpl.html-->
+<div class="slide page-profile-personal" id="page-profile-section-personal"
+     axa-fullpage-slide-index="1">
+
+    <div class="page-container axa-page-container cell ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="title-style-1" data-template="pages.profile.sections.personal.text1"></h3>
+                    <div class="form axa-form">
+                        <div class="form-group animated fadeInUpBig">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text2"></span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   maxlength="3"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="personal.dayofbirth"
+                                   name="dayofbirth"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="18" />
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text2_2"></span>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text3"></span>
+
+                            <select data-binding="personal.gender"
+                                    data-template="select.personal.gender"
+                                    name="gender"
+                                    class="form-control">
+
+                            </select>
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text3_2"></span>
+                        </div>
+
+                        <div class="form-group animated responve-profil-input-bottom">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text4"></span>
+
+                            <select data-binding="personal.region"
+                                    data-template="select.personal.county"
+                                    name="region" class="form-control">
+
+                            </select>
+
+                            <span class="form-text" data-template="pages.profile.sections.personal.text4_2"></span>
+                            <select data-binding="personal.owner"
+                                    data-template="select.personal.owner"
+                                    name="owner" class="form-control">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group animated responve-profil-input-top">
+                            <span class="form-text" data-template="pages.profile.sections.personal.text5"></span>
+
+                            <select data-binding="personal.maritalStatus"
+                                    data-template="select.personal.maritalStatus"
+                                    name="maritalStatus"
+                                    class="form-control">
+
+                            </select>
+
+                            <span id="idProfileCouple">
+
+                                <span class="form-text"
+                                      data-template="pages.profile.sections.personal.text5_2">
+
+                                </span>
+
+                                <input type="number"
+                                       inputmode="numeric"
+                                       pattern="[0-9]*"
+                                       maxlength="1"
+                                       min="0"
+                                       max="6"
+                                       data-binding="personal.numberOfChildren"
+                                       placeholder="0"
+                                       id="idInputNumberOfChildren"
+                                       class="form-control"
+                                       style="width: 40px"
+                                       tabindex="2"
+                                       data-toggle="axa-dynamic_zone"
+                                       axa-dynamic_zone='{"zone": "#idProfileNumberOfChildren", "data": {"id":"#idInputNumberOfChildren"}, "callback": "updateNumberOfChidren"}' />
+
+                                <span class="form-text"
+                                      data-template="pages.profile.sections.personal.text5_3">
+
+                                </span>
+
+                                <span id="idProfileNumberOfChildren" class="dynamicNumberOfChildren">
+
+                                    <span class="form-text"
+                                          data-template="pages.profile.sections.personal.text5_4">
+
+                                    </span>
+
+                                    <span class="old">
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[0]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="3" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[1]"
+                                               class="form-control"
+                                               style="width: 54px" 
+                                               tabindex="4"/>
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[2]"
+                                               class="form-control"
+                                               style="width: 54px" 
+                                               tabindex="5"/>
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[3]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="6" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[4]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="7" />
+                                    </span>
+
+                                    <span class="old">
+                                        ,
+                                        <input type="number"
+                                               inputmode="numeric"
+                                               pattern="[0-9]*"
+                                               min="0"
+                                               data-binding="personal.childrens[5]"
+                                               class="form-control"
+                                               style="width: 54px"
+                                               tabindex="8" />
+                                    </span>
+
+                                    <span class="form-text"
+                                          data-template="pages.profile.sections.personal.text5_5">
+
+                                    </span>
+
+                                </span>
+                            </span>
+
+                        </div>
+
+                        <div class="clearfix center responve-profil-input-top">
+                            <a href="#" class="btn btn-color-orange btn-form-next btn-animate">
+                                <span class="form-text" data-template="global.next"></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end sub-page-profile-personal.tpl.html-->
+
+<!-- start sub-page-profile-professional.tpl.html-->
+<div class="slide page-profile-professional" id="page-profile-section-professional"
+     axa-fullpage-slide-index="2">
+
+    <div class="page-container axa-page-container cell ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="title-style-1" data-template="pages.profile.sections.professional.text1"></h3>
+                    <div class="form axa-form">
+                        <div class="form-group animated fadeInUpBig">
+
+                            <span class="form-text"
+                                  data-template="pages.profile.sections.professional.text2">
+
+                            </span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="0"
+                                   data-binding="professional.experience"
+                                   name="experience"
+                                   class="form-control"
+                                   style="width: 55px"
+                                   placeholder="0" />
+
+                            <span class="form-text"
+                                  data-template="pages.profile.sections.professional.text2_2">
+
+                            </span>
+
+                            <select data-binding="professional.employee"
+                                    data-template="select.professional.status"
+                                    name="employee"
+                                    class="form-control">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group animated responve-profil-input-top">
+                            <span class="form-text"
+                                  data-template="pages.profile.sections.professional.text3"></span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="0"
+                                   autocomplete="off"
+                                   data-binding="income.salary"
+                                   name="salary"
+                                   class="form-control" style="width: 100px" />
+
+                            <span class="form-text"
+                                  data-template="pages.profile.sections.professional.text3_2">
+
+                            </span>
+                        </div>
+
+                        <div class="form-group animated">
+
+                            <span class="form-text"
+                                  data-template="pages.profile.sections.professional.text4">
+
+                            </span>
+
+                            <select data-binding="professional.evolution"
+                                    data-template="select.professional.evolution"
+                                    name="evolution" class="form-control">
+
+                            </select>
+
+                        </div>
+
+                        <div class="clearfix center next-wrapper-remove-height">
+                            <a href="#" class="btn btn-color-orange btn-form-next btn-animate">
+                                <span class="form-text" data-template="global.next"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end sub-page-profile-professional.tpl.html-->
+
+<!-- start sub-page-profile-expense.tpl.html-->
+<div class="slide page-profile-expense" id="page-profile-section-expense"
+     axa-fullpage-slide-index="3">
+
+    <div class="page-container axa-page-container cell ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="header-title">
+                        <h3 class="title" data-template="pages.profile.sections.expense.text1"></h3>
+
+                        <ul class="title-picture" hobbies-icons="picto">
+
+                        </ul>
+                    </div>
+
+                    <div class="form axa-form">
+
+                        <div class="form-group animated fadeInUpBig">
+
+                            <span class="form-text" data-template="pages.profile.sections.expense.text2"></span>
+
+                            <select data-binding="activities.hobby"
+                                    data-print="activities.hobby"
+                                    data-template="select.hobbies"
+                                    name="hobby"
+                                    class="form-control">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="pages.profile.sections.expense.text3"></span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="expense.hobby"
+                                   name="expenses"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="0" hobby-hide="other" />
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="expense.otherExpenses[0]"
+                                   name="expenses"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="0" hobby-show="other" />
+
+                            <span class="form-text" hobby="description"></span>
+                        </div>
+
+                        <div class="clearfix center next-wrapper-remove-height">
+                            <a href="#" class="btn btn-color-orange btn-form-next btn-animate"
+                               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#recap">
+                                <span class="form-text" data-template="global.next"></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end sub-page-profile-expense.tpl.html-->
+
+
+</div>
+<!-- end page-profile.tpl.html-->
+
+<!-- start page-recap.tpl.html-->
+
+<div class="axa-page section fp-auto-heigh  page-recap bg-violet"
+     id="page-recap"
+     axa-fullpage-anchor="recap">
+
+
+    <div class="page-container axa-page-container cell">
+        <div class="page-recap_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title col-6">
+                            <h2 class="text">
+                                <span data-template="pages.recap.title"></span>
+                                <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin"
+                                   axa-popin='{
+                                       "data":{
+                                            "theme": "theme-recap",
+                                            "idText":"pages.recap.popup.text",
+                                            "idTitle":"pages.recap.popup.title",
+                                            "image": {
+                                                "idPath":"pages.recap.popup.image.path",
+                                                "idAlt":"pages.recap.popup.image.alt",
+                                                "idName":"pages.recap.popup.image.name"
+                                                }
+                                         },
+                                         "callback": ""
+                                    }'></i>
+
+                            </h2>
+                        </div>
+                        <div class="page-estimation-bar col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="estimation-expense">
+                                        <div class="estimation-indicator">
+                                            <div class="ko" data-template="pages.recap.economy.error.message"></div>
+                                            <div class="ok">
+                                                <span class="text" data-template="pages.recap.economy.title"></span>
+                                                <span class="val" data-print="economy"></span>
+                                                <span class="devise" data-template="global.currency"></span>
+                                            </div>
+                                        </div>
+                                        <div class="estimation-bar">
+                                            <ul class="estims">
+                                                <li class="estim hobby bg-color"></li>
+                                                <li class="estim home bg-color"></li>
+                                                <li class="estim family bg-color"></li>
+                                                <li class="estim health bg-color"></li>
+                                                <li class="estim other bg-color"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-recap_body">
+            <div class="container">
+
+                <div class="row">
+                    <!-- left part -->
+                    <div class="col-6">
+                        <div class="recap-sub_header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="center-text text">
+                                        <div class="recap-header-title"
+                                             data-template="pages.recap.incoming.title"></div>
+                                        <div class="recap-header-total js-input-binding text">
+                                            <span data-print="income.total" class="total account">0</span>
+                                            <span data-template="global.currency" class="currency"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recap-form incomes">
+                            <form class="js-form-binding form form-incoming">
+
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="incomeSalary">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.incoming.salary.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.incoming.salary.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.salary"
+                                                       data-print="income.salary"
+                                                       id="incomeSalary"
+                                                       tabindex="10"/>
+
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row js-row-template active">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="incomeOtherIcoming">
+
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[0]"
+                                                           data-print="income.otherIncomingLabels[0]"
+                                                           id="incomeOtherIncomingLabels"
+                                                           tabindex="11" />
+
+                                                </div>
+
+                                            </label>
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[0]"
+                                                       data-print="income.otherIncoming[0]"
+                                                       id="incomeOtherIcoming"
+                                                       tabindex="12" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="incomeOtherIcomingA">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[1]"
+                                                           data-print="income.otherIncomingLabels[1]"
+                                                           id="incomeOtherIncomingLabelsA"
+                                                           tabindex="13" />
+
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[1]"
+                                                       data-print="income.otherIncoming[1]"
+                                                       id="incomeOtherIcomingA"
+                                                       tabindex="14" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="incomeOtherIcomingB">
+                                                <div class="form-label_text update">
+
+                                                    <div data-template="pages.recap.incoming.other.main"
+                                                         class="label-title">
+
+                                                    </div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="income.otherIncomingLabels[2]"
+                                                           data-print="income.otherIncomingLabels[2]"
+                                                           id="incomeOtherIncomingLabelsB"
+                                                           tabindex="15" />
+
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="income.otherIncoming[2]"
+                                                       data-print="income.otherIncoming[2]"
+                                                       id="incomeOtherIcomingB"
+                                                       tabindex="16" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <a href="#" class="btn btn-color-violet btn-animate btn-add btn-add-income">
+                                        <span class="text">+</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- right part -->
+                    <div class="col-6">
+                        <div class="recap-sub_header">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="center-text text">
+                                        <div class="recap-header-title"
+                                             data-template="pages.recap.expense.title"></div>
+                                        <div class="recap-header-total js-input-binding text">
+                                            <span data-print="expense.total" class="total account">0</span>
+                                            <span data-template="global.currency" class="currency"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recap-form expenses">
+                            <form class="js-form-binding form form-expense">
+                                <!-- HOBBY -->
+                                <div class="row recap-form_row" hobby-hide="other">
+
+                                    <div class="col-12" >
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHobby">
+                                                <div class="form-label_text">
+                                                    <div class="label-title js-text-binding text" hobby="label">
+
+                                                    </div>
+                                                    <div hobby="sublabel"
+                                                         class="label-sub_title">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-label_icon" >
+                                                    <ul class="title-picture" hobbies-icons="icon">
+
+                                                    </ul>
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.hobby"
+                                                       data-print="expense.hobby"
+                                                       id="expenseHobby"
+                                                       tabindex="17" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency"
+                                                                          class="currency"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HOME -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHome">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.home.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.home.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.home.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.home"
+                                                       data-print="expense.home"
+                                                       id="expenseHome"
+                                                       tabindex="18"/>
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAMILY -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseFamily">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.family.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.family.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.family.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.family"
+                                                       data-print="expense.family"
+                                                       id="expenseFamily"
+                                                       tabindex="19" />
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HEALTH -->
+                                <div class="row recap-form_row">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseHealth">
+                                                <div class="form-label_text">
+                                                    <div data-template="pages.recap.expense.health.main"
+                                                         class="label-title"></div>
+                                                    <div data-template="pages.recap.expense.health.secondary"
+                                                         class="label-sub_title"></div>
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.health.icon">
+                                                </div>
+                                            </label>
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.health"
+                                                       data-print="expense.health"
+                                                       id="expenseHealth"
+                                                       tabindex="20"/>
+                                                <div class="devise"><span data-template="global.currency"
+                                                                          class="currency"></span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="expenseOtherExpensesA">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[0]"
+                                                           data-print="expense.otherExpensesLabels[0]"
+                                                           id="incomeOtherExpensesLabelsA"
+                                                           tabindex="21" />
+
+                                                </div>
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[0]"
+                                                       data-print="expense.otherExpenses[0]"
+                                                       id="expenseOtherExpensesA"
+                                                       tabindex="22"/>
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+
+                                            <label class="form-label" for="expenseOtherExpensesB">
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title"></div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[1]"
+                                                           data-print="expense.otherExpensesLabels[1]"
+                                                           id="incomeOtherExpensesLabelsB"
+                                                           tabindex="23" />
+
+                                                </div>
+
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+
+                                            </label>
+
+                                            <div class="form-amount">
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[1]"
+                                                       data-print="expense.otherExpenses[1]"
+                                                       id="expenseOtherExpensesB"
+                                                       tabindex="24" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- OTHER EXPENSE -->
+                                <div class="row recap-form_row other js-row-template">
+                                    <div class="col-12">
+                                        <div class="row-line">
+                                            <label class="form-label" for="expenseOtherExpensesC">
+
+                                                <div class="form-label_text update">
+                                                    <div data-template="pages.recap.expense.other.main"
+                                                         class="label-title">
+
+                                                    </div>
+
+                                                    <input type="text"
+                                                           class="form-control js-input-for-tab"
+                                                           data-binding="expense.otherExpensesLabels[2]"
+                                                           data-print="expense.otherExpensesLabels[2]"
+                                                           id="incomeOtherExpensesLabelsC"
+                                                           tabindex="25" />
+
+                                                </div>
+
+                                                <div class="form-label_icon">
+                                                    <img src="" data-template="pages.recap.expense.other.icon">
+                                                </div>
+
+                                            </label>
+
+                                            <div class="form-amount">
+
+                                                <input type="number"
+                                                       inputmode="numeric"
+                                                       pattern="[0-9]*"
+                                                       autocomplete="off"
+                                                       class="js-input-binding form-control number js-input-for-tab"
+                                                       data-binding="expense.otherExpenses[2]"
+                                                       data-print="expense.otherExpenses[2]"
+                                                       id="expenseOtherExpensesC"
+                                                       tabindex="26" />
+
+                                                <div class="devise">
+                                                    <span data-template="global.currency" class="currency"></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <a href="#" class="btn btn-color-violet btn-animate btn-add btn-add-income">
+                                        <span class="text">+</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-recap_footer">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clearfix center">
+                            <a href="" class="btn btn-color-violet btn-animate btn-start animated fadeIn "
+                               id="btn-go_to_simulation"
+                               data-template="pages.home.a.button_start.link"
+                               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#loader">
+                                <span class="text" data-template="global.recap"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END class=container-->
+    </div>
+
+</div>
+<!-- end page-recap.tpl.html-->
+
+<!-- start page-loader.tpl.html-->
+
+<div class="axa-page section page-loader bg-violet-loader"
+     id="page-loader"
+     axa-fullpage-anchor="loader">
+    <div class="page-container axa-page-container cell">
+
+        <div class="loader-chart" data-template="{{pages.results.loader.content}}" style="" data-template-style="{{pages.results.loader.style}}">
+            <div class="loader-chart-year"></div>
+        </div>
+
+    </div>
+</div>
+<!-- end page-loader.tpl.html-->
+
+<!-- start page-results.tpl.html-->
+
+<div class="axa-page section page-results bg-light-turquoise"
+     id="page-results"
+     axa-fullpage-anchor="results">
+    <div class="page-container axa-page-container cell">
+
+<!-- start sub-page-results-a.tpl.html-->
+<div class="zone-a full-page" id="results-zone-a">
+
+    <div class="axa-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="page-title">
+                        <h2 class="text">
+                            <span data-template="pages.results.title"></span>
+                            <i class="js-info btn-icon btn-popin icon-info-circle" data-toggle="axa-popin" axa-popin='{
+                                       "data":{
+                                            "theme": "theme-results",
+                                            "idText":"pages.results.popup.text",
+                                            "idTitle":"pages.results.popup.title",
+                                            "image": {
+                                                "idPath":"pages.results.popup.image.path",
+                                                "idAlt":"pages.results.popup.image.alt",
+                                                "idName":"pages.results.popup.image.name"
+                                                }
+                                         },
+                                         "callback": ""
+                                    }'></i>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <ul class="results-actions">
+                        <li>
+                            <a href="" class="link"><span data-template="pages.results.sections.a.btnrestart"></span></a>
+                        </li>
+                        <li>
+                            <a href="" class="link send send-balance_sheet"><span data-template="pages.results.sections.a.btnsendmail"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="axa-page-body">
+
+        <div class="form axa-form container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-results">
+
+                        <span data-template="pages.results.sections.a.text1"></span>
+
+                        <span class="input-update">
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   autocomplete="off"
+                                   data-binding="personal.dayofretirement"
+                                   data-print="personal.dayofretirement"
+                                   step="1"
+                                   min="18"
+                                   name="dayofretirement"
+                                   class="form-control dayofretirement"
+                                   placeholder="0" />
+                        </span>
+
+
+                        <strong data-template="pages.results.sections.a.text1_1"></strong>
+
+                        <span data-template="pages.results.sections.a.text1_2"></span>
+
+                        <strong class="text-bigger">
+                            <span data-print="quoteResult.estimatedExpensesBeforeRetirement"></span>
+                            <span data-template="pages.results.monthlyPrice"></span>
+                        </strong>
+
+                        <br/>
+
+                        <span data-template="pages.results.sections.a.text2"></span>
+
+                        <strong class="text-bigger">
+                            <span class="form-text" data-print="quoteResult.estimatedRetirementPension"></span>
+                            <span class="form-text" data-template="pages.results.monthlyPrice"></span>
+                        </strong>
+
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-8">
+                                <span class="panel-label-valign"
+                                      data-template="pages.results.sections.a.text3"></span>
+                                </div>
+
+                                <div class="col-4 text-center">
+
+                                    <strong class="text-bigger">
+                                        <span data-print="quoteResult.missToWin"></span>
+                                        <span data-template="pages.results.monthlyPrice"></span>
+                                    </strong>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <span class="" data-template="pages.results.sections.a.text4"></span><br/>
+                                    <span class="" data-template="pages.results.sections.a.text4_1"></span>
+                                </div>
+
+                                <div class="col-4 text-center">
+
+                                    <strong class="text-bigger">
+                                        <span data-print="quoteResult.proposedSaving"></span> <span data-template="pages.results.monthlyPrice"></span>
+                                    </strong>
+
+                                    <div class="price-notice">
+
+                                        <small>
+                                            <span data-template="pages.results.sections.a.text4_2"></span>
+                                            <strong><span data-print="quoteResult.taxSaved"></span> €</strong>
+                                            <span data-template="pages.results.sections.a.text4_3"></span>
+                                        </small>
+
+                                    </div>
+
+                                    <i class="icons">
+                                        <i class="icon-a"></i>
+                                    </i>
+
+                                    <a class="btn btn-color-turquoise btn-animate btn-contact animated fadeIn" data-template="pages.results.sections.a.button_contact.link">
+                                        <span class="text" data-template="pages.results.sections.a.button_contact.text"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="btn-next-wrapper">
+            <a href="" class="btn-next btn-next-zone animated fadeInUp"
+               data-template="pages.results.a.button_next.link"
+               data-toggle="axa-fullpage-btn_section"
+               axa-fullpage-target="#results-zone-b">
+
+                <span class="text" data-template="pages.results.a.button_next.text"></span>
+                <i class="icons">
+                    <i class="icon-a"></i>
+                </i>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- end sub-page-results-a.tpl.html-->
+
+<!-- start sub-page-results-b.tpl.html-->
+<div class="zone-b" id="results-zone-b">
+    <div class="container">
+        <div class="row section-graph">
+            <!-- content -->
+
+            <div class="col-7">
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title1">
+                </h4>
+
+                <div class="white-box graph graph-estimate">
+                    <img src="assets/graph-estimate.png" data-template="icons.graphEstimate">
+
+                    <div class="legend">
+                        <ul>
+                            <li class="income"><span class="text" data-template="{{pages.results.sections.b.graph_estimate.legend.income}}" ></span></li>
+                            <li class="expense"><span class="text" data-template="{{pages.results.sections.b.graph_estimate.legend.expense}}"></span></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="price bg-darkblue price-start">
+                        <span data-print="quoteResult.actualSalary"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-darkblue price-middle">
+                        <span data-print="quoteResult.estimatedSalaryBeforeRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-darkblue price-end">
+                        <span data-print="quoteResult.estimatedRetirementPension"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-start">
+                        <span data-print="quoteResult.actualExpenses"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-middle">
+                        <span data-print="quoteResult.estimatedExpensesBeforeRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="price bg-green price-end">
+                        <span data-print="quoteResult.estimatedExpensesRetirement"></span>
+                        <span data-template="global.currency" class="currency"></span>
+                    </div>
+
+                    <div class="chart-footer">
+
+                        <div class="date actual-date">
+                            <div class="text" data-template="{{pages.results.sections.b.graph_estimate.current}}"></div>
+                            <div>
+                                <span data-print="personal.dayofbirth"></span>
+                                <span class="years"
+                                      data-template="{{pages.results.sections.b.graph_estimate.years}}"></span>
+                            </div>
+                        </div>
+
+                        <div class="date retirement-date">
+                            <div class="text"
+                                 data-template="{{pages.results.sections.b.graph_estimate.retirement}}"></div>
+                            <div>
+                                <span data-print="personal.dayofretirement"></span>
+                                <span class="years"
+                                      data-template="{{pages.results.sections.b.graph_estimate.years}}"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-5">
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title2">
+                </h4>
+
+                <div class="row">
+                    <div class="col-6">
+                        <span data-template="pages.results.sections.b.text2_1"></span>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="price-box">
+                            <strong class="text-bigger">
+
+                                <span class="input-update">
+                                    <input type="number"
+                                           inputmode="numeric"
+                                           pattern="[0-9]*"
+                                           autocomplete="off"
+                                           class="salaryBeforeRetirement form-control blue"
+                                           data-binding="fixedSalaryBeforeRetirement"
+                                           data-print="quoteResult.estimatedSalaryBeforeRetirement" />
+                                </span>
+
+                                <span class="montly-label" data-template="pages.results.monthlyPrice"></span>
+                            </strong>
+
+                            <div class="link" data-template="pages.results.sections.b.text2_2"></div>
+                            <div><i><span data-template="pages.results.sections.b.text2_3"></span></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title3">
+                </h4>
+
+                <span data-template="pages.results.sections.b.text3_1"></span>
+                <strong class="text-medium"><span data-print="quoteResult.yearOfBirth"></span></strong>,
+                <span data-template="pages.results.sections.b.text3_2"></span>
+                <strong class="text-medium"><span data-print="quoteResult.remainingDuration.quarters"></span> <span
+                        data-template="pages.results.sections.b.text3_3a"></span></strong>
+
+                <span data-template="pages.results.sections.b.text3_4"></span>
+
+                <strong class="text-medium"><span data-print="quoteResult.remainingDuration.years"></span> <span
+                        data-template="pages.results.sections.b.text3_5a"></span></strong>
+
+                <span data-template="pages.results.sections.b.text3_6"></span>
+
+            </div>
+
+            <div class="col-12" style="padding-top:35px">
+                <h4 class="text-white"
+                    data-template="pages.results.sections.b.title4">
+                </h4>
+            </div>
+
+            <div class="col-5">
+                <div class="white-box graph graph-chart today">
+                    <div class="graph-title" data-template="pages.results.sections.b.graphTitle"></div>
+                    <div class="graph-body">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+
+                <div class="chart-legends">
+                    <div>
+                        <div class="chart-legend home" data-chart-type="home">
+                            <span class="text" data-template="pages.recap.expense.home.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.home.icon">
+                        </div>
+
+                        <div class="chart-legend family" data-chart-type="family">
+                            <span class="text" data-template="pages.recap.expense.family.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.family.icon">
+                        </div>
+
+                        <div class="chart-legend health" data-chart-type="health">
+                            <span class="text" data-template="pages.recap.expense.health.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.health.icon">
+                        </div>
+
+                        <div class="chart-legend hobby" data-chart-type="hobby">
+                            <span class="text" data-template="pages.recap.expense.hobby.main"></span>
+                            <img class="icon" hobby="icon">
+                        </div>
+
+                        <div class="chart-legend other" data-chart-type="other">
+                            <span class="text" data-template="pages.recap.expense.other.main"></span>
+                            <img class="icon" data-template="pages.recap.expense.other.icon">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-5">
+
+                <div class="white-box graph graph-chart retirement">
+                    <div class="graph-title" data-print="quoteResult.yearOfRetirement"></div>
+                    <div data-print=""></div>
+                    <div class="graph-body">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+
+
+                <ul class="results-actions results-footer">
+                    <li>
+                        <a class="btn btn-color-turquoise btn-animate btn-contact animated fadeIn"
+                           data-template="pages.results.sections.a.button_contact.link">
+                            <span class="text" data-template="pages.results.sections.a.button_contact.text"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <span data-template="pages.results.sections.a.btnrestart"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link send send-balance_sheet">
+                            <span data-template="pages.results.sections.a.btnsendmail"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end sub-page-results-b.tpl.html-->
+
+    </div>
+</div>
+<!-- end page-results.tpl.html-->
+
+</div>
+<div class="axa-loader start" style="display:block">
+    <div>
+        <loader-svg>
+            <svg class="spinner" width="80px" height="80px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                        r="30"></circle>
+            </svg>
+        </loader-svg>
+    </div>
+</div>
+<div class="axa-loader chart">
+    <div>
+        <div class="loader-chart">
+        </div>
+    </div>
+</div>
+
+<!-- start footer.tpl.html-->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/es6-promise/es6-promise.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/amplify/lib/amplify.min.js"></script>
+<script src="/bower_components/lodash/lodash.js"></script>
+<script src="/bower_components/lodash-deep/lodash-deep.min.js"></script>
+<script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="/bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+<script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/bower_components/base-64/base64.js"></script>
+<script src="/bower_components/clipboard/dist/clipboard.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script>
+    if (window.Promise === undefined){
+        window.Promise = window.ES6Promise;
+    }
+</script>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/lifeplan.js"></script>
+<script src="scripts/settings.js"></script>
+<script src="scripts/mock.js"></script>
+<script src="scripts/components/events.js"></script>
+<script src="scripts/components/inputNumber.js"></script>
+<script src="scripts/components/loader.js"></script>
+<script src="scripts/components/popin.js"></script>
+<script src="scripts/components/templateCache.js"></script>
+<script src="scripts/components/localStorage.js"></script>
+<script src="scripts/components/dataBinder.js"></script>
+<script src="scripts/components/dataInclude.js"></script>
+<script src="scripts/components/dataTemplate.js"></script>
+<script src="scripts/components/dataPrint.js"></script>
+<script src="scripts/components/dataLoader.js"></script>
+<script src="scripts/components/fullpage.js"></script>
+<script src="scripts/components/form.js"></script>
+<script src="scripts/components/formRecapAdd.js"></script>
+<script src="scripts/components/quotation.js"></script>
+<script src="scripts/components/estimeBar.js"></script>
+<script src="scripts/components/hobbies.js"></script>
+<script src="scripts/components/chartToday.js"></script>
+<script src="scripts/components/chartRetirement.js"></script>
+<script src="scripts/components/popupContact.js"></script>
+<script src="scripts/components/popupSendBalanceSheet.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end footer.tpl.html-->
+</body>
 </html>

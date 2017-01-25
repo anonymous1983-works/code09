@@ -1,3 +1,6 @@
+$axa-page-header-height: 110 !default;
+$axa-page-body-top: $axa-header-height + $axa-page-header-height !default;
+
 .axa-main {
   width: 100%;
   height: 100%;
@@ -6,7 +9,7 @@
 
   &.fullpage-wrapper{
     padding: 0;
-    overflow: initial;
+    overflow: visible;
   }
 
   .axa-page {
@@ -25,17 +28,65 @@
       vertical-align: middle;
     }
 
+    .axa-page-header {
+      position: absolute;
+      @include rem-fallback("top", $axa-header-height);
+      @include rem-fallback("height", $axa-page-header-height);
+      left: 0;
+      right: 0;
+      padding-top: 35px;
+
+      .page-title {
+        position: static;
+        margin: 0;
+        z-index:0;
+      }
+    }
+
+   /* &.page-results {
+      .axa-page-header {
+        position: absolute;
+        //@include rem-fallback("top", 0);
+        top: 0;
+        left: 0;
+        right: 0;
+        //@include rem-fallback("margin-top", 120);
+        margin-top: 8%;
+        padding: 0;
+      }
+      .axa-page-body {
+        //@include rem-fallback("top", 0);
+        top: 0;
+        //@include rem-fallback("margin-top", 290);
+        margin-top: 17%;
+      }
+    }*/
+
+
+    .axa-page-body {
+      position: absolute;
+
+      @include rem-fallback("top", $axa-page-body-top);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+      /* Utilisons un peu d'inertie */
+      -webkit-overflow-scrolling: touch;
+    }
+
     .page-title {
       @include rem-fallback("font-size", 42);
       @include rem-fallback("line-height", 44);
       text-align: left;
       font-weight: 800;
       font-family: $axa-font-franklin-medium;
-      @include rem-fallback("margin-top", 72);
+      @include rem-fallback("margin-top", 90);
       color: $white;
 
       position: absolute;
       top: 0;
+      z-index: 10;
 
       .text,
       .btn-popin {
@@ -46,5 +97,8 @@
   }
 }
 
-@import 'pages/page-home-a';
+@import 'pages/page-home';
 @import 'pages/page-profile';
+@import 'pages/page-recap';
+@import 'pages/page-result';
+@import 'pages/page-loader';

@@ -1,0 +1,72 @@
+
+
+<a href="#" class="btn btn-close"><span class="text" data-template="{{popup_contact.close}}"></span></a>
+<div class="axa-popup-header">
+    <span data-template="{{popup_contact.title}}"></span>
+</div>
+<div class="axa-popup-body">
+    <div class="summary text" data-template="{{popup_contact.body.text}}"></div>
+
+    <form class="axa-popup-form" action="" data-template="{{popup_contact.body.form.action}}">
+
+        <div class="row form-row">
+            <label class="col-3 label" for="contact-name">
+                <span data-template="{{popup_contact.body.form.row1.label}}"></span>
+            </label>
+
+            <input type="text"
+                   id="contact-name"
+                   data-binding="personal.name"
+                   name="contact-name"
+                   class="col-9 input">
+        </div>
+
+        <div class="row form-row">
+            <label class="col-5 label" for="contact-phone">
+                <span data-template="{{popup_contact.body.form.row2.label}}"></span>
+            </label>
+
+            <input type="tel" id="contact-phone"
+                   data-binding="personal.phoneNumber"
+                   name="contact-phone"
+                   class="col-7 input">
+
+        </div>
+        <div class="row form-row">
+            <label class="col-5 label" for="contact-date">
+                <span data-template="{{popup_contact.body.form.row3.label}}"></span>
+            </label>
+
+            <input type="date"
+                   id="contact-date"
+                   name="contact-date"
+                   data-binding="personal.contactDate"
+                   class="col-7 input date"
+                   placeholder="JJ/MM/AAAA">
+        </div>
+
+        <div class="row form-row">
+            <label class="col-5 label" for="contact-datetime">
+                <span data-template="{{popup_contact.body.form.row4.label}}"></span>
+            </label>
+
+            <input type="time"
+                   data-binding="personal.contactDateHour"
+                   id="contact-datetime"
+                   name="contact-datetime"
+                   class="col-7 input time"
+                   placeholder="HH:MM">
+        </div>
+        <div class="center">
+            <a href="#" class="btn btn-submit  btn-white">
+                <span class="text" data-template="{{popup_contact.body.form.btnSubmit}}"></span>
+            </a>
+        </div>
+
+    </form>
+</div>
+
+<div class="axa-popup-success"><span data-template="{{popup_contact.success}}"></span></div>
+<div class="axa-popup-error"><span data-template="{{popup_contact.error}}"></span></div>
+
+

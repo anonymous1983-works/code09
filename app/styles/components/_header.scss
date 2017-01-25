@@ -52,15 +52,15 @@
   }
 
   .axa-header_navbar {
-    display : none;
-    .btn-start {
-      display : none;
-      &.active {
-        display : block;
-      }
+    display: none;
+    &.active,
+    &.active-start {
+      display: block;
     }
-    &.active {
-      display : block;
+    &.active-start {
+      .item-start {
+        display: block;
+      }
     }
     $axa-header_element-height: $axa-header-height - (6 * 2);
     @include clearfix();
@@ -69,49 +69,53 @@
       float: left;
       @include rem-fallback("margin-left", $axa-header_element-height);
       @include rem-fallback("line-height", $axa-header_element-height);
+    }
+    .item-start{
+      display: none;
+    }
 
-      .btn {
-        @include rem-fallback("height", $axa-header_element-height);
-        @include rem-fallback("width", $axa-header_element-height);
-        border: 0;
-        padding: 0;
-        margin: 0;
-        background: transparent;
-        text-align: center;
-        color: $axa-header-color;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
+    .btn {
+      @include rem-fallback("height", $axa-header_element-height);
+      @include rem-fallback("width", $axa-header_element-height);
+      border: 0;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      text-align: center;
+      color: $axa-header-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
 
-        .icon {
-          vertical-align: middle;
+      .icon {
+        vertical-align: middle;
+      }
+
+      &.btn-start {
+        width: auto;
+        @include rem-fallback("padding-left", 16);
+        @include rem-fallback("padding-right", 16);
+        border: 4px solid $axa-header-color;
+        @include rem-fallback("line-height", $axa-header_element-height - (4 * 2));
+        @include rem-fallback("font-size", $axa-header_btn-font-size);
+        @include transition(background-color .2s, color .2s);
+        position: relative;
+
+        .text {
+          color: $axa-header-color;
         }
-
-        &.btn-start {
-          width: auto;
-          @include rem-fallback("padding-left", 16);
-          @include rem-fallback("padding-right", 16);
-          border: 4px solid $axa-header-color;
-          @include rem-fallback("line-height", $axa-header_element-height - (4 * 2));
-          @include rem-fallback("font-size", $axa-header_btn-font-size);
-          @include transition(background-color .2s, color .2s);
-          position: relative;
-
+        &:hover,
+        &:focus,
+        &:active {
+          color: $white;
+          background-color: $axa-header-color !important;
           .text {
-            color: $axa-header-color;
-          }
-          &:hover,
-          &:focus,
-          &:active {
             color: $white;
-            background-color: $axa-header-color;
-            .text {
-              color: $white;
-            }
           }
         }
       }
     }
+
   }
 
 }

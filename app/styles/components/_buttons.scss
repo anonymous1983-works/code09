@@ -1,17 +1,85 @@
 .btn {
-  border : 6px solid $white;
+  border: 6px solid $white;
   background: transparent;
-  color : $white;
+  color: $white;
   display: inline-block;
-  text-transform : uppercase;
+  text-transform: uppercase;
   text-decoration: none;
-  @include rem-fallback("padding", 16,48);
-
+  @include rem-fallback("padding", 16, 48);
   outline: none;
-  font-weight : 700;
-  font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include rem-fallback("font-size", 18);
-  &:hover {
-    cursor: pointer;
+  cursor: pointer;
+  position: relative;
+  @include transition(color 1s, background 1s);
+
+  &.btn-animate:before {
+    content: '';
+    display: block;
+    border: 6px solid $white;
+    background-color: transparent;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white !important;
+    border-color: $white;
+    &.btn-animate:before {
+      -webkit-animation-name: hvr-ripple-out;
+      animation-name: hvr-ripple-out;
+    }
+    &.btn-color-orange {
+      color: $orange;
+    }
+    &.btn-color-turquoise {
+      color: $turquoise;
+    }
+    &.btn-color-violet {
+      color: $violet;
+    }
+    &.btn-color-dark_blue {
+      color: $dark_blue;
+    }
+    &.btn-color-light_blue{
+      color: $light_blue;
+    }
+    &.btn-color-yellow {
+      color: $yellow;
+    }
+    &.btn-color-red {
+      color: $red;
+    }
+
+  }
+
+}
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -18px;
+    right: -18px;
+    bottom: -18px;
+    left: -18px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -18px;
+    right: -18px;
+    bottom: -18px;
+    left: -18px;
+    opacity: 0;
   }
 }

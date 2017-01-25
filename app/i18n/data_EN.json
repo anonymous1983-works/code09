@@ -1,300 +1,707 @@
-{    
-    "app": {
-        "title": "AXA Life Planning",
-        "page_title": "AXA Life Planning",
-        "need_update": "<span>You are using an outdated browser</span><br/>It is limiting your user experience. <a target='_blank' href='http://browser-update.org/update.html'>Please upgrade your browser</a>.",
-        "cookies": {
-            "content": "By continuing your visit to this site, you accept the use of cookies to make visits statistics.",
-            "button": "ok"
+{
+  "select": {
+    "personal": {
+      "gender": [
+        {
+          "value": "",
+          "label": ""
         },
-        "ageUnit": "years old",
-        "monthly": "$/month",
-        "monthly_noSymbol": "/month",
-        "yearly": "$/year",
-        "yearly_noSymbol": "/year"
-    },    
-    
-    "scroller": {
-        "please": "please",
-        "scroll": "scroll",
-        "button_cancel": "cancel",
-        "button_validate": "ok",
-        "editAmount_title": "Click to edit",
-        
-        "home_level_1": "I would like to live in my own house",
-        "home_level_2": "I would like to live in a flat in the city center",
-        "home_level_3": "I would like to live in a cottage",
-        "home_level_4": "I would like to live in a big house near the beach",
-                    
-        "travel_level_1": "I would like to travel with my backpack",
-        "travel_level_2": "I would like to travel across countries with a caravan",
-        "travel_level_3": "I would like to travel across the seas with my boat",
-        "travel_level_4": "I would like to travel around the world in first class",
-
-        "food_level_1": "I would like to cook at home",
-        "food_level_2": "I would like to eat the menu of the day",
-        "food_level_3": "I would like to often eat in a trendy restaurant",
-        "food_level_4": "I would like to always eat in the best restaurant of the city",
-
-        "transport_level_1": "I would like to move by bicycle or walking",
-        "transport_level_2": "I would like to move by bus or metro",
-        "transport_level_3": "I would like to move with my own car",
-        "transport_level_4": "I would like to move around the city only by taxi",
-
-        "family_level_1": "I think that I will not have children",
-        "family_level_2": "I would like to have no more than 2 kids",
-        "family_level_3": "I would like to have a big family",
-
-        "shopping_level_1": "I would like to buy clothes only in sale",
-        "shopping_level_2": "I would like to buy my clothes in flea markets",
-        "shopping_level_3": "I would like to buy my shoes at large chain stores",
-        "shopping_level_4": "I would like to buy my clothes in luxury shops",
-        
-        "freetime_level_1": "I would like to have a quiet life at home",
-        "freetime_level_2": "I would like to visit all the museums every month",
-        "freetime_level_3": "I would like to go to the opera every week",
-        "freetime_level_4": "I would like to practice golf with a personal coach",
-
-        "health_level_1": "I practice a lot of sport and eat healthy",
-        "health_level_2": "I am quite often sick",
-
-        "saving_level_1": "I will save very few money",
-        "saving_level_2": "I will save a reasonable amount of money",
-        "saving_level_3": "I want to save a lot of money",
-        "saving_level_4": "I want to save a lot of money",
-
-        "start_saving_up_level_1": "I want to start saving now",
-        "start_saving_up_level_2": "I need some time before I start",
-        "start_saving_up_level_3": "I prefer to wait",
-        "start_saving_up_level_4": "I prefer to wait",
-
-        "last_salary_up_level_1": "I think my revenues will remain the same as now",
-        "last_salary_up_level_2": "My salary will increase regulary",
-        "last_salary_up_level_3": "I think I will earn much more money than now",
-        "last_salary_up_level_4": "I think I will earn much more money than now",
-
-        "retire_age_up_level_1": "I will try to stop working as soon as possible",
-        "retire_age_up_level_2": "I will retire at the standard age",
-        "retire_age_up_level_3": "I like my job and I will work while I can",
-        "retire_age_up_level_4": "I like my job and I will work while I can",
-        "retire_age_up_level_5": "I like my job and I will work while I can"
+        {
+          "value": "mme",
+          "label": "woman"
+        },
+        {
+          "value": "mr",
+          "label": "man"
+        }
+      ],
+      "county": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "51",
+          "label": "Alsace Champagne"
+        },
+        {
+          "value": "19",
+          "label": "Aquitaine Limousin"
+        },
+        {
+          "value": "15",
+          "label": "Aquitaine Rhone Alpes"
+        },
+        {
+          "value": "21",
+          "label": "Bourgogne Franche Comté"
+        },
+        {
+          "value": "22",
+          "label": "Bretagne"
+        },
+        {
+          "value": "28",
+          "label": "Centre Val de Loire"
+        },
+        {
+          "value": "2A",
+          "label": "Corse"
+        },
+        {
+          "value": "75",
+          "label": "Ile de France"
+        }
+      ],
+      "owner": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "landlord",
+          "label": "the owner"
+        },
+        {
+          "value": "tenant",
+          "label": "a tenant"
+        }
+      ],
+      "maritalStatus": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "couple",
+          "label": "have a partner"
+        },
+        {
+          "value": "single",
+          "label": "’m single"
+        }
+      ]
     },
-
-    "nav":{
-        "salary": "Salary",
-        "pension": "Public Pension",
-        "lifestyle": "Lifestyle",
-        "complementary": "Complementary"
+    "professional": {
+      "status": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "cadre",
+          "label": "Executive"
+        },
+        {
+          "value": "employe",
+          "label": "Employee"
+        },
+        {
+          "value": "fonctionnaire",
+          "label": "Civil servant"
+        },
+        {
+          "value": "profession-liberale",
+          "label": "Self-employed"
+        }
+      ],
+      "evolution": [
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "1",
+          "label": "1% / year-moderate "
+        },
+        {
+          "value": "2",
+          "label": "2% / year-dynamic"
+        },
+        {
+          "value": "5",
+          "label": "5% / year"
+        }
+      ]
     },
-
-    "start":{
-        "title": "Life Planning",
-        "subtitle": "Better plan your futur retirement",
-        "headline": "Do you think you need a complementary pension?",
-        "pension_headline": "Estimate your <br/><span>public pension</span>",
-        "lifestyle_headline": "Design your <br/><span>lifestyle</span>",
-        "plan_headline": "Discover your <br/><span>retirement plan</span>",
-        "button_start": "start simulation",
-        "help": "want to help one of your closes to prepare his retirement ?"
+    "hobbies": [
+      {
+        "label": "",
+        "value": "",
+        "description": "€/mois.",
+        "sublabel": ""
+      },
+      {
+        "label": "Globe-trotter ",
+        "value": "globetrotter",
+        "sublabel": "and  I dedicate ",
+        "description": "€ a month to my escapades",
+        "src": "../assets/${type}-depenses_globetrotter.png"
+      },
+      {
+        "label": "Fashionista",
+        "value": "fashion",
+        "sublabel": "and  I dedicate ",
+        "description": "€ a month to trendy clothes and accessories",
+        "src": "../assets/${type}-depenses_fashion.png"
+      },
+      {
+        "label": "big Music fan",
+        "value": "music",
+        "sublabel": "fan and I dedicate",
+        "description": "€ a month to rocking to the beat",
+        "src": "../assets/${type}-depenses_music.png"
+      },
+      {
+        "label": "Geek",
+        "value": "geek",
+        "sublabel": "and  I dedicate ",
+        "description": "€ a month to testing new devices",
+        "src": "../assets/${type}-depenses_device.png"
+      },
+      {
+        "label": "Sport-addict",
+        "value": "sport",
+        "sublabel": "and  I dedicate ",
+        "description": "€ a month to adrenaline and keeping fit",
+        "src": "../assets/${type}-depenses_sport.png"
+      },
+      {
+        "label": "Afficionado",
+        "value": "art",
+        "sublabel": "and  I dedicate ",
+        "description": "€ a month to my love of the arts",
+        "src": "../assets/${type}-depenses_art.png"
+      },
+      {
+        "label": "Other",
+        "value": "other",
+        "sublabel": " ",
+        "description": "€/mois.",
+        "src": "../assets/${type}-depenses_other.png"
+      }
+    ]
+  },
+  "icons": {
+    "plus": "../assets/icon-plus.png",
+    "info": "../assets/icon-info.png",
+    "multiply": "../assets/icon-phone.png",
+    "divide": "../assets/icon-phone.png",
+    "phone": "../assets/icon-phone.png",
+    "arrow": "../assets/icon-arrow.png",
+    "arrowDown": "../assets/arrow-down.png",
+    "house": "../assets/icon-depenses_house.png",
+    "health": "../assets/icon-depenses_health.png",
+    "fun": "../assets/icon-depenses_globetrotter.png",
+    "family": "../assets/icon-depenses_family.png",
+    "graphHealth": "../assets/graph-health.png",
+    "graphEstimate": "../assets/graph-estimate.png",
+    "graphEvolution": "../assets/graph-evolution.png",
+    "back": "../assets/icon-arrow.png"
+  },
+  "popin": {
+    "profile": {
+      "text1": "The Axa simulator takes into account different criteria to estimate your retirement.<br/><br/>",
+      "text2": "The criteria « legal » but also projections that vary according to certain factors, such as the increase in the time of the cost of health or inflation or the evolution of wages.<br/><br/>",
+      "text3": "Knowing the current age of your children allows us to know, for example, whether they will still be at your expense, as students, at the time of retirement.<br/><br/>",
+      "text4": "Getting to know you better by also incorporating other personal criteria in our calculations leads us to better define your profile and to refine our simulation.<br/>"
+    }
+  },
+  "header": {
+    "brand": {
+      "title": "Prepare <strong>your retirement</strong>",
+      "link": "/"
     },
-
-    "pension": {
-        "title": "Estimate your public pension",
-        "titleAfterCalculation": "Estimate your public pension",
-        "headline": "by changing the filling the following form",
-        "headlineAfterCalculation": "how we calculate it...",
-        "form_name": "My name is",
-        "form_age": "I am",
-        "form_age_unit": "years old",
-        "form_birthdate_man": "I am born on the",
-        "form_birthdate_woman": "I am born on the",
-        "form_gender": "I am a",
-        "form_gender_man": "Man",
-        "form_gender_woman": "Woman",
-        "form_work": "I work as",
-
-        "form_positionStart": "since",
-        "form_positionStart_end": "years",
-
-        "form_pastPositionStart": "I worked for",
-        "form_pastPositionStart_end": "years",
-
-        "form_salary": "My salary is",
-        "form_salary_netMonthly": "net monthly",
-        "form_salary_grossYearly": "gross annual",
-        "form_startWork": "$/month. I started working at",
-        "form_startWork_end": "",
-        "form_studentMessage": "(Your public pension will be calculated on the national average)",
-
-        "result_retirementYear": "in year",
-        "result_retirementAge": "at",
-        "result_pensionTitle": "Your estimated pension",
-        "result_ratioSalary": "{{ratio}}% of your last income",
-        "result_salaryTitle": "Your last salary",
-        "result_inflationMeaning": "+{{inflation}}% per year",
-        "result_alreadyRetired": "Congratulations, you can retire in the current year.",
-
-        "button_back": "Back",
-        "button_backToMyData": "Back to my data",
-        "button_calculate": "Calculate pension",
-        "calculate_info": "calculating your public pension...",
-        "button_lifestyle": "Design my lifestyle",
-
-        "form_workPeriodDuration_before": "",
-        "form_workPeriodDuration_after": "years as",
-        "form_workPeriodSalary_before": "with",
-        "form_workPeriodSalary_after": "",
-        "button_add": "Add",
-        "button_add_title": "Add the previous work period",
-        "button_remove_title": "Remove this work period",
-        "button_workPeriod": "the previous work period"
+    "navbar": {
+      "button_start": {
+        "link": "#satrt",
+        "text": "Begin the simulation"
+      },
+      "geolocation": {
+        "link": "http://www.google.fr",
+        "text": "Adresse",
+        "icon": "assets/icon-location-arrow.svg",
+        "attr": {
+          "title": "Adresse title",
+          "alt": "Adresse alt"
+        }
+      },
+      "call": {
+        "link": "tel:0123456789",
+        "text": "Phone",
+        "icon": "assets/icon-phone.svg",
+        "attr": {
+          "title": "Phone title",
+          "alt": "Phone alt"
+        }
+      }
+    }
+  },
+  "popup_contact": {
+    "close": "Close",
+    "title": "Contact an advisor",
+    "body": {
+      "text": "To be recalled by one of our advisors, please enter the following information",
+      "form": {
+        "row1": {
+          "label": "Name"
+        },
+        "row2": {
+          "label": "Phone number"
+        },
+        "row3": {
+          "label": "Date"
+        },
+        "row4": {
+          "label": "Time slot"
+        },
+        "btnSubmit": "Submit"
+      }
     },
-
-    "lifestyle": {
-        "title": "If you were retired today...",
-        "headline": "what could be your lifestyle?",
-
-        "title_not_enough": "Please decrease of<br/><span class=\"number\">{{lifestyleBalance | abs | currency:undefined:0}}</span>",
-        "headline_not_enough": "to adjust your Lifestyle",
-
-        "title_perfect": "Congratulations!",
-        "headline_perfect": "Plan & Lifestyle match perfectly...",
-        
-        "title_a_lot": "You can increase of<br/><span class=\"number\">{{lifestyleBalance | abs | currency:undefined:0}}</span>",
-        "headline_a_lot": "to adjust your Lifestyle",
-
-        "title_no_complementary_needed": "You can increase",
-        "headline_no_complementary_needed": "to adjust your Lifestyle",
-
-        "needs": "- You need -",
-        "needs_unit": "/month",
-        "button_back": "Back",
-        "button_seeFuture": "See my futur",
-        "button_add": "Add",
-        "button_otherExpenses": "OTHER Expenses",
-        "button_add_title": "Add other expenses",
-        "otherExpenses": "Other expenses :",
-        "expensesValue": " : {{expenses}} $/month"
+    "success": "Your message has been sent",
+    "error": "Error! Message not sent. Please try again later."
+  },
+  "popup_send_balance_sheet": {
+    "close": "fermer",
+    "title": "Receive your balance sheet",
+    "body": {
+      "text": "To receive your balance sheet, please enter your e-mail address.",
+      "form": {
+        "row1": {
+          "label": "Email",
+          "default_val": ""
+        },
+        "btnSubmit": "Send",
+        "btnCopyClipboard": "Copy link"
+      }
     },
-
-    "timeMachine": {
-        "year": "year",
-        "needs": "- your lifestyle is -",
-        "future_needs": "- your lifestyle will be -",
-        "needsFrequency": "/month",
-        "message1": "the cost of living increases",
-        "message2": "you have to take care of your health",
-        "button_go": "Let's go"
+    "success": "Your request has been processed",
+    "error": "Error! Service temporarily unavailable, please try again later.",
+    "available": "Your personalized report can be accessed from this link:"
+  },
+  "global": {
+    "next": "Next",
+    "back": "Retrun",
+    "backLink": "javascript:void(0);",
+    "recap": "Obtain my personalized appraisal",
+    "currency": "€",
+    "validator": {
+      "msg_required": "Ce champ est requis.",
+      "msg_email": "Veuillez saisir une adresse mail valide.",
+      "msg_url": "Veuillez saisir une URL valide.",
+      "msg_creditcard": "Veuillez saisir un numéro de carte de crédit valide.",
+      "msg_date": "Veuillez saisir une date valide.",
+      "msg_datetime": "Veuillez saisir une date/heure valide.(aaaa-mm-jjThh:mm:ssZ)",
+      "msg_datetime_local": "Veuillez saisir une date/heure locale valide.(aaaa-mm-jjThh:mm:ss)",
+      "msg_time": "Veuillez saisir une heure valide.",
+      "msg_alphabetic": "Veuillez ne saisir que des lettres.",
+      "msg_alphanumeric": "Veuillez ne saisir que des lettres, souligné et chiffres.",
+      "msg_color": "Veuillez saisir une couleur valide. (nommée, hexadecimale ou rvb)",
+      "msg_month": "Veuillez saisir une année et un mois. (ex.: 1974-03)",
+      "msg_week": "Veuillez saisir une année et une semaine. (ex.: 1974-W43)",
+      "msg_number": "Veuillez saisir un nombre.(ex.: 12,-12.5,-1.3e-2)",
+      "msg_integer": "Veuillez saisir un nombre sans decimales.",
+      "msg_zipcode": "Veuillez saisir un code postal valide.",
+      "msg_minlength": "Veuillez saisir au moins {0} caractères.",
+      "msg_maxlength": "Veuillez ne pas saisir plus de {0} caractères.",
+      "msg_min": "Veuillez saisir une valeur supérieure ou égale à {0}.",
+      "msg_max": "Veuillez saisir une valeur inférieure ou égale à {0}.",
+      "msg_mustmatch": "Veuillez resaisir la même valeur.",
+      "msg_captcha": "Votre réponse ne correspond pas au texte de l'image. Réesayez.",
+      "msg_personnummer": "Veuillez saisir un personnummer valide. (aaaammjj-aaaa)",
+      "msg_organisationsnummer": "Veuillez saisir un organisationsnummer valide. (xxyyzz-aaaa)",
+      "msg_ipv4": "Veuillez saisir une adresse IP valide (version 4).",
+      "msg_ipv6": "Veuillez saisir une adresse IP valide (version 6).",
+      "msg_tel": "Veuillez saisir un numéro de téléphone valide.",
+      "msg_remote": "Veuillez vérifier ce champ."
+    }
+  },
+  "pages": {
+    "home": {
+      "a": {
+        "title": "Calculating your pension online is quick and easy!",
+        "button_start": {
+          "link": "#satrt",
+          "text": "Begin the simulation"
+        },
+        "button_next": {
+          "link": "#next",
+          "text": "Why prepare your retirement now?"
+        }
+      }
     },
-
-    "plan": {
-        "title": "Your plan for {{year}}",
-        "headline": "you can finetune by changing<br/>following elements",
-
-        "title_not_enough": "It is not enough :(",
-        "headline_not_enough": "<strong>Decrease</strong> your Lifestyle values...<br/>or save <span class=\"number\">{{targetSaving| currency:undefined:0}}</span> /month",
-
-        "title_perfect": "Congratulations!",
-        "headline_perfect": "Plan & Lifestyle match perfectly...",
-        
-        "title_a_lot": "You have more :)",
-        "headline_a_lot": "Enjoy to <strong>increase</strong> your Lifestyle...<br/>or save <span class=\"number\">{{targetSaving| currency:undefined:0}}</span> /month",
-
-        "title_no_complementary_needed": "You have more :)",
-        "headline_no_complementary_needed": "Enjoy to <strong>increase</strong> your Lifestyle...",
-        
-        "needs": "you will need",
-        "publicPension_legend": "from your public pension",
-        "complementaryPension_legend": "from AXA Retirement plan",
-        "incomes_legend": "+ incomes",
-        "button_add": "Add",
-        "button_otherIncomes": "OTHER INCOMES",
-        "button_add_title": "Add other incomes",
-        "otherIncomes": "Other incomes",
-        "incomesValue": " : {{incomes}} $/month",
-        "taxAdvantagesBegin": "taxes deduction of<br/>",
-        "taxAdvantagesEnd": "per year",
-        "ageUnit": "years<br/>old",
-
-        "button_back": "back",
-        "button_finish": "Finish",
-        "button_sendMail": "send to my email"
+    "profile": {
+      "title": "My profile,<br/> in a few clicks ",
+      "popup": {
+        "theme": "theme-profile",
+        "title": "title popup profile",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>Mauris et interdum enim. Cras euismod est lacus, id sagittis ex mollis ac. Nam tempor, felis sollicitudin euismod cursus, orci ipsum scelerisque enim, vitae pretium dolor mauris eu metus. Duis mollis consectetur fermentum. Sed urna nunc, tristique at dolor vitae, tempor tempus justo. <br/><br/>Ut sed sem magna. Quisque interdum venenatis lacus, at euismod nisl semper eu. Aenean consectetur mattis lobortis. Praesent ut sapien ultricies, venenatis diam eget, hendrerit tellus.",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
+      "sections": {
+        "personal": {
+          "text1": "My personal situation",
+          "text2": "I'm",
+          "text2_2": "years old but I don’t look my age.",
+          "text3": "I am a",
+          "text3_2": "sound in mind and body.",
+          "text4": "I live in the",
+          "text4_2": ". I am",
+          "text5": "I",
+          "text5_2": "and I have",
+          "text5_3": "children(s)",
+          "text5_4": "aged",
+          "text5_5": "years."
+        },
+        "professional": {
+          "text1": " My professional situation",
+          "text2": "I've been working for ",
+          "text2_2": "years. I am an ",
+          "text3": "My last net monthly salary was ",
+          "text3_2": "euros.",
+          "text4": "I expect a stable salary change "
+        },
+        "expense": {
+          "text1": "My principal passion:",
+          "text2": "I am a",
+          "text3": "And I dedicate",
+          "text3_2": "€/mois à mon adrénaline et à garder la forme."
+        }
+      }
     },
-
-    "final": {
-        "retirementYear": "plan for",
-        "retirementAge": "at {{age}} years old",
-        "savings_title": "By saving now",
-        "savings_duration": "",
-        "savings_tax": "taxes advantages",
-        "complementary_title": "You will get",
-        "complementary_duration": "",
-        "complementary_capital": "or a capital of",
-        "button_save": "Save",
-        "button_restart": "Restart",
-        "button_recallMe": "Recall<br/>me",
-        "button_findAgent": "Find an<br/>agent"
+    "recap": {
+      "title": "ESTIMATE YOUR <br/>BUDGET ALLOCATION",
+      "popup": {
+        "theme": "theme-recap",
+        "title": "title popup recap",
+        "text": "Knowing your budget today will enable us to estimate your savings capacity and to compare your standard of living today with that you will have after retiring.",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
+      "economy": {
+        "title": "Savings",
+        "error": {
+          "message": "Vos dépenses ne peuvent pas dépasser vos revenus. Merci d'ajouter vos revenus, ou de réduire vos dépenses."
+        }
+      },
+      "incoming": {
+        "title": "MY MONTHLY REVENUES",
+        "salary": {
+          "main": "Salary",
+          "secondary": "Net monthly salary"
+        },
+        "other": {
+          "main": "Other revenues",
+          "secondary": "Private income, compensation,..."
+        }
+      },
+      "expense": {
+        "title": "MY MONTHLY REVENUES",
+        "hobby": {
+          "main": "Globbe-trotter",
+          "secondary": "Getaways..."
+        },
+        "home": {
+          "main": "Housing",
+          "secondary": "rent, taxes, bills,…",
+          "icon": "../assets/icon-depenses_house.png"
+        },
+        "family": {
+          "main": "Family",
+          "secondary": "food, study...",
+          "icon": "../assets/icon-depenses_family.png"
+        },
+        "health": {
+          "main": "Health",
+          "secondary": "medecin, insurance...",
+          "icon": "../assets/icon-depenses_health.png"
+        },
+        "other": {
+          "main": "Other",
+          "secondary": "",
+          "icon": "../assets/icon-depenses_other.png"
+        }
+      }
     },
-
-    "dataLoader": {
-        "loading_message": "Please wait<br/>while the data are loaded ..."
+    "results": {
+      "title": "Your personalized retirement <br/>appraisal",
+      "popup": {
+        "theme": "theme-results",
+        "title": "",
+        "text": "The legal age of retirement depends on your year of birth. Within the framework of pension reforms, it will increase progressively from 60 to 67 years old.<br /> If you were born in 19xx, you may retire at the age of 67 years old, as long as you have worked 172 terms. <br/ >You may also retire earlier, or later, which will change the amount of your pension once you have retired.",
+        "image": {
+          "path": "assets/icon-location-arrow.svg",
+          "name": "Image name",
+          "alt": "Image alt"
+        }
+      },
+      "loader": {
+        "content": "",
+        "style": "background-image: url(../assets/en/loader-chart.gif);"
+      },
+      "monthlyPrice": "€/month",
+      "a": {
+        "button_next": {
+          "link": "#next",
+          "text": "My appraisal in detail"
+        }
+      },
+      "sections": {
+        "a": {
+          "text1": "I would like to retire at ",
+          "text1_1": "years old ",
+          "text1_2": "and my estimated",
+          "text2": "The amount of my pension will be",
+          "text3": "I will have a shortfall of",
+          "text4": "In order to maintain the standard of living you have today,",
+          "text4_1": "we suggest that you start saving straight away",
+          "text4_2": "you could save up to <br />",
+          "text4_3": "in tax credits a year!",
+          "btnrestart": "Start the simulation again",
+          "btnsendmail": "Receive my personalized appraisal",
+          "button_contact": {
+            "link": "http://google.com?q=contact",
+            "text": "Contact an advisor"
+          }
+        },
+        "b": {
+          "title1": "Evolution of your revenues  <br />and expenses (monthly)",
+          "title2": "Revenues",
+          "text2_1": "We estimate the amount of the last salary of your career to be:",
+          "text2_2": "Change the amount of my last salary",
+          "text2_3": "(end of career)",
+          "title3": "Number of years left to work",
+          "text3_1": "You were born in ",
+          "text3_2": "you therefore need to contribute ",
+          "text3_3a": "terms",
+          "text3_3b": "terms",
+          "text3_4": "in other words ",
+          "text3_5a": "<strong>years</strong>",
+          "text3_5b": "<strong>year</strong>",
+          "text3_6": "in order to benefit from the full pension.",
+          "title4": "Allocation of your monthly expenses<br /><small>(estimate)</small>",
+          "btncontact": "Contacter un conseiller",
+          "btnrestart": "Start the simulation again",
+          "btnsendmail": "Receive my personalized appraisal",
+          "graphTitle": "Today",
+          "graph_estimate": {
+            "years": "years",
+            "current": "Your age at the moment",
+            "retirement": "Your age upon retirement ",
+            "legend": {
+              "income": "income",
+              "expense": "expense"
+            }
+          }
+        }
+      },
+      "chart": {
+        "popup": {
+          "home": {
+            "theme": "theme-chart-home",
+            "icon": "../assets/icon-depenses_house.png",
+            "title": "Housing",
+            "text": "At the start of our career, we usually rent a small and inexpensive lodging. At the end of our career, even if we own property, the costs associated with housing remain quite high, (property tax, maintenance & renovations, replacement of furniture and appliances,...)."
+          },
+          "family": {
+            "theme": "theme-chart-family",
+            "icon": "../assets/icon-depenses_family.png",
+            "title": "FAMILY",
+            "text": "The cost of schooling for children increases with the level of studies, and can be expensive in the case of prolonged studies (e.g. private business or engineering schools…). Moreover, parents remain a long term financial support for a longer amount of time, in terms of either their children’s first big investments or for their grandchildren."
+          },
+          "health": {
+            "theme": "theme-chart-health",
+            "icon": "../assets/icon-depenses_health.png",
+            "title": "HEALTH",
+            "text": "The older we get, the more our health costs tend to grow exponentially due to the increasing need for medicine, treatment and care. "
+          },
+          "hobby": {
+            "theme": "theme-chart-hobby",
+            "icon": "../assets/icon-depenses_globetrotter.png",
+            "title": "HOBBY",
+            "text": "Retirement gives people more time to make the most of life. Holidays, outings, visiting grandchildren,...This part of the budget often increases at retirement age."
+          },
+          "other": {
+            "theme": "theme-chart-other",
+            "icon": "../assets/icon-depenses_other.png",
+            "title": "OTHER",
+            "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. "
+          }
+        }
+      }
+    }
+  },
+  "profile": {
+    "title": "Mon profil,<br/>en quelques clics",
+    "perso": "Ma situation personnelle",
+    "pro": "Ma situation professionnelle",
+    "year": "Je suis né(e) le mais je ne fais pas mon âge.",
+    "gender": "Je suis bien dans sa tête et dans son corps",
+    "situation": "Je suis et j'ai enfant âgé de ans",
+    "locale": "J'habite dans la région . Je suis",
+    "experience": "Cela fait ans que je travaille. Je suis",
+    "salary": "Mon dernier salaire net mensuel est de ",
+    "evolution": "je prévois une évolution de salaire",
+    "hobby": "La passion qui me ressemble le plus",
+    "activity": "Je suis et je consacre &euro;/mois à mes escapades."
+  },
+  "formula": {
+    "var1": "Average annual salary *",
+    "var2": "Rate**",
+    "var3": "Insurance period contributed (d)***",
+    "var4": "Maximum duration of insurance taken into account under the general scheme (D)****"
+  },
+  "legend": {
+    "var1": "* Average annual salary = average of the best 25 years capped at 38 K €.",
+    "var2": "** The rate varies from 25% to 50%. At 50%, it is called the \" maximum rate \".",
+    "var3": "*** The contribution period is expressed quarterly. It is possible to validate up to 4 terms per year.",
+    "var4": "**** d / D = 1 at most, with D being evolutionary"
+  },
+  "recap": {
+    "title": "ESTIMATE YOUR BUDGET ALLOCATION",
+    "renvenubymonth": "MY MONTHLY REVENUES",
+    "expensebymonth": "MY MONTHLY EXPENSES",
+    "lastSalary": {
+      "main": "Salary",
+      "secondary": "Net monthly salary"
     },
-
-    "about": {
-        "button_back": "back",
-        "button_about": "about",
-        "button_recallMe": "Recall<br/>me",
-        "button_findAgent": "Find an<br/>agent",
-
-        "website": "Welcome to AXA Tools website",
-        "website_link": "http://www.axa.com",
-        "phone": "",
-
-        "headline": "Please READ CAREFULLY THE FOLLOWING TERMS OF USE, WHICH APPLY TO ALL VISITORS TO THIS SITE. BY DECIDING TO VISIT THIS SITE, YOU IMPLICITLY AGREE TO ABIDE BY ITS TERMS.",
-
-        "presentation_title": "General Presentation",
-        "presentation_text": "You are currently connected to the http://tools.axa.com site which is published by AXA.<br/>- Company name: AXA<br/>- Legal representative: Henri de Castries - Chairman & CEO<br/>- Public company with registered capital of: €5,589,831,371.42 at December 5, 2014<br/>- Paris Register of Companies: 572.093.920<br/>- Head Office: 25, avenue Matignon 75008 Paris France<br/>- Hosting: AXA Group Solutions, 23 avenue Matignon 75008 Paris FrancePublic company with a registered capital of: €250,000 (at December 12, 2013Paris Register of Companies: 344.710.082<br/>- Publications Director: AXA Group Communication Department<br/>- Site registered at the C.N.I.L.",
-
-        "privacy_title": "Personal data",
-        "privacy_text": "The personal information communicated to the company by Internet users on the AXA Group's sites, by way of forms or questionnaires placed on line, is necessary for the processing of these forms and questionnaires. It will be analysed and passed on to the various departments concerned to be handled by them. If no objection is raised by the person concerned, AXA may be called upon to process this information for sales operations. The user has a right of access, modification, correction and removal of data collected on this site, under the conditions stipulated by law no. 78-17 of the 6th of January 1978 on computer information, files and civil liberties.",
-        
-        "custom_HTML": "",
-
-        "copyright_title": "Copyright Law",
-        "copyright_text": "This site must be seen as an inseparable whole. Complete or partial reproduction or representation of the pages, the data and any other element constituting the site, by any process and on any support, is prohibited and constitutes, without the publisher's permission, an infringement of copyright. The brand names and/or logos featured on the site are owned or acquired under licence contract by AXA.",
-        
-        "cookies_title": "Cookies",
-        "cookies_text": "Users of the site are informed that when they access this site, information may be temporarily stored in memory or on their hard disk in order to optimise and customise navigation on the site. It is possible for any Internet user to configure the preferences of his browser to refuse cookies. In this case, certain functions of the site may not be accessible."
+    "otherIncoming": {
+      "main": "Other revenues",
+      "secondary": "Private income, compensation,"
     },
-
-    "popup_contactMe": {
-        "title": "Recall me",
-        "customerType_label": "Are you already our client?",
-        "customerType_0": "No. I am not a client",
-        "customerType_1": "MPS or AXA MPS",
-        "customerType_2": "AXA Assigurazioni",
-        "thanks": "Thank you for<br/>your interest :)",
-        "term1": "I have read and accept the <a href='#/about/privacy'>data protection clauses</a>.",
-        "term2": "I authorize AXA to use my data for <a href='#/about/privacy'>commercial offers</a>.",
-        "nextStep": "An AXA agent will contact you.",
-        "helpAClose": "And now...<br/>you can do the same<br/>to help a close.",
-        "button_cancel": "cancel",
-        "button_ok": "Ok",
-        "button_send": "Send<br>me",
-        "button_helpAClose": "Restart for<br/>someone else"
+    "home": {
+      "main": "Housing",
+      "secondary": "rent, taxes, bills,…"
     },
-
-    "popup_savePlan": {
-        "title": "Save your plan on your email",
-        "headline": "We will keep your plan during 2 months.",
-        "privacyLink_label": "Learn more about the AXA privacy policy",
-        "sent": "Plan sent.",
-        "checkMail": "Check your email",
-        "availability": "Your plan is available <span>during 2 months.</span>",
-        "button_cancel": "cancel",
-        "button_ok": "Ok",
-        "button_send": "Send<br>me"
+    "family": {
+      "main": "Family",
+      "secondary": "food, study..."
     },
-
-    "storeLocator_link": "http://www.previsio.axa.it/dovesiamo/"
+    "health": {
+      "main": "Health",
+      "secondary": "insurance, medecine..."
+    },
+    "other": {
+      "main": "Other",
+      "secondary": ""
+    }
+  },
+  "start": {
+    "title": "Calculer ma retraite en ligne,<br/>c’est simple et rapide !",
+    "button_start": "Begin the simulation",
+    "title_cta": "Pourquoi préparer sa retraite dès maintenant ?",
+    "bulb": {
+      "title": "Let’s take an example !",
+      "description": "Delphine is 34 years old.<br/>She rents a property in Bordeaux.<br/>She has two children, aged 5 and 8, and has full custody of them since her divorce"
+    },
+    "exemple": {
+      "part1": {
+        "title": "Today",
+        "left": {
+          "title": "Her budget",
+          "description": "She is a Communications Manager with<br/>an executive status and her monthly revenue is <b>2 500 €/mois</b>.<br/>She has no specific career plan.",
+          "description-2": "<br/>Apart from her children, Delphine has two passions in life:<br /> paragliding, on which she spends around <b>500</b> euros a year,<br/>and Milou, the family dog, who costs 60 euros a month."
+        },
+        "right": {
+          "title": "Her current expenses",
+          "listItems": {
+            "item1": {
+              "img": "assets/icon-house.png",
+              "amount": "1 225 €",
+              "title": "HOUSING",
+              "description": "(RENT, TAXES, BILLS,…)"
+            },
+            "item2": {
+              "img": "assets/icon-health.png",
+              "amount": "175 €",
+              "title": "HEALTH COSTS",
+              "description": "(INSURANCE, MEDICINE,…) "
+            },
+            "item3": {
+              "img": "assets/icon-fun.png",
+              "amount": "875 €",
+              "title": "FAMILY ",
+              "description": "AND MILOU…"
+            },
+            "item4": {
+              "img": "assets/icon-family.png",
+              "amount": "865 €",
+              "title": "LEISURE ",
+              "description": "(TRAVEL, SPORT,…)"
+            }
+          }
+        }
+      },
+      "part2": {
+        "title": "In the future, after retiring",
+        "left": {
+          "title": "",
+          "description": "Delphine will retire in  <strong>2049</strong> at the age of <strong>67</strong>. Her estimated salary at the end of her career will be <strong>4&nbsp;500&nbsp;€</strong> but she will only have <strong>2&nbsp;700&nbsp;€</strong> pension.",
+          "description-2": "<br/>Her shortfall will be <strong>1&nbsp;675&nbsp;€</strong> hould she wish to maintain the standard of living she has today, once her children have left home.<br /><br />By saving 330 <strong>330&nbsp;€</strong> every month from now on, with a tax break of <strong>345&nbsp;€</strong> chaque année.  a year, Delphine won’t need to make any difficult choices, as her standard leof living will be maintained."
+        },
+        "right": {
+          "title": "Her expenses will be split as follows*:",
+          "listItems": {
+            "item1": {
+              "amount": "1 800 €",
+              "title": "HOUSING",
+              "description": "(RENT, TAXES, BILLS,…)"
+            },
+            "item2": {
+              "amount": "675 €",
+              "title": "HEALTH COSTS",
+              "description": "(INSURANCE, MEDICINE,…) "
+            },
+            "item3": {
+              "amount": "1000 €",
+              "title": "FAMILY ",
+              "description": "AND MILOU…"
+            },
+            "item4": {
+              "amount": "900 €",
+              "title": "LEISURE ",
+              "description": "(TRAVEL, SPORT,…)"
+            }
+          }
+        }
+      },
+      "disclaimer": "* Based on information provided and salary, expenses and inflation forecasts.",
+      "repartiion": {
+        "left": {
+          "title": "The evolution of her health costs (by age)",
+          "subTitle": "years-retirement **"
+        },
+        "right": {
+          "title": "Her salary evolution",
+          "subTitle": "Salary today – End of career salary – pension"
+        }
+      },
+      "explantion": {
+        "title": "Which criteria are taken into account for the simulation ?",
+        "headline": "Axa’s simulator takes different criteria into account in order<br/>to estimate your pension.",
+        "text": "Some are \" legal \" criteria and some are forecasts that may vary<br/>depending on various factors, such as the rise in health <br/>care costs, inflation or salary evolution.",
+        "text1": "Integrating other, more personal, criteria into our calculations helps <br/> us to better define your profile and refine your simulation.",
+        "text2": "Knowing the age of your children enables us, for example, to know <br/> whether they will still be your dependents, as students, when you retire"
+      },
+      "explantion2": {
+        "title": "How is retirement age calculated ?",
+        "subTitle": "In order to benefit from the state pension funded by social security, you need have paid contributions over at least one term (and earned a monthly minimum of 1 452 €), towards the general social security scheme.",
+        "text": "The legal age for retirement is: <strong>62</strong>.<br /><br /> ",
+        "text1": "The pension is calculated at the full level if the minimum number of terms is reached. If you were born in 1956, you need <strong>166 terms</strong> terms to have the maximum pension. If you were born in <strong>1973</strong>, you need <strong>172</strong> terms.<br /> <br />",
+        "text2": "Surcharges, as well as increases, may apply. For example, each year worked over the age of 60 years gives rise to a premium of <strong>5%</strong><br /> <br />",
+        "text3": "The number of children you raised (whether your own, those of your spouse, or adopted children) will increase the number of terms:<br /><strong>8 quarters</strong> per child for those born up until  12/31/2009. For each child 12/31/2009, <strong>4 quarters go automatically to the mother </strong> and the other  4 are to be allocated to the father, the mother, or both (to be decided in the year of the child’s fourth birthday). <br /> <br />",
+        "text4": "Health insurance policies can also have a very important effect on retirement and getting the maximum rate.<br /><br />",
+        "text5": "<strong>There are in fact many special cases. Hence the importance of being well advised in order to obtain a precise estimate and optimize your retirement. </strong><br /><br />",
+        "text6": "However, you can choose to continue working. The maximum rate is guaranteed for those working up to age 67. <br /><br />",
+        "text7": "Retirement lasts on average 28 years for women and 24 years for men."
+      }
+    }
+  }
 }

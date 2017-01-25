@@ -1,41 +1,27 @@
-;(function (__W, __D, $){
+(($, LIFEPLAN) => {
+
     'use strict';
 
-    var LOADER = window.LIFEPLAN || {};
-    var element;
+    class Loader {
 
-    function getStatus () {
-        return LOADER.loader.displayed = !element.hasClass('is_hide');
-    }
-    function hideLoader() {
-        element.addClass('is_hide');
-        getStatus();
-    }
+        constructor(className = '.loader') {
+            this.$element = $(className);
+        }
 
-    function showLoader() {
-        element.removeClass('is_hide');
-        getStatus();
-    }
+        hide(){
+            return new Promise((resolve) => {
+                this.$element.fadeOut(500, resolve);
+            });
 
-    function eventsListener () {
-        $.subscribe('loader:to/show', function (){
-            showLoader();
-        });
-        $.subscribe('loader:to/hide', function (){
-            hideLoader();
-        });
+        }
+
+        show(){
+            return new Promise((resolve) => {
+                this.$element.fadeIn(500, resolve);
+            });
+        }
     }
 
-    $(__D).ready(function () {
-        element = $('.loader');
+    LIFEPLAN.Loader = Loader;
 
-        eventsListener();
-
-        LOADER.loader = {
-            'hide' : hideLoader,
-            'show' : showLoader,
-            'getStatus' : getStatus,
-            'displayed' : true
-        };
-    });
-})(window, window.document, jQuery);
+})(jQuery, LIFEPLAN);

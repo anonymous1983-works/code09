@@ -5,8 +5,12 @@
   color : $white;
 }
 
-.title-style-1 {
+
+@mixin title-style-1() {
   @include rem-fallback("font-size", 20);
   text-transform: uppercase;
   @include rem-fallback("margin-bottom", 30);
+}
+.title-style-1 {
+  @include title-style-1;
 }

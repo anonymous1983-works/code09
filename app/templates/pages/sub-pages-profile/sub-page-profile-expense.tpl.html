@@ -1,0 +1,73 @@
+<div class="slide <!-- @@var classPage -->" id="<!-- @@var idPage -->"
+     axa-fullpage-slide-index="<!-- @@var slideIndexPage -->">
+
+    <div class="page-container axa-page-container cell ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="header-title">
+                        <h3 class="title" data-template="pages.profile.sections.expense.text1"></h3>
+
+                        <ul class="title-picture" hobbies-icons="picto">
+
+                        </ul>
+                    </div>
+
+                    <div class="form axa-form">
+
+                        <div class="form-group animated fadeInUpBig">
+
+                            <span class="form-text" data-template="pages.profile.sections.expense.text2"></span>
+
+                            <select data-binding="activities.hobby"
+                                    data-print="activities.hobby"
+                                    data-template="select.hobbies"
+                                    name="hobby"
+                                    class="form-control">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group animated">
+                            <span class="form-text" data-template="pages.profile.sections.expense.text3"></span>
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="expense.hobby"
+                                   name="expenses"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="0" hobby-hide="other" />
+
+                            <input type="number"
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
+                                   min="18"
+                                   autocomplete="off"
+                                   data-binding="expense.otherExpenses[0]"
+                                   name="expenses"
+                                   class="form-control"
+                                   style="width: 74px"
+                                   placeholder="0" hobby-show="other" />
+
+                            <span class="form-text" hobby="description"></span>
+                        </div>
+
+                        <div class="clearfix center next-wrapper-remove-height">
+                            <a href="#" class="btn btn-color-orange btn-form-next btn-animate"
+                               data-toggle="axa-fullpage-btn_section" axa-fullpage-target="#recap">
+                                <span class="form-text" data-template="global.next"></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

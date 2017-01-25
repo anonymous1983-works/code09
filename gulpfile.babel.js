@@ -60,7 +60,7 @@ gulp.task('tpl', [], () => {
 });
 
 gulp.task('html', ['tpl', 'styles', 'scripts'], () => {
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
         .pipe(extender({annotations: true, verbose: false})) // default options
         .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
         //.pipe($.if('*.js', $.uglify()))
@@ -110,7 +110,7 @@ gulp.task('copy:json', () => gulp
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['wiredep', 'html', 'styles', 'scripts', 'fonts', 'copy:json'], () => {
+gulp.task('serve', ['html', 'styles', 'scripts', 'fonts', 'copy:json'], () => {
     browserSync({
         notify: false,
         port: 9000,
